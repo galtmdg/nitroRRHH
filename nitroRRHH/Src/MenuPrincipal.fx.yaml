@@ -140,6 +140,28 @@
                     Y: =21
                     ZIndex: =4
 
+                Button1_2 As button:
+                    AlignInContainer: =AlignInContainer.Center
+                    BorderColor: =App.Theme.Colors.Primary
+                    DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =App.Theme.Colors.Primary
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Semibold
+                    HoverBorderColor: =App.Theme.Colors.Darker10
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =App.Theme.Colors.Darker10
+                    OnSelect: =Navigate(ModuloVacaciones,ScreenTransition.CoverRight)
+                    PressedBorderColor: =App.Theme.Colors.Darker40
+                    PressedColor: =Self.Color
+                    PressedFill: =App.Theme.Colors.Darker40
+                    Size: =15
+                    Text: ="Vacaciones"
+                    X: =1054
+                    Y: =666
+                    ZIndex: =5
+
             MainContainer1 As groupContainer.verticalAutoLayoutContainer:
                 DropShadow: =DropShadow.Light
                 Fill: =RGBA(255, 255, 255, 1)

@@ -1,0 +1,169 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crda0_rrhhdeduccioneses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crda0_rrhhdeducciones",
+    "Name": "RRHHDeducciones",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Propietario",
+      "crda0_activo": "Activo",
+      "crda0_deduccion": "Deduccion",
+      "crda0_deduccionactiva": "DeduccionActiva",
+      "crda0_fechafinalizacion": "FechaFInalizacion",
+      "crda0_monto": "Monto",
+      "crda0_monto_base": "Monto (base)",
+      "crda0_name": "IDDeduccion",
+      "crda0_numeroprestamo": "NumeroPrestamo",
+      "crda0_RRHHcolaborador": "RRHHcolaborador",
+      "crda0_rrhhdeducciones_AsyncOperations": "Trabajos del sistema",
+      "crda0_rrhhdeducciones_BulkDeleteFailures": "Errores de eliminación en masa",
+      "crda0_rrhhdeducciones_connections1": "Conexiones (crda0_rrhhdeducciones_connections1)",
+      "crda0_rrhhdeducciones_connections2": "Conexiones (crda0_rrhhdeducciones_connections2)",
+      "crda0_rrhhdeducciones_MailboxTrackingFolders": "Carpetas de seguimiento automático del buzón",
+      "crda0_rrhhdeducciones_PrincipalObjectAttributeAccesses": "Uso compartido de campos",
+      "crda0_rrhhdeducciones_ProcessSession": "Sesiones de proceso",
+      "crda0_rrhhdeducciones_SyncErrors": "Errores de sincronización",
+      "crda0_rrhhdeduccionesid": "RRHHDeducciones",
+      "createdby": "Autor",
+      "createdon": "Fecha de creación",
+      "createdonbehalfby": "Autor (delegado)",
+      "exchangerate": "Tipo de cambio",
+      "importsequencenumber": "Número de secuencia de importación",
+      "modifiedby": "Modificado por",
+      "modifiedon": "Fecha de modificación",
+      "modifiedonbehalfby": "Modificado por (delegado)",
+      "overriddencreatedon": "Fecha de creación del registro",
+      "owningbusinessunit": "Unidad de negocio propietaria",
+      "owningteam": "Equipo propietario",
+      "owninguser": "Usuario propietario",
+      "statecode": "Estado",
+      "statuscode": "Razón para el estado",
+      "timezoneruleversionnumber": "Número de versión de regla de zona horaria",
+      "transactioncurrencyid": "Divisa",
+      "utcconversiontimezonecode": "Código de zona horaria de conversión UTC",
+      "versionnumber": "Número de versión"
+    },
+    "PreferredName": "RRHHDeducciones",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "RRHHDeducciones (Vistas)",
+    "Name": "_crda0_rrhhdeducciones_views",
+    "RelatedEntityName": "RRHHDeducciones",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "3eb8bcd5-f680-4d9f-bd8c-9b25e55dee4c": "Vista de búsqueda avanzada de RRHHDeducciones",
+      "59b7cba1-ae76-4f17-89ab-e4ddcfe97368": "Vista asociada de RRHHDeducciones",
+      "74b5c65b-2076-4add-88e0-066060a3be84": "RRHHDeducciones activo",
+      "7febdcc7-bb44-46aa-8021-e29c450669ed": "Vista de búsqueda de RRHHDeducciones",
+      "d3432fdb-739b-49aa-ac04-92ddfacf54f5": "RRHHDeducciones inactivo"
+    }
+  },
+  {
+    "DisplayName": "Deduccion",
+    "Name": "crda0_deduccion",
+    "OptionSetInfoNameMapping": {
+      "424870000": "Prestamo Hipotecario",
+      "424870001": "Prestamo Personal",
+      "424870002": "Prestamo de Auto",
+      "424870003": "Seguro de Vida Adicional",
+      "424870004": "Otras Deducciones"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crda0_deduccion",
+        "OptionSetReferenceEntityName": "RRHHDeducciones"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "crda0_deduccion",
+    "RelatedEntityName": "RRHHDeducciones",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Activo (RRHHDeducciones)",
+    "Name": "crda0_rrhhdeducciones_crda0_activo",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crda0_activo",
+        "OptionSetReferenceEntityName": "RRHHDeducciones"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "crda0_activo",
+    "RelatedEntityName": "RRHHDeducciones",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "DeduccionActiva (RRHHDeducciones)",
+    "Name": "crda0_rrhhdeducciones_crda0_deduccionactiva",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Sí"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crda0_deduccionactiva",
+        "OptionSetReferenceEntityName": "RRHHDeducciones"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "crda0_deduccionactiva",
+    "RelatedEntityName": "RRHHDeducciones",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Estado (RRHHDeducciones)",
+    "Name": "crda0_rrhhdeducciones_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Activo",
+      "1": "Inactivo"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "RRHHDeducciones"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "RRHHDeducciones",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Razón para el estado (RRHHDeducciones)",
+    "Name": "crda0_rrhhdeducciones_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Activo",
+      "2": "Inactivo"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "RRHHDeducciones"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "RRHHDeducciones",
+    "Type": "OptionSetInfo"
+  }
+]

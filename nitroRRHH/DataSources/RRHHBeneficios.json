@@ -1,0 +1,147 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crda0_rrhhbeneficioses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crda0_rrhhbeneficios",
+    "Name": "RRHHBeneficios",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Propietario",
+      "crda0_beneficio": "Beneficio",
+      "crda0_estado": "Estado (crda0_estado)",
+      "crda0_monto": "Monto",
+      "crda0_monto_base": "Monto (base)",
+      "crda0_name": "IDBeneficios",
+      "crda0_rrhhbeneficios_AsyncOperations": "Trabajos del sistema",
+      "crda0_rrhhbeneficios_BulkDeleteFailures": "Errores de eliminación en masa",
+      "crda0_rrhhbeneficios_connections1": "Conexiones (crda0_rrhhbeneficios_connections1)",
+      "crda0_rrhhbeneficios_connections2": "Conexiones (crda0_rrhhbeneficios_connections2)",
+      "crda0_rrhhbeneficios_MailboxTrackingFolders": "Carpetas de seguimiento automático del buzón",
+      "crda0_rrhhbeneficios_PrincipalObjectAttributeAccesses": "Uso compartido de campos",
+      "crda0_rrhhbeneficios_ProcessSession": "Sesiones de proceso",
+      "crda0_rrhhbeneficios_SyncErrors": "Errores de sincronización",
+      "crda0_rrhhbeneficiosid": "RRHHBeneficios",
+      "crda0_RRHHcolaborador": "RRHHcolaborador",
+      "createdby": "Autor",
+      "createdon": "Fecha de creación",
+      "createdonbehalfby": "Autor (delegado)",
+      "exchangerate": "Tipo de cambio",
+      "importsequencenumber": "Número de secuencia de importación",
+      "modifiedby": "Modificado por",
+      "modifiedon": "Fecha de modificación",
+      "modifiedonbehalfby": "Modificado por (delegado)",
+      "overriddencreatedon": "Fecha de creación del registro",
+      "owningbusinessunit": "Unidad de negocio propietaria",
+      "owningteam": "Equipo propietario",
+      "owninguser": "Usuario propietario",
+      "statecode": "Estado (statecode)",
+      "statuscode": "Razón para el estado",
+      "timezoneruleversionnumber": "Número de versión de regla de zona horaria",
+      "transactioncurrencyid": "Divisa",
+      "utcconversiontimezonecode": "Código de zona horaria de conversión UTC",
+      "versionnumber": "Número de versión"
+    },
+    "PreferredName": "RRHHBeneficios",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "RRHHBeneficios (Vistas)",
+    "Name": "_crda0_rrhhbeneficios_views",
+    "RelatedEntityName": "RRHHBeneficios",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0e4fd0dc-5bc4-49ee-bbdc-7fec07d1e4e3": "Vista asociada de RRHHBeneficios",
+      "11cf0fe8-6a4e-48dc-9137-9e2900b0f810": "RRHHBeneficios activo",
+      "1e0a8354-afe3-4080-9e05-ed4dd193b6d3": "Vista de búsqueda avanzada de RRHHBeneficios",
+      "388f5b41-7285-4c0e-8e44-807171c84196": "Vista de búsqueda de RRHHBeneficios",
+      "6a26e0d5-be88-4fd1-8b32-b388e9cc45bb": "RRHHBeneficios inactivo"
+    }
+  },
+  {
+    "DisplayName": "Beneficios",
+    "Name": "crda0_beneficios",
+    "OptionSetInfoNameMapping": {
+      "424870000": "Vale General",
+      "424870001": "Celular Corporativo",
+      "424870002": "Estacionamiento",
+      "424870003": "Seguro Médico",
+      "424870004": "ENA",
+      "424870005": "Otros"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crda0_beneficio",
+        "OptionSetReferenceEntityName": "RRHHBeneficios"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "crda0_beneficio",
+    "RelatedEntityName": "RRHHBeneficios",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Estado (RRHHBeneficios)",
+    "Name": "crda0_rrhhbeneficios_crda0_estado",
+    "OptionSetInfoNameMapping": {
+      "0": "Inactivo",
+      "1": "Activo"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crda0_estado",
+        "OptionSetReferenceEntityName": "RRHHBeneficios"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "crda0_estado",
+    "RelatedEntityName": "RRHHBeneficios",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Estado (RRHHBeneficios)_1",
+    "Name": "crda0_rrhhbeneficios_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Activo",
+      "1": "Inactivo"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "RRHHBeneficios"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "RRHHBeneficios",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Razón para el estado (RRHHBeneficios)",
+    "Name": "crda0_rrhhbeneficios_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Activo",
+      "2": "Inactivo"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "RRHHBeneficios"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "RRHHBeneficios",
+    "Type": "OptionSetInfo"
+  }
+]
