@@ -4,9 +4,19 @@ Screen1 As screen:
 
     TextCanvas1 As Texto:
         DisplayMode: =DisplayMode.Edit
+        FontColor: =
         Height: =32
         Width: =96
         X: =40
         Y: =40
         ZIndex: =1
+
+    TextCanvas1_1 As Texto:
+        DisplayMode: =DisplayMode.Edit
+        FontColor: =
+        Height: =32
+        Width: =96
+        X: =60
+        Y: =60
+        ZIndex: =2
 
