@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "0ba44cf1-a201-4377-b5cd-674dc3ec75f4",
+    "Name": "AprobaciónVacaciones",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "df0ccd9b-381f-ed11-b83e-000d3a593a28"
+  }
+]

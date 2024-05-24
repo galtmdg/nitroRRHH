@@ -1,0 +1,76 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "aadusers",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "aaduser",
+    "MaxGetRowsCount": 500,
+    "Name": "AAD Users",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "aaduserid": "Id. de Microsoft Entra Identity",
+      "accountenabled": "Cuenta de Microsoft Entra Identity habilitada",
+      "businessphones": "Teléfonos del trabajo",
+      "city": "Ciudad",
+      "companyname": "Nombre de empresa",
+      "crda0_asigned_to_aaduser": "SupportDeskTickets (crda0_asigned_to_aaduser)",
+      "crda0_ClienteUnibank_aaduser_aaduser": "ClienteUnibank",
+      "crda0_Pipeline_aaduser_aaduser": "Pipeline",
+      "crda0_RegistroVacaciones_aaduser_aaduser": "RegistroVacaciones",
+      "crda0_supportdeskticket_closed_by_aaduser": "SupportDeskTickets (crda0_supportdeskticket_closed_by_aaduser)",
+      "crda0_ticketthread_response_by_aaduser": "TicketThreads",
+      "crda0_Vacaciones_aaduser_aaduser": "Vacaciones",
+      "createddatetime": "Fecha y hora de creación",
+      "displayname": "Nombre para mostrar",
+      "givenname": "Nombre de pila",
+      "id": "Un identificador único para Microsoft Entra Identity",
+      "imaddresses": "ImAddresses",
+      "jobtitle": "Puesto",
+      "mail": "Correo",
+      "mobilephone": "Teléfono móvil",
+      "officelocation": "Ubicación de la oficina",
+      "postalcode": "Código postal",
+      "preferredlanguage": "Idioma preferido",
+      "streetaddress": "Dirección de la calle",
+      "surname": "Apellido",
+      "userprincipalname": "Nombre principal de usuario",
+      "usertype": "Tipo de usuario"
+    },
+    "PreferredName": "AAD Users",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "AAD Users (Vistas)",
+    "Name": "_aaduser_views",
+    "RelatedEntityName": "AAD Users",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1f1810e2-2903-402f-92bc-db11ec075c24": "All Microsoft Entra IDs",
+      "37ced142-2ece-4621-94f0-f5c3398ee4e8": "Microsoft Entra ID Lookup View",
+      "41d3f913-bf6f-4d27-84c8-4f2a3f43644e": "Microsoft Entra ID Advanced Find View",
+      "f802f753-1e75-4eba-9bc9-4da3935813c4": "Microsoft Entra ID Associated View"
+    }
+  },
+  {
+    "DisplayName": "Cuenta de Microsoft Entra Identity habilitada (AAD Users)",
+    "Name": "adduser_account_enabled",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Sí"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "accountenabled",
+        "OptionSetReferenceEntityName": "AAD Users"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "accountenabled",
+    "RelatedEntityName": "AAD Users",
+    "Type": "OptionSetInfo"
+  }
+]

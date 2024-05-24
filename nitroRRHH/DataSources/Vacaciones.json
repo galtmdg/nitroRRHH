@@ -1,0 +1,133 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crda0_vacacioneses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crda0_vacaciones",
+    "MaxGetRowsCount": 500,
+    "Name": "Vacaciones",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Propietario",
+      "{Attachments}": "Attachments",
+      "crda0_aaduser": "AAD User",
+      "crda0_fechacontratacion": "FechaContratacion",
+      "crda0_jefe": "Jefe",
+      "crda0_name": "Name",
+      "crda0_rrhh": "RRHH",
+      "crda0_sumatoriavacacionestomadas": "SumatoriaVacacionesTomadas",
+      "crda0_sumatoriavacacionestomadas_date": "SumatoriaVacacionesTomadas (fecha de última actualización)",
+      "crda0_sumatoriavacacionestomadas_state": "SumatoriaVacacionesTomadas (estado)",
+      "crda0_tipocolaborador": "TipoColaborador",
+      "crda0_totalvacaciones": "TotalDias",
+      "crda0_vacaciones_Annotations": "Notas",
+      "crda0_vacaciones_AsyncOperations": "Trabajos del sistema",
+      "crda0_vacaciones_BulkDeleteFailures": "Errores de eliminación en masa",
+      "crda0_vacaciones_connections1": "Conexiones (crda0_vacaciones_connections1)",
+      "crda0_vacaciones_connections2": "Conexiones (crda0_vacaciones_connections2)",
+      "crda0_Vacaciones_crda0_Vacaciones_crda0_R": "RegistroVacaciones",
+      "crda0_vacaciones_DuplicateBaseRecord": "Registros duplicados (crda0_vacaciones_DuplicateBaseRecord)",
+      "crda0_vacaciones_DuplicateMatchingRecord": "Registros duplicados (crda0_vacaciones_DuplicateMatchingRecord)",
+      "crda0_vacaciones_MailboxTrackingFolders": "Carpetas de seguimiento automático del buzón",
+      "crda0_vacaciones_PrincipalObjectAttributeAccesses": "Uso compartido de campos",
+      "crda0_vacaciones_ProcessSession": "Sesiones de proceso",
+      "crda0_vacaciones_SyncErrors": "Errores de sincronización",
+      "crda0_vacacionesdias": "VacacionesDias",
+      "crda0_vacacionesdisponibles": "VacacionesDisponibles",
+      "crda0_vacacionesid": "Vacaciones",
+      "createdby": "Autor",
+      "createdon": "Fecha de creación",
+      "createdonbehalfby": "Autor (delegado)",
+      "importsequencenumber": "Número de secuencia de importación",
+      "modifiedby": "Modificado por",
+      "modifiedon": "Fecha de modificación",
+      "modifiedonbehalfby": "Modificado por (delegado)",
+      "overriddencreatedon": "Fecha de creación del registro",
+      "owningbusinessunit": "Unidad de negocio propietaria",
+      "owningteam": "Equipo propietario",
+      "owninguser": "Usuario propietario",
+      "statecode": "Estado",
+      "statuscode": "Razón para el estado",
+      "timezoneruleversionnumber": "Número de versión de regla de zona horaria",
+      "utcconversiontimezonecode": "Código de zona horaria de conversión UTC",
+      "versionnumber": "Número de versión"
+    },
+    "PreferredName": "Vacaciones",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Vacaciones (Vistas)",
+    "Name": "_crda0_vacaciones_views",
+    "RelatedEntityName": "Vacaciones",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1f8def41-5ccc-47ad-9f2c-2c2a1296aef0": "Vacaciones activo",
+      "60814004-ab67-4d76-81d2-06c8eb4899d2": "Vacaciones inactivo",
+      "9768c6b1-8b6d-4935-ad97-5c6273974723": "Vista de búsqueda avanzada de Vacaciones",
+      "a377fde5-15de-4677-8c17-321c5d980d7c": "Vista de búsqueda de Vacaciones",
+      "f4efc3a3-df02-4e23-9449-10f8e639391e": "Vista asociada de Vacaciones"
+    }
+  },
+  {
+    "DisplayName": "TipoColaborador (Vacaciones)",
+    "Name": "crda0_vacaciones_crda0_tipocolaborador",
+    "OptionSetInfoNameMapping": {
+      "424870000": "Asalariado",
+      "424870001": "Servicios Profesionales"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crda0_tipocolaborador",
+        "OptionSetReferenceEntityName": "Vacaciones"
+      }
+    },
+    "OptionSetTypeKey": "MultiSelectPicklistType",
+    "RelatedColumnInvariantName": "crda0_tipocolaborador",
+    "RelatedEntityName": "Vacaciones",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Estado (Vacaciones)",
+    "Name": "crda0_vacaciones_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Activo",
+      "1": "Inactivo"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Vacaciones"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Vacaciones",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Razón para el estado (Vacaciones)",
+    "Name": "crda0_vacaciones_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Activo",
+      "2": "Inactivo"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Vacaciones"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Vacaciones",
+    "Type": "OptionSetInfo"
+  }
+]

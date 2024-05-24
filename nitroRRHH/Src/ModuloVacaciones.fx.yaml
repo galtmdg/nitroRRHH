@@ -1,0 +1,370 @@
+ModuloVacaciones As screen:
+    Fill: =Color.White
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+
+    "Gallery4 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
+        '#CopilotOverlayLabel': ="Filtrada"
+        BorderColor: =App.Theme.Colors.Darker40
+        BorderStyle: =BorderStyle.None
+        Height: =376
+        Items: =Filter('AAD Users',Correo=User().Email)
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =318
+        Width: =1366
+        Y: =97
+        ZIndex: =1
+
+        Title9 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Semibold
+            Height: =32
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =16
+            Text: =ThisItem.'Nombre para mostrar'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =639
+            X: =150
+            Y: =23
+            ZIndex: =1
+
+        Subtitle8 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            Height: =36
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =16
+            Text: =ThisItem.'Nombre de empresa'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =329
+            X: =150
+            Y: =51
+            ZIndex: =2
+
+        Body1 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            Height: =29
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =16
+            Text: =ThisItem.Puesto
+            VerticalAlign: =VerticalAlign.Top
+            Width: =420
+            X: =150
+            Y: =85
+            ZIndex: =3
+
+        NextArrow6 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =App.Theme.Colors.Darker30
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="Ver los detalles del elemento"
+            Width: =60
+            X: =580
+            Y: =396
+            ZIndex: =4
+
+        FechaContratación As label:
+            Align: =Align.Center
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =Text(LookUp(Vacaciones,'AAD User'.'AAD user id'=ThisItem.'AAD user id',FechaContratacion),"dd/mm/yyyy")
+            Width: =139
+            X: =211
+            Y: =155
+            ZIndex: =8
+
+        TotalDias_3 As label:
+            Align: =Align.Center
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Bold
+            Height: =82
+            OnSelect: =Select(Parent)
+            Size: =45
+            Text: =LookUp(Vacaciones,'AAD User'.'Id. de Microsoft Entra Identity'=ThisItem.'Id. de Microsoft Entra Identity', VacacionesDisponibles)
+            Width: =210
+            X: =531
+            Y: =182
+            ZIndex: =10
+
+        Label3 As label:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Bold
+            Height: =61
+            OnSelect: =Select(Parent)
+            Size: =25
+            Text: |-
+                ="Días de vacaciones disponibles:"
+            Width: =566
+            X: =32
+            Y: =193
+            ZIndex: =11
+
+        Button3 As button:
+            BorderColor: =App.Theme.Colors.Primary
+            DisabledBorderColor: =RGBA(244, 244, 244, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =App.Theme.Colors.Primary
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Semibold
+            Height: =44
+            HoverBorderColor: =App.Theme.Colors.Darker10
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =App.Theme.Colors.Darker10
+            OnSelect: |-
+                =Select(Parent); Navigate(SolicitarVacaciones); Set(Colaborador,LookUp('AAD Users','Id. de Microsoft Entra Identity'=ThisItem.'Id. de Microsoft Entra Identity')); 
+                Set(VacacionesColaborador,LookUp(Vacaciones,'AAD User'.'Id. de Microsoft Entra Identity'=ThisItem.'Id. de Microsoft Entra Identity'))
+            PressedBorderColor: =App.Theme.Colors.Darker40
+            PressedColor: =Self.Color
+            PressedFill: =App.Theme.Colors.Darker40
+            Size: =15
+            Text: ="Solicitar Vacaciones"
+            Width: =209
+            X: =1126
+            Y: =14
+            ZIndex: =12
+
+        Label5 As label:
+            Align: =Align.Center
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Bold
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: |-
+                ="Fecha Contratación: "
+            Width: =191
+            X: =32
+            Y: =158
+            ZIndex: =13
+
+        Label8 As label:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Bold
+            OnSelect: =Select(Parent)
+            Size: =16
+            Text: |-
+                ="Nombre:"
+            X: =32
+            Y: =16
+            ZIndex: =14
+
+        Label8_1 As label:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Bold
+            OnSelect: =Select(Parent)
+            Size: =16
+            Text: |-
+                ="Empresa:"
+            X: =32
+            Y: =45
+            ZIndex: =15
+
+        Label8_2 As label:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Bold
+            OnSelect: =Select(Parent)
+            Size: =16
+            Text: |-
+                ="Cargo:"
+            X: =32
+            Y: =74
+            ZIndex: =16
+
+    DataTable1 As dataTable.datatable:
+        BorderColor: =App.Theme.Colors.Darker40
+        BorderStyle: =BorderStyle.Solid
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Normal
+        HeadingColor: =RGBA(255, 255, 255, 1)
+        HeadingFill: =App.Theme.Colors.Primary
+        HeadingFont: =App.Theme.Font
+        HeadingFontWeight: =FontWeight.Semibold
+        HeadingSize: =13
+        Height: =270
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter80
+        InputFill: =RGBA(255, 255, 255, 1)
+        InvertedColor: =RGBA(255, 255, 255, 1)
+        Items: =Sort(Filter(RegistroVacaciones,Vacaciones.'AAD User'.'AAD user id'=Gallery4.Selected.'AAD user id'),FechaInicio)
+        LinkColor: =App.Theme.Colors.Lighter10
+        PrimaryColor1: =App.Theme.Colors.Primary
+        PrimaryColor2: =App.Theme.Colors.Darker30
+        PrimaryColor3: =App.Theme.Colors.Lighter70
+        SelectedColor: =RGBA(0, 0, 0, 1)
+        SelectedFill: =App.Theme.Colors.Lighter70
+        Size: =13
+        Width: =1079
+        X: =143
+        Y: =498
+        ZIndex: =6
+
+        FechaInicio_Columna1 As dataTableColumn.dateTimeColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Fecha de Inicio de Vacaciones"
+            FieldName: ="crda0_fechainicio"
+            FieldVariantName: ="dateTimeColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =Text(ThisItem.FechaInicio,"dd/mm/yyyy")
+            Width: =273
+            X: =180
+            Y: =0
+            ZIndex: =10
+
+        FechaFinal_Columna1 As dataTableColumn.dateTimeColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Fecha de Finalización de Vacaciones"
+            FieldName: ="crda0_fechafinal"
+            FieldVariantName: ="dateTimeColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =Text(ThisItem.FechaFinal,"dd/mm/yyyy")
+            Width: =346
+            X: =219
+            Y: =0
+            ZIndex: =11
+
+        DiasTomados_Columna1 As dataTableColumn.numberColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Días de Vacaciones Tomados"
+            FieldName: ="crda0_diastomados"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.DiasTomados
+            Width: =293
+            X: =0
+            Y: =0
+            ZIndex: =12
+
+        Estado_Columna1 As dataTableColumn.complexOptionSetColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Estado"
+            FieldName: ="statecode"
+            FieldVariantName: ="complexOptionSetColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.'Estado (crda0_estado)'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =17
+
+    Icon1 As icon.BackArrow:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =App.Theme.Colors.Darker30
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =43
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(MenuPrincipal,ScreenTransition.UnCoverRight)
+        Width: =49
+        X: =38
+        Y: =22
+        ZIndex: =9
+
+    Label1 As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        Height: =56
+        Size: =13
+        Text: =User().FullName
+        Width: =242
+        X: =1044
+        Y: =16
+        ZIndex: =10
+
+    Image6 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =75
+        Image: =User().Image
+        RadiusBottomLeft: =70
+        RadiusBottomRight: =70
+        RadiusTopLeft: =70
+        RadiusTopRight: =70
+        Width: =92
+        X: =1274
+        Y: =3
+        ZIndex: =11
+
+    Label1_2 As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =49
+        Size: =25
+        Text: ="Registro de vacaciones devengadas"
+        Width: =636
+        X: =365
+        Y: =424
+        ZIndex: =12
+

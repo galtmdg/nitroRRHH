@@ -1,0 +1,106 @@
+{
+  "1189957f-340d-4989-a49c-828a39bbb02f": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Usuarios de Office 365",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1686/1.0.1686.3706/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "UsuariosdeOffice365"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "1189957f-340d-4989-a49c-828a39bbb02f"
+  },
+  "580675d3-8461-4073-bab8-4f0b0ffdb070": {
+    "appActions": [
+      "Run"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Flujos lógicos",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/patelronak/specialtrain-logicflows-2/1.0.1692.3734/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "5863e9d9-5113-401b-93d6-fbe084ca6589": {
+          "value": "shared_commondataserviceforapps"
+        },
+        "c3294cc0-b726-4f05-9583-6595ed771abe": {
+          "value": "shared_approvals"
+        },
+        "workflowEntityId": {
+          "value": "df0ccd9b-381f-ed11-b83e-000d3a593a28"
+        },
+        "workflowName": {
+          "value": "54a9d4b8-9633-2139-1f9d-65d0cd3a9eab"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_approvals": {
+          "value": "c3294cc0-b726-4f05-9583-6595ed771abe"
+        },
+        "shared_commondataserviceforapps": {
+          "value": "5863e9d9-5113-401b-93d6-fbe084ca6589"
+        },
+        "workflowEntityId": {
+          "value": "df0ccd9b-381f-ed11-b83e-000d3a593a28"
+        },
+        "workflowName": {
+          "value": "54a9d4b8-9633-2139-1f9d-65d0cd3a9eab"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "AprobaciónVacaciones"
+    ],
+    "dependencies": {
+      "shared_approvals": "c3294cc0-b726-4f05-9583-6595ed771abe",
+      "shared_commondataserviceforapps": "5863e9d9-5113-401b-93d6-fbe084ca6589"
+    },
+    "dependents": [],
+    "id": "580675d3-8461-4073-bab8-4f0b0ffdb070"
+  },
+  "5863e9d9-5113-401b-93d6-fbe084ca6589": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Premium",
+      "bypassConsent": true,
+      "displayName": "Microsoft Dataverse",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/dannylevy/fastTrack/Commondataserviceforapps/1.0.1694.3756/commondataserviceforapps/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_commondataserviceforapps",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "580675d3-8461-4073-bab8-4f0b0ffdb070"
+    ],
+    "id": "5863e9d9-5113-401b-93d6-fbe084ca6589"
+  },
+  "c3294cc0-b726-4f05-9583-6595ed771abe": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Aprobaciones",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1682/1.0.1682.3672/approvals/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_approvals",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "580675d3-8461-4073-bab8-4f0b0ffdb070"
+    ],
+    "id": "c3294cc0-b726-4f05-9583-6595ed771abe"
+  }
+}

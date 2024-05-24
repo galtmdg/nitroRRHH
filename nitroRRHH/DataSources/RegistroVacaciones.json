@@ -1,0 +1,125 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crda0_registrovacacioneses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crda0_registrovacaciones",
+    "MaxGetRowsCount": 500,
+    "Name": "RegistroVacaciones",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Propietario",
+      "crda0_aaduser": "AAD User",
+      "crda0_diastomados": "DiasTomados",
+      "crda0_estado": "Estado (crda0_estado)",
+      "crda0_fechafinal": "FechaFinal",
+      "crda0_fechainicio": "FechaInicio",
+      "crda0_name": "Name",
+      "crda0_registrovacaciones_AsyncOperations": "Trabajos del sistema",
+      "crda0_registrovacaciones_BulkDeleteFailures": "Errores de eliminación en masa",
+      "crda0_registrovacaciones_DuplicateBaseRecord": "Registros duplicados (crda0_registrovacaciones_DuplicateBaseRecord)",
+      "crda0_registrovacaciones_DuplicateMatchingRecord": "Registros duplicados (crda0_registrovacaciones_DuplicateMatchingRecord)",
+      "crda0_registrovacaciones_MailboxTrackingFolders": "Carpetas de seguimiento automático del buzón",
+      "crda0_registrovacaciones_PrincipalObjectAttributeAccesses": "Uso compartido de campos",
+      "crda0_registrovacaciones_ProcessSession": "Sesiones de proceso",
+      "crda0_registrovacaciones_QueueItems": "Elementos de cola",
+      "crda0_registrovacaciones_SyncErrors": "Errores de sincronización",
+      "crda0_registrovacacionesid": "RegistroVacaciones",
+      "crda0_Vacaciones": "Vacaciones",
+      "createdby": "Autor",
+      "createdon": "Fecha de creación",
+      "createdonbehalfby": "Autor (delegado)",
+      "importsequencenumber": "Número de secuencia de importación",
+      "modifiedby": "Modificado por",
+      "modifiedon": "Fecha de modificación",
+      "modifiedonbehalfby": "Modificado por (delegado)",
+      "overriddencreatedon": "Fecha de creación del registro",
+      "owningbusinessunit": "Unidad de negocio propietaria",
+      "owningteam": "Equipo propietario",
+      "owninguser": "Usuario propietario",
+      "statecode": "Estado (statecode)",
+      "statuscode": "Razón para el estado",
+      "timezoneruleversionnumber": "Número de versión de regla de zona horaria",
+      "utcconversiontimezonecode": "Código de zona horaria de conversión UTC",
+      "versionnumber": "Número de versión"
+    },
+    "PreferredName": "RegistroVacaciones",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "RegistroVacaciones (Vistas)",
+    "Name": "_crda0_registrovacaciones_views",
+    "RelatedEntityName": "RegistroVacaciones",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "4b6d0993-167a-44de-bdc8-a74fd0647d48": "Vista de búsqueda avanzada de RegistroVacaciones",
+      "558f3a34-f847-4207-b71d-f29e9176391c": "RegistroVacaciones inactivo",
+      "5aabf314-891c-4417-bf91-4613a1e7f64a": "RegistroVacaciones activo",
+      "81abb301-5dc3-4402-8546-f38812518f8f": "Vista de búsqueda de RegistroVacaciones",
+      "cd381472-a16e-48a8-83e8-5bb73c095891": "Vista asociada de RegistroVacaciones"
+    }
+  },
+  {
+    "DisplayName": "Estado (RegistroVacaciones)_1",
+    "Name": "crda0_registrovacaciones_crda0_estado",
+    "OptionSetInfoNameMapping": {
+      "424870000": "En revisión",
+      "424870001": "Aprobado",
+      "424870002": "Rechazado"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crda0_estado",
+        "OptionSetReferenceEntityName": "RegistroVacaciones"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "crda0_estado",
+    "RelatedEntityName": "RegistroVacaciones",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Estado (RegistroVacaciones)",
+    "Name": "crda0_registrovacaciones_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Activo",
+      "1": "Inactivo"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "RegistroVacaciones"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "RegistroVacaciones",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Razón para el estado (RegistroVacaciones)",
+    "Name": "crda0_registrovacaciones_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Activo",
+      "2": "Inactivo"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "RegistroVacaciones"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "RegistroVacaciones",
+    "Type": "OptionSetInfo"
+  }
+]
