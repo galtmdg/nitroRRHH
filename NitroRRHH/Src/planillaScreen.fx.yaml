@@ -52,64 +52,9 @@
                 RadiusTopRight: =4
                 ZIndex: =4
 
-                planillaPerfilUsuario As image:
-                    AlignInContainer: =AlignInContainer.Center
-                    BorderColor: =App.Theme.Colors.Darker40
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    Height: =90
-                    Image: =User().Image
-                    RadiusBottomLeft: =120
-                    RadiusBottomRight: =120
-                    RadiusTopLeft: =120
-                    RadiusTopRight: =120
-                    Width: =90
-                    ZIndex: =1
-
-                planillaBtnInicioNav As Button:
-                    Appearance: ='ButtonCanvas.Appearance'.Subtle
-                    BasePaletteColor: =
-                    DisplayMode: =DisplayMode.Edit
-                    FontColor: =RGBA(240, 98, 15, 1)
-                    FontSize: =20
-                    Height: =32
-                    LayoutMinHeight: =32
-                    LayoutMinWidth: =96
-                    Text: ="Inicio"
-                    Width: =Parent.Width
-                    X: =0
-                    Y: =0
-                    ZIndex: =2
-
-                planillaBtnPlanillaNav As Button:
-                    Appearance: ='ButtonCanvas.Appearance'.Subtle
-                    BasePaletteColor: =
-                    DisplayMode: =DisplayMode.Edit
-                    FontColor: =RGBA(240, 98, 15, 1)
-                    FontSize: =20
-                    Height: =32
-                    LayoutMinHeight: =32
-                    LayoutMinWidth: =96
-                    Text: ="Planilla"
-                    Width: =Parent.Width
-                    X: =0
-                    Y: =0
-                    ZIndex: =3
-
-                PlanillaBtnVacacionesNav As Button:
-                    Appearance: ='ButtonCanvas.Appearance'.Subtle
-                    BasePaletteColor: =
-                    DisplayMode: =DisplayMode.Edit
-                    FontColor: =RGBA(240, 98, 15, 1)
-                    FontSize: =20
-                    Height: =32
-                    LayoutMinHeight: =32
-                    LayoutMinWidth: =96
-                    Text: ="Vacaciones"
-                    Width: =Parent.Width
-                    X: =0
-                    Y: =0
-                    ZIndex: =4
+                planillaNavBar As NavBar:
+                    LayoutMinHeight: =640
+                    LayoutMinWidth: =640
 
             planillaContentContainer As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer

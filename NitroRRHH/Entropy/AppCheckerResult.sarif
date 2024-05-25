@@ -14,19 +14,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "overViewScreen.MainContainer.BottomContainer.SideBarContainer.btnInicioNav.AccessibleLabel"
+                  "fullyQualifiedName": "NavBar.Container1.btnInicioNav_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "overViewScreen.MainContainer.BottomContainer.SideBarContainer.btnInicioNav.AccessibleLabel",
+                  "fullyQualifiedName": "NavBar.Container1.btnInicioNav_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "overViewScreen",
-                "type": "overViewScreen.MainContainer.BottomContainer.SideBarContainer.btnInicioNav"
+                "module": "NavBar",
+                "type": "NavBar.Container1.btnInicioNav_1"
               }
             }
           ],
@@ -44,19 +44,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "overViewScreen.MainContainer.BottomContainer.SideBarContainer.btnPlanillaNav.AccessibleLabel"
+                  "fullyQualifiedName": "NavBar.Container1.btnPlanillaNav_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "overViewScreen.MainContainer.BottomContainer.SideBarContainer.btnPlanillaNav.AccessibleLabel",
+                  "fullyQualifiedName": "NavBar.Container1.btnPlanillaNav_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "overViewScreen",
-                "type": "overViewScreen.MainContainer.BottomContainer.SideBarContainer.btnPlanillaNav"
+                "module": "NavBar",
+                "type": "NavBar.Container1.btnPlanillaNav_1"
               }
             }
           ],
@@ -74,109 +74,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "overViewScreen.MainContainer.BottomContainer.SideBarContainer.btnVacacionesNav.AccessibleLabel"
+                  "fullyQualifiedName": "NavBar.Container1.btnVacacionesNav_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "overViewScreen.MainContainer.BottomContainer.SideBarContainer.btnVacacionesNav.AccessibleLabel",
+                  "fullyQualifiedName": "NavBar.Container1.btnVacacionesNav_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "overViewScreen",
-                "type": "overViewScreen.MainContainer.BottomContainer.SideBarContainer.btnVacacionesNav"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "planillaScreen.planillaMainContainer.planillaBottomContainer.planillaSideBarContainer.planillaBtnInicioNav.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "planillaScreen.planillaMainContainer.planillaBottomContainer.planillaSideBarContainer.planillaBtnInicioNav.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "planillaScreen",
-                "type": "planillaScreen.planillaMainContainer.planillaBottomContainer.planillaSideBarContainer.planillaBtnInicioNav"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "planillaScreen.planillaMainContainer.planillaBottomContainer.planillaSideBarContainer.planillaBtnPlanillaNav.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "planillaScreen.planillaMainContainer.planillaBottomContainer.planillaSideBarContainer.planillaBtnPlanillaNav.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "planillaScreen",
-                "type": "planillaScreen.planillaMainContainer.planillaBottomContainer.planillaSideBarContainer.planillaBtnPlanillaNav"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "planillaScreen.planillaMainContainer.planillaBottomContainer.planillaSideBarContainer.PlanillaBtnVacacionesNav.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "planillaScreen.planillaMainContainer.planillaBottomContainer.planillaSideBarContainer.PlanillaBtnVacacionesNav.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "planillaScreen",
-                "type": "planillaScreen.planillaMainContainer.planillaBottomContainer.planillaSideBarContainer.PlanillaBtnVacacionesNav"
+                "module": "NavBar",
+                "type": "NavBar.Container1.btnVacacionesNav_1"
               }
             }
           ],
