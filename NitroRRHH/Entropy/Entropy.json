@@ -3,20 +3,20 @@
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
-    "BottomContainer": 34,
-    "btnInicioNav": 60,
-    "btnPlanillaNav": 61,
-    "btnVacacionesNav": 62,
-    "ContentContainer": 36,
+    "BottomContainer": 6,
+    "btnInicioNav": 9,
+    "btnPlanillaNav": 10,
+    "btnVacacionesNav": 11,
+    "ContentContainer": 12,
     "Host": 3,
-    "Image1": 58,
-    "MainContainer": 32,
+    "Image1": 8,
+    "MainContainer": 5,
     "overViewScreen": 4,
-    "SideBarContainer": 35
+    "SideBarContainer": 7
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "05/25/2024 18:25:44",
+  "HeaderLastSavedDateTimeUTC": "05/25/2024 18:48:16",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": true,
@@ -113,14 +113,14 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.0426282,
+    "AnalysisLoadTime": 0.0647461,
     "ControlCount": {
-      "groupContainer": 5,
+      "groupContainer": 4,
+      "image": 1,
       "PowerApps_CoreControls_ButtonCanvas": 3,
-      "PowerApps_CoreControls_TextCanvas": 2,
       "screen": 1
     },
-    "DeserializationLoadTime": 0.9837368
+    "DeserializationLoadTime": 0.6085692
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

@@ -5,24 +5,12 @@
       "ThemeName": "PowerAppsTheme"
     },
     {
-      "BasePaletteColor": "#ff842d",
-      "EntityName": "Custom",
-      "Font": "Arial",
-      "ThemeName": "Custom"
-    },
-    {
       "EntityName": "PlatinumTheme",
       "ThemeName": "PlatinumTheme"
     },
     {
       "EntityName": "OrangeTheme",
       "ThemeName": "OrangeTheme"
-    },
-    {
-      "BasePaletteColor": "#2D3142",
-      "EntityName": "Custom 2",
-      "Font": "Segoe UI",
-      "ThemeName": "Custom 2"
     },
     {
       "EntityName": "TeamsTheme",

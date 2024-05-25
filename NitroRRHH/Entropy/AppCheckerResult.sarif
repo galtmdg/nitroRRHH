@@ -14,36 +14,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "overViewScreen.MainContainer.BottomContainer.SideBarContainer.btnVacacionesNav.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "overViewScreen.MainContainer.BottomContainer.SideBarContainer.btnVacacionesNav.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "overViewScreen",
-                "type": "overViewScreen.MainContainer.BottomContainer.SideBarContainer.btnVacacionesNav"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "overViewScreen.MainContainer.BottomContainer.SideBarContainer.btnInicioNav.AccessibleLabel"
                 }
               ],
@@ -87,6 +57,36 @@
                 "member": "AccessibleLabel",
                 "module": "overViewScreen",
                 "type": "overViewScreen.MainContainer.BottomContainer.SideBarContainer.btnPlanillaNav"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "overViewScreen.MainContainer.BottomContainer.SideBarContainer.btnVacacionesNav.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "overViewScreen.MainContainer.BottomContainer.SideBarContainer.btnVacacionesNav.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "overViewScreen",
+                "type": "overViewScreen.MainContainer.BottomContainer.SideBarContainer.btnVacacionesNav"
               }
             }
           ],

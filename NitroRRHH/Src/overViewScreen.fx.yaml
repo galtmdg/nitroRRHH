@@ -3,8 +3,8 @@
     LoadingSpinnerColor: =App.Theme.Colors.Primary
 
     MainContainer As groupContainer.verticalAutoLayoutContainer:
+        BorderColor: =RGBA(255, 255, 255, 1)
         DropShadow: =DropShadow.Light
-        Fill: =RGBA(45, 49, 66, 1)
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Stretch
         LayoutDirection: =LayoutDirection.Vertical
@@ -19,12 +19,17 @@
         BottomContainer As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             DropShadow: =DropShadow.Light
-            Fill: =RGBA(45, 49, 66, 1)
+            Fill: =RGBA(45, 49, 66, 0.93)
             LayoutAlignItems: =LayoutAlignItems.Stretch
+            LayoutGap: =15
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             LayoutWrap: =true
+            PaddingBottom: =15
+            PaddingLeft: =15
+            PaddingRight: =15
+            PaddingTop: =15
             RadiusBottomLeft: =4
             RadiusBottomRight: =4
             RadiusTopLeft: =4
@@ -49,6 +54,7 @@
                 ZIndex: =4
 
                 Image1 As image:
+                    AlignInContainer: =AlignInContainer.Center
                     BorderColor: =App.Theme.Colors.Darker40
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     DisabledFill: =RGBA(244, 244, 244, 1)
@@ -62,9 +68,10 @@
                     ZIndex: =1
 
                 btnInicioNav As Button:
-                    Appearance: ='ButtonCanvas.Appearance'.Primary
-                    BasePaletteColor: =RGBA(209, 67, 67, 1)
+                    Appearance: ='ButtonCanvas.Appearance'.Subtle
+                    BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
+                    FontColor: =RGBA(240, 98, 15, 1)
                     Height: =32
                     LayoutMinHeight: =32
                     LayoutMinWidth: =96
@@ -75,10 +82,10 @@
                     ZIndex: =2
 
                 btnPlanillaNav As Button:
-                    Appearance: ='ButtonCanvas.Appearance'.Primary
-                    BasePaletteColor: =RGBA(209, 67, 67, 1)
+                    Appearance: ='ButtonCanvas.Appearance'.Subtle
+                    BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
-                    FontColor: =
+                    FontColor: =RGBA(240, 98, 15, 1)
                     Height: =32
                     LayoutMinHeight: =32
                     LayoutMinWidth: =96
@@ -89,10 +96,10 @@
                     ZIndex: =3
 
                 btnVacacionesNav As Button:
-                    Appearance: ='ButtonCanvas.Appearance'.Primary
-                    BasePaletteColor: =RGBA(209, 67, 67, 1)
+                    Appearance: ='ButtonCanvas.Appearance'.Subtle
+                    BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
-                    FontColor: =
+                    FontColor: =RGBA(240, 98, 15, 1)
                     Height: =32
                     LayoutMinHeight: =32
                     LayoutMinWidth: =96
@@ -105,7 +112,7 @@
             ContentContainer As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.Light
-                Fill: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(45, 49, 66, 1)
                 FillPortions: =7
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutMinHeight: =100

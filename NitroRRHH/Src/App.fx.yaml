@@ -1,6 +1,6 @@
 App As appinfo:
     BackEnabled: =true
-    Theme: =Custom
+    Theme: =PlatinumTheme
 
     Host As hostControl.DefaultHostControlVariant:
         OnCancel: =false
