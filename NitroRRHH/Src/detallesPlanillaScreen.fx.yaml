@@ -112,7 +112,7 @@
 
                 Container15 As groupContainer.manualLayoutContainer:
                     DropShadow: =DropShadow.Light
-                    Fill: =RGBA(255, 255, 255, 1)
+                    Fill: =RGBA(148, 148, 148, 1)
                     FillPortions: =7
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
