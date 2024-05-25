@@ -130,9 +130,9 @@
     "PublishDataLocally": false,
     "PublishResourcesLocally": false,
     "PublishTarget": "player",
-    "UserLocale": "es-ES"
+    "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Screen1"
+    "overViewScreen"
   ]
 }
