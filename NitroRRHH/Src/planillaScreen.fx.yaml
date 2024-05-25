@@ -1,0 +1,179 @@
+"planillaScreen As screen.'autoLayout_Sidebar_ver1.0'":
+    Fill: =Color.White
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+
+    planillaMainContainer As groupContainer.verticalAutoLayoutContainer:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        DropShadow: =DropShadow.Light
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width
+        ZIndex: =1
+
+        planillaBottomContainer As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(45, 49, 66, 0.93)
+            LayoutAlignItems: =LayoutAlignItems.Stretch
+            LayoutGap: =15
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =15
+            PaddingLeft: =15
+            PaddingRight: =15
+            PaddingTop: =15
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            ZIndex: =3
+
+            planillaSideBarContainer As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                DropShadow: =DropShadow.Regular
+                Fill: =RGBA(45, 49, 66, 1)
+                FillPortions: =0.5
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutGap: =5
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingTop: =10
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                ZIndex: =4
+
+                planillaPerfilUsuario As image:
+                    AlignInContainer: =AlignInContainer.Center
+                    BorderColor: =App.Theme.Colors.Darker40
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Height: =90
+                    Image: =User().Image
+                    RadiusBottomLeft: =120
+                    RadiusBottomRight: =120
+                    RadiusTopLeft: =120
+                    RadiusTopRight: =120
+                    Width: =90
+                    ZIndex: =1
+
+                planillaBtnInicioNav As Button:
+                    Appearance: ='ButtonCanvas.Appearance'.Subtle
+                    BasePaletteColor: =
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =RGBA(240, 98, 15, 1)
+                    FontSize: =20
+                    Height: =32
+                    LayoutMinHeight: =32
+                    LayoutMinWidth: =96
+                    Text: ="Inicio"
+                    Width: =Parent.Width
+                    X: =0
+                    Y: =0
+                    ZIndex: =2
+
+                planillaBtnPlanillaNav As Button:
+                    Appearance: ='ButtonCanvas.Appearance'.Subtle
+                    BasePaletteColor: =
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =RGBA(240, 98, 15, 1)
+                    FontSize: =20
+                    Height: =32
+                    LayoutMinHeight: =32
+                    LayoutMinWidth: =96
+                    Text: ="Planilla"
+                    Width: =Parent.Width
+                    X: =0
+                    Y: =0
+                    ZIndex: =3
+
+                PlanillaBtnVacacionesNav As Button:
+                    Appearance: ='ButtonCanvas.Appearance'.Subtle
+                    BasePaletteColor: =
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =RGBA(240, 98, 15, 1)
+                    FontSize: =20
+                    Height: =32
+                    LayoutMinHeight: =32
+                    LayoutMinWidth: =96
+                    Text: ="Vacaciones"
+                    Width: =Parent.Width
+                    X: =0
+                    Y: =0
+                    ZIndex: =4
+
+            planillaContentContainer As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                DropShadow: =DropShadow.Light
+                Fill: =RGBA(45, 49, 66, 1)
+                FillPortions: =7
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                LayoutOverflowY: =LayoutOverflow.Scroll
+                PaddingLeft: =16
+                PaddingTop: =15
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                ZIndex: =5
+
+                Container9 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.Light
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    ZIndex: =5
+
+                    planillaTitleIcon As icon.Trending:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =App.Theme.Colors.Lighter80
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Icon: =Icon.Journal
+                        ZIndex: =1
+
+                    planillaTitleText As Text:
+                        AutoHeight: =false
+                        DisplayMode: =DisplayMode.Edit
+                        Font: =Font.'Lato Black'
+                        FontColor: =RGBA(255, 255, 255, 0)
+                        Height: =72
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =96
+                        Size: =60
+                        Text: ="Planilla"
+                        Width: =250
+                        Wrap: =true
+                        X: =0
+                        Y: =0
+                        ZIndex: =2
+
+                Container11 As groupContainer.verticalAutoLayoutContainer:
+                    DropShadow: =DropShadow.Light
+                    FillPortions: =7
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    ZIndex: =6
+
