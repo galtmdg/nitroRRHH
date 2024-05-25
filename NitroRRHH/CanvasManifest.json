@@ -133,6 +133,7 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "overViewScreen"
+    "overViewScreen",
+    "Screen1"
   ]
 }

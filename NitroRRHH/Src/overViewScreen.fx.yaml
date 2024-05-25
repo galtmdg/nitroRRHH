@@ -168,12 +168,591 @@
                 tilesVerticalConainer As groupContainer.horizontalAutoLayoutContainer:
                     DropShadow: =DropShadow.Light
                     FillPortions: =8
+                    LayoutGap: =15
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
+                    LayoutWrap: =true
                     RadiusBottomLeft: =4
                     RadiusBottomRight: =4
                     RadiusTopLeft: =4
                     RadiusTopRight: =4
                     ZIndex: =5
+
+                    Container7_1 As groupContainer.verticalAutoLayoutContainer:
+                        DropShadow: =DropShadow.Light
+                        Fill: =RGBA(255, 255, 255, 1)
+                        FillPortions: =0.5
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutGap: =5
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =300
+                        LayoutMinWidth: =If(Screen1.Size = ScreenSize.Small, Parent.Width, 400)
+                        LayoutMode: =LayoutMode.Auto
+                        LayoutOverflowY: =LayoutOverflow.Scroll
+                        PaddingBottom: =10
+                        PaddingLeft: =5
+                        PaddingRight: =5
+                        PaddingTop: =10
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        ZIndex: =1
+
+                        ImageContainer1_1 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            FillPortions: =1.5
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutDirection: =LayoutDirection.Vertical
+                            LayoutGap: =5
+                            LayoutJustifyContent: =LayoutJustifyContent.End
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =Container7_1.Width
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =6
+
+                            Image2_1 As image:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                ImagePosition: =ImagePosition.Fill
+                                RadiusBottomLeft: =90
+                                RadiusBottomRight: =90
+                                RadiusTopLeft: =90
+                                RadiusTopRight: =90
+                                ZIndex: =7
+
+                        TitleContainer1_1 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            LayoutDirection: =LayoutDirection.Vertical
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =Container7_1.Width
+                            LayoutMode: =LayoutMode.Auto
+                            PaddingTop: =20
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =8
+
+                            FeatureItemButton1_1 As Button:
+                                AccessibleLabel: ="Featured item button"
+                                Appearance: ='ButtonCanvas.Appearance'.Transparent
+                                BasePaletteColor: =
+                                DisplayMode: =DisplayMode.Edit
+                                FontColor: =
+                                FontSize: =20
+                                FontWeight: =FontWeight.Bold
+                                Height: =32
+                                LayoutMinHeight: =32
+                                LayoutMinWidth: =Parent.Width
+                                Text: ="Featured item"
+                                Width: =Parent.Width
+                                X: =0
+                                Y: =0
+                                ZIndex: =9
+
+                            DescriptionText1_1 As Text:
+                                Align: ='TextCanvas.Align'.Center
+                                DisplayMode: =DisplayMode.Edit
+                                FillPortions: =1
+                                FontColor: =
+                                Height: =32
+                                LayoutMinHeight: =32
+                                LayoutMinWidth: =Parent.Width
+                                Size: =16
+                                Text: ="Short description or engaging message"
+                                VerticalAlign: ='TextCanvas.VerticalAlign'.Top
+                                Width: =Parent.Width
+                                X: =0
+                                Y: =0
+                                ZIndex: =10
+
+                    Container7_2 As groupContainer.verticalAutoLayoutContainer:
+                        DropShadow: =DropShadow.Light
+                        Fill: =RGBA(255, 255, 255, 1)
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutGap: =5
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =300
+                        LayoutMinWidth: =If(Screen1.Size = ScreenSize.Small, Parent.Width, 400)
+                        LayoutMode: =LayoutMode.Auto
+                        LayoutOverflowY: =LayoutOverflow.Scroll
+                        PaddingBottom: =10
+                        PaddingLeft: =5
+                        PaddingRight: =5
+                        PaddingTop: =10
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        ZIndex: =2
+
+                        ImageContainer1_2 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            FillPortions: =1.5
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutDirection: =LayoutDirection.Vertical
+                            LayoutGap: =5
+                            LayoutJustifyContent: =LayoutJustifyContent.End
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =Container7_2.Width
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =6
+
+                            Image2_2 As image:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                ImagePosition: =ImagePosition.Fill
+                                RadiusBottomLeft: =90
+                                RadiusBottomRight: =90
+                                RadiusTopLeft: =90
+                                RadiusTopRight: =90
+                                ZIndex: =7
+
+                        TitleContainer1_2 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            LayoutDirection: =LayoutDirection.Vertical
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =Container7_2.Width
+                            LayoutMode: =LayoutMode.Auto
+                            PaddingTop: =20
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =8
+
+                            FeatureItemButton1_2 As Button:
+                                AccessibleLabel: ="Featured item button"
+                                Appearance: ='ButtonCanvas.Appearance'.Transparent
+                                BasePaletteColor: =
+                                DisplayMode: =DisplayMode.Edit
+                                FontColor: =
+                                FontSize: =20
+                                FontWeight: =FontWeight.Bold
+                                Height: =32
+                                LayoutMinHeight: =32
+                                LayoutMinWidth: =Parent.Width
+                                Text: ="Featured item"
+                                Width: =Parent.Width
+                                X: =0
+                                Y: =0
+                                ZIndex: =9
+
+                            DescriptionText1_2 As Text:
+                                Align: ='TextCanvas.Align'.Center
+                                DisplayMode: =DisplayMode.Edit
+                                FillPortions: =1
+                                FontColor: =
+                                Height: =32
+                                LayoutMinHeight: =32
+                                LayoutMinWidth: =Parent.Width
+                                Size: =16
+                                Text: ="Short description or engaging message"
+                                VerticalAlign: ='TextCanvas.VerticalAlign'.Top
+                                Width: =Parent.Width
+                                X: =0
+                                Y: =0
+                                ZIndex: =10
+
+                    Container7_3 As groupContainer.verticalAutoLayoutContainer:
+                        DropShadow: =DropShadow.Light
+                        Fill: =RGBA(255, 255, 255, 1)
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutGap: =5
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =300
+                        LayoutMinWidth: =If(Screen1.Size = ScreenSize.Small, Parent.Width, 400)
+                        LayoutMode: =LayoutMode.Auto
+                        LayoutOverflowY: =LayoutOverflow.Scroll
+                        PaddingBottom: =10
+                        PaddingLeft: =5
+                        PaddingRight: =5
+                        PaddingTop: =10
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        ZIndex: =3
+
+                        ImageContainer1_3 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            FillPortions: =1.5
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutDirection: =LayoutDirection.Vertical
+                            LayoutGap: =5
+                            LayoutJustifyContent: =LayoutJustifyContent.End
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =Container7_3.Width
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =6
+
+                            Image2_3 As image:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                ImagePosition: =ImagePosition.Fill
+                                RadiusBottomLeft: =90
+                                RadiusBottomRight: =90
+                                RadiusTopLeft: =90
+                                RadiusTopRight: =90
+                                ZIndex: =7
+
+                        TitleContainer1_3 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            LayoutDirection: =LayoutDirection.Vertical
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =Container7_3.Width
+                            LayoutMode: =LayoutMode.Auto
+                            PaddingTop: =20
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =8
+
+                            FeatureItemButton1_3 As Button:
+                                AccessibleLabel: ="Featured item button"
+                                Appearance: ='ButtonCanvas.Appearance'.Transparent
+                                BasePaletteColor: =
+                                DisplayMode: =DisplayMode.Edit
+                                FontColor: =
+                                FontSize: =20
+                                FontWeight: =FontWeight.Bold
+                                Height: =32
+                                LayoutMinHeight: =32
+                                LayoutMinWidth: =Parent.Width
+                                Text: ="Featured item"
+                                Width: =Parent.Width
+                                X: =0
+                                Y: =0
+                                ZIndex: =9
+
+                            DescriptionText1_3 As Text:
+                                Align: ='TextCanvas.Align'.Center
+                                DisplayMode: =DisplayMode.Edit
+                                FillPortions: =1
+                                FontColor: =
+                                Height: =32
+                                LayoutMinHeight: =32
+                                LayoutMinWidth: =Parent.Width
+                                Size: =16
+                                Text: ="Short description or engaging message"
+                                VerticalAlign: ='TextCanvas.VerticalAlign'.Top
+                                Width: =Parent.Width
+                                X: =0
+                                Y: =0
+                                ZIndex: =10
+
+                    Container7_4 As groupContainer.verticalAutoLayoutContainer:
+                        DropShadow: =DropShadow.Light
+                        Fill: =RGBA(255, 255, 255, 1)
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutGap: =5
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =300
+                        LayoutMinWidth: =If(Screen1.Size = ScreenSize.Small, Parent.Width, 400)
+                        LayoutMode: =LayoutMode.Auto
+                        LayoutOverflowY: =LayoutOverflow.Scroll
+                        PaddingBottom: =10
+                        PaddingLeft: =5
+                        PaddingRight: =5
+                        PaddingTop: =10
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        ZIndex: =4
+
+                        ImageContainer1_4 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            FillPortions: =1.5
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutDirection: =LayoutDirection.Vertical
+                            LayoutGap: =5
+                            LayoutJustifyContent: =LayoutJustifyContent.End
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =Container7_4.Width
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =6
+
+                            Image2_4 As image:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                ImagePosition: =ImagePosition.Fill
+                                RadiusBottomLeft: =90
+                                RadiusBottomRight: =90
+                                RadiusTopLeft: =90
+                                RadiusTopRight: =90
+                                ZIndex: =7
+
+                        TitleContainer1_4 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            LayoutDirection: =LayoutDirection.Vertical
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =Container7_4.Width
+                            LayoutMode: =LayoutMode.Auto
+                            PaddingTop: =20
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =8
+
+                            FeatureItemButton1_4 As Button:
+                                AccessibleLabel: ="Featured item button"
+                                Appearance: ='ButtonCanvas.Appearance'.Transparent
+                                BasePaletteColor: =
+                                DisplayMode: =DisplayMode.Edit
+                                FontColor: =
+                                FontSize: =20
+                                FontWeight: =FontWeight.Bold
+                                Height: =32
+                                LayoutMinHeight: =32
+                                LayoutMinWidth: =Parent.Width
+                                Text: ="Featured item"
+                                Width: =Parent.Width
+                                X: =0
+                                Y: =0
+                                ZIndex: =9
+
+                            DescriptionText1_4 As Text:
+                                Align: ='TextCanvas.Align'.Center
+                                DisplayMode: =DisplayMode.Edit
+                                FillPortions: =1
+                                FontColor: =
+                                Height: =32
+                                LayoutMinHeight: =32
+                                LayoutMinWidth: =Parent.Width
+                                Size: =16
+                                Text: ="Short description or engaging message"
+                                VerticalAlign: ='TextCanvas.VerticalAlign'.Top
+                                Width: =Parent.Width
+                                X: =0
+                                Y: =0
+                                ZIndex: =10
+
+                    Container7_5 As groupContainer.verticalAutoLayoutContainer:
+                        DropShadow: =DropShadow.Light
+                        Fill: =RGBA(255, 255, 255, 1)
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutGap: =5
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =300
+                        LayoutMinWidth: =If(Screen1.Size = ScreenSize.Small, Parent.Width, 400)
+                        LayoutMode: =LayoutMode.Auto
+                        LayoutOverflowY: =LayoutOverflow.Scroll
+                        PaddingBottom: =10
+                        PaddingLeft: =5
+                        PaddingRight: =5
+                        PaddingTop: =10
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        ZIndex: =5
+
+                        ImageContainer1_5 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            FillPortions: =1.5
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutDirection: =LayoutDirection.Vertical
+                            LayoutGap: =5
+                            LayoutJustifyContent: =LayoutJustifyContent.End
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =Container7_5.Width
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =6
+
+                            Image2_5 As image:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                ImagePosition: =ImagePosition.Fill
+                                RadiusBottomLeft: =90
+                                RadiusBottomRight: =90
+                                RadiusTopLeft: =90
+                                RadiusTopRight: =90
+                                ZIndex: =7
+
+                        TitleContainer1_5 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            LayoutDirection: =LayoutDirection.Vertical
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =Container7_5.Width
+                            LayoutMode: =LayoutMode.Auto
+                            PaddingTop: =20
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =8
+
+                            FeatureItemButton1_5 As Button:
+                                AccessibleLabel: ="Featured item button"
+                                Appearance: ='ButtonCanvas.Appearance'.Transparent
+                                BasePaletteColor: =
+                                DisplayMode: =DisplayMode.Edit
+                                FontColor: =
+                                FontSize: =20
+                                FontWeight: =FontWeight.Bold
+                                Height: =32
+                                LayoutMinHeight: =32
+                                LayoutMinWidth: =Parent.Width
+                                Text: ="Featured item"
+                                Width: =Parent.Width
+                                X: =0
+                                Y: =0
+                                ZIndex: =9
+
+                            DescriptionText1_5 As Text:
+                                Align: ='TextCanvas.Align'.Center
+                                DisplayMode: =DisplayMode.Edit
+                                FillPortions: =1
+                                FontColor: =
+                                Height: =32
+                                LayoutMinHeight: =32
+                                LayoutMinWidth: =Parent.Width
+                                Size: =16
+                                Text: ="Short description or engaging message"
+                                VerticalAlign: ='TextCanvas.VerticalAlign'.Top
+                                Width: =Parent.Width
+                                X: =0
+                                Y: =0
+                                ZIndex: =10
+
+                    Container7_6 As groupContainer.verticalAutoLayoutContainer:
+                        DropShadow: =DropShadow.Light
+                        Fill: =RGBA(255, 255, 255, 1)
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutGap: =5
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =300
+                        LayoutMinWidth: =If(Screen1.Size = ScreenSize.Small, Parent.Width, 400)
+                        LayoutMode: =LayoutMode.Auto
+                        LayoutOverflowY: =LayoutOverflow.Scroll
+                        PaddingBottom: =10
+                        PaddingLeft: =5
+                        PaddingRight: =5
+                        PaddingTop: =10
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        ZIndex: =6
+
+                        ImageContainer1_6 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            FillPortions: =1.5
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutDirection: =LayoutDirection.Vertical
+                            LayoutGap: =5
+                            LayoutJustifyContent: =LayoutJustifyContent.End
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =Container7_6.Width
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =6
+
+                            Image2_6 As image:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                ImagePosition: =ImagePosition.Fill
+                                RadiusBottomLeft: =90
+                                RadiusBottomRight: =90
+                                RadiusTopLeft: =90
+                                RadiusTopRight: =90
+                                ZIndex: =7
+
+                        TitleContainer1_6 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            LayoutDirection: =LayoutDirection.Vertical
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =Container7_6.Width
+                            LayoutMode: =LayoutMode.Auto
+                            PaddingTop: =20
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =8
+
+                            FeatureItemButton1_6 As Button:
+                                AccessibleLabel: ="Featured item button"
+                                Appearance: ='ButtonCanvas.Appearance'.Transparent
+                                BasePaletteColor: =
+                                DisplayMode: =DisplayMode.Edit
+                                FontColor: =
+                                FontSize: =20
+                                FontWeight: =FontWeight.Bold
+                                Height: =32
+                                LayoutMinHeight: =32
+                                LayoutMinWidth: =Parent.Width
+                                Text: ="Featured item"
+                                Width: =Parent.Width
+                                X: =0
+                                Y: =0
+                                ZIndex: =9
+
+                            DescriptionText1_6 As Text:
+                                Align: ='TextCanvas.Align'.Center
+                                DisplayMode: =DisplayMode.Edit
+                                FillPortions: =1
+                                FontColor: =
+                                Height: =32
+                                LayoutMinHeight: =32
+                                LayoutMinWidth: =Parent.Width
+                                Size: =16
+                                Text: ="Short description or engaging message"
+                                VerticalAlign: ='TextCanvas.VerticalAlign'.Top
+                                Width: =Parent.Width
+                                X: =0
+                                Y: =0
+                                ZIndex: =10
 
