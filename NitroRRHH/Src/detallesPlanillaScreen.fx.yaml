@@ -1,0 +1,182 @@
+"detallesPlanillaScreen As screen.'autoLayout_Sidebar_ver1.0'":
+    Fill: =Color.White
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+
+    detallesPlanillaMainContainer As groupContainer.verticalAutoLayoutContainer:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        DropShadow: =DropShadow.Light
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width
+        ZIndex: =1
+
+        detallesPlanillaBottomContainer As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(45, 49, 66, 0.93)
+            LayoutAlignItems: =LayoutAlignItems.Stretch
+            LayoutGap: =15
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =15
+            PaddingLeft: =15
+            PaddingRight: =15
+            PaddingTop: =15
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            ZIndex: =3
+
+            detallesPlanillaSideBarContainer As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                DropShadow: =DropShadow.Regular
+                Fill: =RGBA(45, 49, 66, 1)
+                FillPortions: =0.5
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutGap: =5
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingTop: =10
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                ZIndex: =4
+
+                detallesPlanillaNavBar As NavBar:
+                    LayoutMinHeight: =640
+                    LayoutMinWidth: =640
+                    ZIndex: =5
+
+            detallesPlanillaContentContainer As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                DropShadow: =DropShadow.Light
+                Fill: =RGBA(45, 49, 66, 1)
+                FillPortions: =7
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                LayoutOverflowY: =LayoutOverflow.Scroll
+                PaddingLeft: =16
+                PaddingTop: =15
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                ZIndex: =5
+
+                Container9_1 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.Light
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    ZIndex: =1
+
+                    planillaTitleIcon_1 As icon.Trending:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =App.Theme.Colors.Lighter80
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Icon: =Icon.Journal
+                        ZIndex: =1
+
+                    planillaTitleText_1 As Text:
+                        AutoHeight: =false
+                        DisplayMode: =DisplayMode.Edit
+                        Font: =Font.'Lato Black'
+                        FontColor: =RGBA(255, 255, 255, 0)
+                        Height: =72
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =96
+                        Size: =60
+                        Text: ="Detalle colaborador"
+                        Width: =Parent.Width
+                        Wrap: =true
+                        X: =0
+                        Y: =0
+                        ZIndex: =2
+
+                Container15 As groupContainer.manualLayoutContainer:
+                    DropShadow: =DropShadow.Light
+                    Fill: =RGBA(255, 255, 255, 1)
+                    FillPortions: =7
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    ZIndex: =2
+
+                    HtmlText2 As htmlViewer:
+                        Height: =618
+                        HtmlText: |-
+                            ="<!DOCTYPE html>
+                            <html lang='es'>
+                            <head>
+                                <meta charset='UTF-8'>
+                                <title>Latam Digital</title>
+                            </head>
+                            <body style='font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0;'>
+                                <div style='display: flex; justify-content: space-between;'>
+                                    <div style='max-width: 100px;'>
+                                        <img src='data:image/png;base64,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'>
+                                    </div>
+                                    <div style='flex: 1; text-align: right;'>
+                                        <strong>Dirección:</strong> Calle Principal, Ciudad, País<br>
+                                        <strong>Teléfono:</strong> +1234567890<br>
+                                        <strong>Correo:</strong> info@latamdigital.com
+                                    </div>
+                                </div>
+                            <div style='width: 800px; margin: 20px auto; border: 1px solid #000; padding: 20px; background-color: #fff;'>
+                                <h2 style='text-align: center; margin-top: 0;'>Latam Digital</h2>
+                                    <div style='text-align: center; flex: 1; margin-right: 20px; margin-bottom: 10px;'><strong>Ruc:</strong> 1075366-1-553185 Dv.55</div>
+                                    <div style='text-align: center; flex: 1; margin-right: 20px; margin-bottom: 10px;'><strong>Periodo:</strong> 01/04/2024 al 15/04/2024</div>
+                                    <div style='flex: 1; margin-right: 20px; margin-bottom: 10px;'><strong>Nombre:</strong> " & Colaboradores.Selected.Nombre &" " & Colaboradores.Selected.Apellido & " 
+                                     <strong>Cedula:<strong>" & Colaboradores.Selected.NIdentificacion &"</div>
+                                    <div style='display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 10px;'>
+                                    <div style='flex: 1; margin-right: 100px; margin-bottom: 10px;'><strong>N° S.S.:</strong>" & Colaboradores.Selected.SS &"</div>
+                                    <div style='flex: 1; margin-right: 100px; margin-bottom: 10px;'><strong>Salario Bruto:</strong>" & Colaboradores.Selected.SS &"</div>
+                                    <div style='flex: 1; margin-right: 100px; margin-bottom: 10px;'><strong>Extras:</strong></div>
+                                    <div style='flex: 1; margin-right: 100px; margin-bottom: 10px;'><strong>ISR:</strong>" & Colaboradores.Selected.ISR &"</div>
+                                    <div style='flex: 1; margin-right: 100px; margin-bottom: 10px;'><strong>S.S.:</strong>" & Colaboradores.Selected.SS &"</div>
+                                    <div style='flex: 1; margin-right: 100px; margin-bottom: 10px;'><strong>S.E.:</strong>" & Colaboradores.Selected.SE &"</div>
+                                    <div style='flex: 1; margin-right: 100px; margin-bottom: 10px;'><strong>Salario Neto:</strong>" & Colaboradores.Selected.SalarioNeto &"</div>
+                                    <div style='flex: 1; margin-right: 100px; margin-bottom: 10px;'><strong>Gastos de Representación:</strong>" & Colaboradores.Selected.GastoRepresentacion &"</div>
+                                    <div style='flex: 1; margin-right: 100px; margin-bottom: 10px;'><strong>Descuentos:</strong></div>
+                                    <div style='flex: 1; margin-bottom: 10px;'><span>Descuento Prést. Hipot.:</span> B/.199.66</div>
+                                </div>
+                            </div>
+                            
+                            <div style='display: flex; justify-content: space-between; margin-top: 20px; padding-top: 20px; border-top: 1px solid #000;'>
+                                <div style='display: flex; align-items: center;'>
+                                    <p style='margin: 0;'>www.latamdigital.com</p>
+                                    <p style='margin: 0; margin-left: 20px;'></p>
+                                    <!-- Aquí puedes agregar iconos de redes sociales -->
+                                </div>
+                                <div>
+                                    <!-- Aquí puedes agregar los logos -->
+                                </div>
+                            </div>
+                            
+                            </body>
+                            </html>
+                            
+                            "
+                        Width: =Parent.Width
+                        ZIndex: =1
+

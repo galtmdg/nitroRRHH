@@ -1,0 +1,104 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crda0_rrhhempresas",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crda0_rrhhempresa",
+    "Name": "RRHHEmpresas",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Propietario",
+      "crda0_correo": "Correo",
+      "crda0_direccion": "Direccion",
+      "crda0_name": "IDEmpresa",
+      "crda0_nombre": "Nombre",
+      "crda0_rrhhempresa_AsyncOperations": "Trabajos del sistema",
+      "crda0_rrhhempresa_BulkDeleteFailures": "Errores de eliminación en masa",
+      "crda0_rrhhempresa_connections1": "Conexiones (crda0_rrhhempresa_connections1)",
+      "crda0_rrhhempresa_connections2": "Conexiones (crda0_rrhhempresa_connections2)",
+      "crda0_RRHHEmpresa_crda0_RRHHEmpresa_crda0": "RRHHcolaboradores",
+      "crda0_rrhhempresa_DuplicateBaseRecord": "Registros duplicados (crda0_rrhhempresa_DuplicateBaseRecord)",
+      "crda0_rrhhempresa_DuplicateMatchingRecord": "Registros duplicados (crda0_rrhhempresa_DuplicateMatchingRecord)",
+      "crda0_rrhhempresa_MailboxTrackingFolders": "Carpetas de seguimiento automático del buzón",
+      "crda0_rrhhempresa_PrincipalObjectAttributeAccesses": "Uso compartido de campos",
+      "crda0_rrhhempresa_ProcessSession": "Sesiones de proceso",
+      "crda0_rrhhempresa_SyncErrors": "Errores de sincronización",
+      "crda0_rrhhempresaid": "RRHHEmpresa",
+      "crda0_ruc": "RUC",
+      "crda0_telefono": "Telefono",
+      "createdby": "Autor",
+      "createdon": "Fecha de creación",
+      "createdonbehalfby": "Autor (delegado)",
+      "importsequencenumber": "Número de secuencia de importación",
+      "modifiedby": "Modificado por",
+      "modifiedon": "Fecha de modificación",
+      "modifiedonbehalfby": "Modificado por (delegado)",
+      "overriddencreatedon": "Fecha de creación del registro",
+      "owningbusinessunit": "Unidad de negocio propietaria",
+      "owningteam": "Equipo propietario",
+      "owninguser": "Usuario propietario",
+      "statecode": "Estado",
+      "statuscode": "Razón para el estado",
+      "timezoneruleversionnumber": "Número de versión de regla de zona horaria",
+      "utcconversiontimezonecode": "Código de zona horaria de conversión UTC",
+      "versionnumber": "Número de versión"
+    },
+    "PreferredName": "RRHHEmpresas",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "RRHHEmpresas (Views)",
+    "Name": "_crda0_rrhhempresa_views",
+    "RelatedEntityName": "RRHHEmpresas",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "5010399e-bb6c-4f92-8172-2e29d7a42876": "Vista asociada de RRHHEmpresa",
+      "6654d8d4-ccf0-484c-b617-783f794bcbe7": "RRHHEmpresas activo",
+      "78d837dd-9c0a-480a-81f3-e1d9c8d5cc5f": "Vista de búsqueda de RRHHEmpresa",
+      "c5e7df0b-ed3d-4080-83e2-0ea8e5406432": "RRHHEmpresas inactivo",
+      "d701adf4-7f54-4ddd-b5d9-7288fba9c991": "Vista de búsqueda avanzada de RRHHEmpresa"
+    }
+  },
+  {
+    "DisplayName": "Estado (RRHHEmpresas)",
+    "Name": "crda0_rrhhempresa_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Activo",
+      "1": "Inactivo"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "RRHHEmpresas"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "RRHHEmpresas",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Razón para el estado (RRHHEmpresas)",
+    "Name": "crda0_rrhhempresa_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Activo",
+      "2": "Inactivo"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "RRHHEmpresas"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "RRHHEmpresas",
+    "Type": "OptionSetInfo"
+  }
+]

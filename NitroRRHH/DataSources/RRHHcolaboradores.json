@@ -1,0 +1,200 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crda0_rrhhcolaboradors",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crda0_rrhhcolaborador",
+    "Name": "RRHHcolaboradores",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Propietario",
+      "crda0_apellido": "Apellido",
+      "crda0_banco": "Banco",
+      "crda0_cargo": "Cargo",
+      "crda0_celular": "Celular",
+      "crda0_correopersonal": "CorreoPersonal",
+      "crda0_descuento": "Descuento",
+      "crda0_descuento_base": "Descuento (base)",
+      "crda0_descuento_date": "Descuento (fecha de última actualización)",
+      "crda0_descuento_state": "Descuento (estado)",
+      "crda0_direccion": "Direccion",
+      "crda0_edad": "Edad",
+      "crda0_fechanacimiento": "FechaNacimiento",
+      "crda0_gastorepresentacion": "GastoRepresentacion",
+      "crda0_gastorepresentacion_base": "GastoRepresentacion (base)",
+      "crda0_idcolaborador": "idcolaborador",
+      "crda0_isr": "ISR",
+      "crda0_isranual": "ISRAnual",
+      "crda0_montoletras": "MontoLetras",
+      "crda0_nacionalidad": "Nacionalidad",
+      "crda0_nidentificacion": "NIdentificacion",
+      "crda0_nombre": "Nombre",
+      "crda0_numerocuenta": "NumeroCuenta",
+      "crda0_RRHHBeneficios_crda0_RRHHcolaborado": "RRHHBeneficios",
+      "crda0_rrhhcolaborador_AsyncOperations": "Trabajos del sistema",
+      "crda0_rrhhcolaborador_BulkDeleteFailures": "Errores de eliminación en masa",
+      "crda0_rrhhcolaborador_connections1": "Conexiones (crda0_rrhhcolaborador_connections1)",
+      "crda0_rrhhcolaborador_connections2": "Conexiones (crda0_rrhhcolaborador_connections2)",
+      "crda0_rrhhcolaborador_MailboxTrackingFolders": "Carpetas de seguimiento automático del buzón",
+      "crda0_rrhhcolaborador_PrincipalObjectAttributeAccesses": "Uso compartido de campos",
+      "crda0_rrhhcolaborador_ProcessSession": "Sesiones de proceso",
+      "crda0_rrhhcolaborador_SyncErrors": "Errores de sincronización",
+      "crda0_rrhhcolaboradorid": "RRHHcolaborador",
+      "crda0_RRHHContrato_crda0_RRHHcolaborador_": "RRHHContratos",
+      "crda0_RRHHDeducciones_crda0_RRHHcolaborad": "RRHHDeducciones",
+      "crda0_RRHHEmpresa": "RRHHEmpresa",
+      "crda0_salarioanual": "SalarioAnual",
+      "crda0_salariobruto": "SalarioBruto",
+      "crda0_salariobruto_base": "SalarioBruto (base)",
+      "crda0_salarioneto": "SalarioNeto",
+      "crda0_salarioneto_base": "SalarioNeto (base)",
+      "crda0_se": "SE",
+      "crda0_ss": "SS",
+      "crda0_ss_base": "SS (base)",
+      "crda0_tipocolaborador": "TipoColaborador",
+      "crda0_tipocuenta": "TipoCuenta",
+      "crda0_tiposangre": "TipoSangre",
+      "createdby": "Autor",
+      "createdon": "Fecha de creación",
+      "createdonbehalfby": "Autor (delegado)",
+      "exchangerate": "Tipo de cambio",
+      "importsequencenumber": "Número de secuencia de importación",
+      "modifiedby": "Modificado por",
+      "modifiedon": "Fecha de modificación",
+      "modifiedonbehalfby": "Modificado por (delegado)",
+      "overriddencreatedon": "Fecha de creación del registro",
+      "owningbusinessunit": "Unidad de negocio propietaria",
+      "owningteam": "Equipo propietario",
+      "owninguser": "Usuario propietario",
+      "statecode": "Estado",
+      "statuscode": "Razón para el estado",
+      "timezoneruleversionnumber": "Número de versión de regla de zona horaria",
+      "transactioncurrencyid": "Divisa",
+      "utcconversiontimezonecode": "Código de zona horaria de conversión UTC",
+      "versionnumber": "Número de versión"
+    },
+    "PreferredName": "RRHHcolaboradores",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "RRHHcolaboradores (Views)",
+    "Name": "_crda0_rrhhcolaborador_views",
+    "RelatedEntityName": "RRHHcolaboradores",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1e1abe78-b195-4cd7-ae9a-1586510e6995": "Vista asociada de RRHHcolaborador",
+      "291c936f-ba09-4968-8885-e049d7ef2f39": "Vista de búsqueda de RRHHcolaborador",
+      "314b93f0-5065-435f-aabe-8aeb3dce1259": "Vista de búsqueda avanzada de RRHHcolaborador",
+      "b0274ded-b3aa-471b-afd0-a0eba8486210": "RRHHcolaboradores activo",
+      "bed9708a-fb54-4e00-a600-c9bc57be5b6e": "RRHHcolaboradores inactivo"
+    }
+  },
+  {
+    "DisplayName": "Bancos",
+    "Name": "crda0_bancos",
+    "OptionSetInfoNameMapping": {
+      "424870000": "Banco General",
+      "424870001": "Banistmo",
+      "424870002": "BAC International Bank",
+      "424870003": "Banesco"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crda0_banco",
+        "OptionSetReferenceEntityName": "RRHHcolaboradores"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "crda0_banco",
+    "RelatedEntityName": "RRHHcolaboradores",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Estado (RRHHcolaboradores)",
+    "Name": "crda0_rrhhcolaborador_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Activo",
+      "1": "Inactivo"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "RRHHcolaboradores"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "RRHHcolaboradores",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Razón para el estado (RRHHcolaboradores)",
+    "Name": "crda0_rrhhcolaborador_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Activo",
+      "2": "Inactivo"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "RRHHcolaboradores"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "RRHHcolaboradores",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Tipo Colaborador",
+    "Name": "crda0_tipocolaborador",
+    "OptionSetInfoNameMapping": {
+      "424870000": "Asalariados",
+      "424870001": "Servicios Profesionales"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crda0_tipocolaborador",
+        "OptionSetReferenceEntityName": "RRHHcolaboradores"
+      },
+      "OptionSetReferenceItem1": {
+        "OptionSetReferenceColumnName": "crda0_tipocolaborador",
+        "OptionSetReferenceEntityName": "RRHHContratos"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "crda0_tipocolaborador",
+    "RelatedEntityName": "RRHHcolaboradores",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Tipo de Cuenta",
+    "Name": "crda0_tipodecuenta",
+    "OptionSetInfoNameMapping": {
+      "424870000": "Ahorros",
+      "424870001": "Corriente"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crda0_tipocuenta",
+        "OptionSetReferenceEntityName": "RRHHcolaboradores"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "crda0_tipocuenta",
+    "RelatedEntityName": "RRHHcolaboradores",
+    "Type": "OptionSetInfo"
+  }
+]

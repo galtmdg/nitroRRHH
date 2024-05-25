@@ -1,0 +1,149 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crda0_rrhhcontratos",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crda0_rrhhcontrato",
+    "Name": "RRHHContratos",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Propietario",
+      "crda0_asignado": "Asignado",
+      "crda0_fechafinalizacion": "FechaFinalizacion",
+      "crda0_fechainicio": "FechaInicio",
+      "crda0_name": "IDContrato",
+      "crda0_RRHHcolaborador": "RRHHcolaborador",
+      "crda0_rrhhcontrato_AsyncOperations": "Trabajos del sistema",
+      "crda0_rrhhcontrato_BulkDeleteFailures": "Errores de eliminación en masa",
+      "crda0_rrhhcontrato_connections1": "Conexiones (crda0_rrhhcontrato_connections1)",
+      "crda0_rrhhcontrato_connections2": "Conexiones (crda0_rrhhcontrato_connections2)",
+      "crda0_rrhhcontrato_MailboxTrackingFolders": "Carpetas de seguimiento automático del buzón",
+      "crda0_rrhhcontrato_PrincipalObjectAttributeAccesses": "Uso compartido de campos",
+      "crda0_rrhhcontrato_ProcessSession": "Sesiones de proceso",
+      "crda0_rrhhcontrato_SyncErrors": "Errores de sincronización",
+      "crda0_rrhhcontratoid": "RRHHContrato",
+      "crda0_tipocolaborador": "TipoColaborador",
+      "crda0_tipocontrato": "TipoContrato",
+      "createdby": "Autor",
+      "createdon": "Fecha de creación",
+      "createdonbehalfby": "Autor (delegado)",
+      "importsequencenumber": "Número de secuencia de importación",
+      "modifiedby": "Modificado por",
+      "modifiedon": "Fecha de modificación",
+      "modifiedonbehalfby": "Modificado por (delegado)",
+      "overriddencreatedon": "Fecha de creación del registro",
+      "owningbusinessunit": "Unidad de negocio propietaria",
+      "owningteam": "Equipo propietario",
+      "owninguser": "Usuario propietario",
+      "statecode": "Estado",
+      "statuscode": "Razón para el estado",
+      "timezoneruleversionnumber": "Número de versión de regla de zona horaria",
+      "utcconversiontimezonecode": "Código de zona horaria de conversión UTC",
+      "versionnumber": "Número de versión"
+    },
+    "PreferredName": "RRHHContratos",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "RRHHContratos (Views)",
+    "Name": "_crda0_rrhhcontrato_views",
+    "RelatedEntityName": "RRHHContratos",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "496e3083-7593-48ac-b6dd-2ae0aa2cbea2": "Vista de búsqueda avanzada de RRHHContrato",
+      "7337f8c0-6949-4e0c-b6d8-2616568d5ba3": "RRHHContratos activo",
+      "89e2e543-c59a-421b-acf9-470f81daa67f": "RRHHContratos inactivo",
+      "c709ce43-df8d-4639-a5da-e91be092cd74": "Vista de búsqueda de RRHHContrato",
+      "c8eb39c7-4308-4a11-94db-a9a16ad2f2d8": "Vista asociada de RRHHContrato"
+    }
+  },
+  {
+    "DisplayName": "Asignado",
+    "Name": "crda0_asignado",
+    "OptionSetInfoNameMapping": {
+      "424870000": "COPA",
+      "424870001": "Banistmo",
+      "424870002": "UniBank",
+      "424870003": "Banco Delta",
+      "424870004": "Latam Consulting Services Inc",
+      "424870005": "RSM",
+      "424870006": "CIFI",
+      "424870007": "Aflora Salud",
+      "424870008": "Banesco"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crda0_asignado",
+        "OptionSetReferenceEntityName": "RRHHContratos"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "crda0_asignado",
+    "RelatedEntityName": "RRHHContratos",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Estado (RRHHContratos)",
+    "Name": "crda0_rrhhcontrato_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Activo",
+      "1": "Inactivo"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "RRHHContratos"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "RRHHContratos",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Razón para el estado (RRHHContratos)",
+    "Name": "crda0_rrhhcontrato_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Activo",
+      "2": "Inactivo"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "RRHHContratos"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "RRHHContratos",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "TipoContrato",
+    "Name": "crda0_tipocontrato",
+    "OptionSetInfoNameMapping": {
+      "424870000": "Indefinido",
+      "424870001": "Definido"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crda0_tipocontrato",
+        "OptionSetReferenceEntityName": "RRHHContratos"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "crda0_tipocontrato",
+    "RelatedEntityName": "RRHHContratos",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -83,7 +83,7 @@
                     RadiusBottomRight: =4
                     RadiusTopLeft: =4
                     RadiusTopRight: =4
-                    ZIndex: =5
+                    ZIndex: =1
 
                     planillaTitleIcon As icon.Trending:
                         BorderColor: =App.Theme.Colors.Darker40
@@ -109,9 +109,85 @@
                         Y: =0
                         ZIndex: =2
 
+                Container13 As groupContainer.horizontalAutoLayoutContainer:
+                    FillPortions: =0.5
+                    LayoutMinHeight: =50
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    ZIndex: =2
+
+                Container13_1 As groupContainer.horizontalAutoLayoutContainer:
+                    FillPortions: =0.5
+                    LayoutMinHeight: =50
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    ZIndex: =3
+
+                    Container14 As groupContainer.manualLayoutContainer:
+                        DropShadow: =DropShadow.Light
+                        LayoutMinHeight: =50
+                        LayoutMinWidth: =50
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        ZIndex: =1
+
+                        TextCanvas2 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            FontColor: =RGBA(255, 255, 255, 1)
+                            Height: =32
+                            Text: ="Colaborador"
+                            Weight: ='TextCanvas.Weight'.Bold
+                            Width: =96
+                            X: =92
+                            Y: =12
+                            ZIndex: =1
+
+                        TextCanvas2_1 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            FontColor: =RGBA(255, 255, 255, 1)
+                            Height: =32
+                            Text: ="Colaborador"
+                            Weight: ='TextCanvas.Weight'.Bold
+                            Width: =96
+                            X: =361
+                            Y: =12
+                            ZIndex: =2
+
+                        TextCanvas2_2 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            FontColor: =RGBA(255, 255, 255, 1)
+                            Height: =32
+                            Text: ="Colaborador"
+                            Weight: ='TextCanvas.Weight'.Bold
+                            Width: =96
+                            X: =655
+                            Y: =12
+                            ZIndex: =3
+
+                        TextCanvas2_3 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            FontColor: =RGBA(255, 255, 255, 1)
+                            Height: =32
+                            Text: ="Opciones"
+                            Weight: ='TextCanvas.Weight'.Bold
+                            Width: =96
+                            X: =931
+                            Y: =12
+                            ZIndex: =4
+
                 Container11 As groupContainer.verticalAutoLayoutContainer:
                     DropShadow: =DropShadow.Light
-                    FillPortions: =7
+                    FillPortions: =10
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
@@ -120,5 +196,84 @@
                     RadiusBottomRight: =4
                     RadiusTopLeft: =4
                     RadiusTopRight: =4
-                    ZIndex: =6
+                    ZIndex: =4
+
+                    "Colaboradores As gallery.'BrowseLayout_Flexible_NewsFeed_ver5.0'":
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        BorderColor: =App.Theme.Colors.Darker40
+                        DelayItemLoading: =true
+                        Items: =RRHHcolaboradores
+                        Layout: =Layout.Vertical
+                        LayoutMinHeight: =0
+                        LoadingSpinner: =LoadingSpinner.Data
+                        TemplatePadding: =0
+                        TemplateSize: =Min(220, Self.Height - 60)
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                        Body3 As label:
+                            Color: =RGBA(255, 255, 255, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                            Height: =25
+                            OnSelect: =Select(Parent)
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Size: =12
+                            Text: =ThisItem.Nombre & " " & ThisItem.Apellido
+                            VerticalAlign: =VerticalAlign.Top
+                            Width: =280
+                            X: =91
+                            Y: =49
+                            ZIndex: =2
+
+                        Image9 As image:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            Height: =60
+                            Image: =Office365Users.UserPhotoV2("garaujo@latamdigi.com")
+                            OnSelect: =Select(Parent)
+                            RadiusBottomLeft: =90
+                            RadiusBottomRight: =90
+                            RadiusTopLeft: =90
+                            RadiusTopRight: =90
+                            Width: =60
+                            X: =18
+                            Y: =32
+                            ZIndex: =3
+
+                        Separator3 As rectangle:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Fill: =App.Theme.Colors.Darker30
+                            Height: =0
+                            OnSelect: =Select(Parent)
+                            Width: =Parent.TemplateWidth
+                            Y: =160
+                            ZIndex: =4
+
+                        Rectangle3 As rectangle:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Fill: =App.Theme.Colors.Primary
+                            Height: =74
+                            OnSelect: =Select(Parent)
+                            Width: =3
+                            X: =912
+                            ZIndex: =5
+
+                        Icon2 As icon.OpenInNewWindow:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =App.Theme.Colors.Lighter80
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledColor: =RGBA(244, 244, 244, 1)
+                            Height: =32
+                            Icon: =Icon.OpenInNewWindow
+                            OnSelect: =Select(Parent);Navigate(detallesPlanillaScreen,ScreenTransition.Fade)
+                            Width: =24
+                            X: =934
+                            Y: =17
+                            ZIndex: =6
 
