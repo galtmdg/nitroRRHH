@@ -14,6 +14,10 @@
       "crda0_banco": "Banco",
       "crda0_cargo": "Cargo",
       "crda0_celular": "Celular",
+      "crda0_colaboradoractivo": "ColaboradorActivo",
+      "crda0_colaboradorconcontrato": "ColaboradorConContrato",
+      "crda0_colaboradorconcontrato_date": "ColaboradorConContrato (fecha de última actualización)",
+      "crda0_colaboradorconcontrato_state": "ColaboradorConContrato (estado)",
       "crda0_contratoactivo": "ContratoActivo",
       "crda0_contratoactivo_date": "ContratoActivo (fecha de última actualización)",
       "crda0_contratoactivo_state": "ContratoActivo (estado)",
@@ -117,6 +121,26 @@
     },
     "OptionSetTypeKey": "PicklistType",
     "RelatedColumnInvariantName": "crda0_banco",
+    "RelatedEntityName": "RRHHcolaboradores",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "ColaboradorActivo (RRHHcolaboradores)",
+    "Name": "crda0_rrhhcolaborador_crda0_colaboradoractivo",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Sí"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crda0_colaboradoractivo",
+        "OptionSetReferenceEntityName": "RRHHcolaboradores"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "crda0_colaboradoractivo",
     "RelatedEntityName": "RRHHcolaboradores",
     "Type": "OptionSetInfo"
   },
