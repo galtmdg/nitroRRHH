@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "crda0_rrhhempresa",
+    "MaxGetRowsCount": 500,
     "Name": "RRHHEmpresas",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Propietario",

@@ -369,14 +369,14 @@
       "WebDefaultValue": ""
     }
   ],
-  "Name": "Text",
+  "Name": "Texto",
   "Properties": [
     {
       "Category": "data",
       "DefaultValue": "Text",
-      "Description": "Text that appears on a control.",
+      "Description": "Texto que aparece en un control.",
       "DescriptionResourceString": "TextCanvas_Text_Desc",
-      "DisplayName": "Text",
+      "DisplayName": "Texto",
       "DisplayNameResourceString": "TextCanvas_Text",
       "EnumValues": [],
       "HelperUI": null,
@@ -402,9 +402,9 @@
     {
       "Category": "data",
       "DefaultValue": "14",
-      "Description": "Display text using the selected font sizes.",
+      "Description": "Mostrar el texto utilizando los tamaños de fuente seleccionados.",
       "DescriptionResourceString": "TextCanvas_Size_Desc",
-      "DisplayName": "Font size",
+      "DisplayName": "Tamaño de fuente",
       "DisplayNameResourceString": "TextCanvas_Size",
       "EnumValues": [],
       "HelperUI": null,
@@ -430,35 +430,35 @@
     {
       "Category": "data",
       "DefaultValue": "Regular",
-      "Description": "Display text using the selected font weights.",
+      "Description": "Mostrar el texto utilizando los espesores de fuente seleccionados.",
       "DescriptionResourceString": "TextCanvas_Weight_Desc",
-      "DisplayName": "Font weight",
+      "DisplayName": "Espesor de la fuente",
       "DisplayNameResourceString": "TextCanvas_Weight",
       "EnumValues": [
         {
-          "Description": "Medium",
-          "DisplayName": "Medium",
+          "Description": "Mediano",
+          "DisplayName": "Mediano",
           "IsDefaultValue": false,
           "Name": "Medium",
           "Value": "Medium"
         },
         {
-          "Description": "Regular",
-          "DisplayName": "Regular",
+          "Description": "Normal",
+          "DisplayName": "Normal",
           "IsDefaultValue": true,
           "Name": "Regular",
           "Value": "Regular"
         },
         {
-          "Description": "Semibold",
-          "DisplayName": "Semibold",
+          "Description": "Seminegrita",
+          "DisplayName": "Seminegrita",
           "IsDefaultValue": false,
           "Name": "Semibold",
           "Value": "Semibold"
         },
         {
-          "Description": "Bold",
-          "DisplayName": "Bold",
+          "Description": "Negrita",
+          "DisplayName": "Negrita",
           "IsDefaultValue": false,
           "Name": "Bold",
           "Value": "Bold"
@@ -487,35 +487,35 @@
     {
       "Category": "data",
       "DefaultValue": "Start",
-      "Description": "Display text using the selected text alignment.",
+      "Description": "Mostrar el texto utilizando la alineación de texto seleccionada.",
       "DescriptionResourceString": "TextCanvas_Align_Desc",
-      "DisplayName": "Align",
+      "DisplayName": "Alinear",
       "DisplayNameResourceString": "TextCanvas_Align",
       "EnumValues": [
         {
-          "Description": "Start",
-          "DisplayName": "Start",
+          "Description": "Inicio",
+          "DisplayName": "Inicio",
           "IsDefaultValue": true,
           "Name": "Start",
           "Value": "Start"
         },
         {
-          "Description": "End",
-          "DisplayName": "End",
+          "Description": "Fin",
+          "DisplayName": "Fin",
           "IsDefaultValue": false,
           "Name": "End",
           "Value": "End"
         },
         {
-          "Description": "Center",
-          "DisplayName": "Center",
+          "Description": "Centro",
+          "DisplayName": "Centro",
           "IsDefaultValue": false,
           "Name": "Center",
           "Value": "Center"
         },
         {
-          "Description": "Justify",
-          "DisplayName": "Justify",
+          "Description": "Justificar",
+          "DisplayName": "Justificar",
           "IsDefaultValue": false,
           "Name": "Justify",
           "Value": "Justify"
@@ -544,28 +544,28 @@
     {
       "Category": "data",
       "DefaultValue": "Middle",
-      "Description": "Display text using the selected text verlitcal alignment.",
+      "Description": "Mostrar el texto utilizando la alineación vertical de texto seleccionada.",
       "DescriptionResourceString": "TextCanvas_VerticalAlign_Desc",
-      "DisplayName": "Vertical align",
+      "DisplayName": "Alineación vertical",
       "DisplayNameResourceString": "TextCanvas_VerticalAlign",
       "EnumValues": [
         {
-          "Description": "Top",
-          "DisplayName": "Top",
+          "Description": "Superior",
+          "DisplayName": "Superior",
           "IsDefaultValue": false,
           "Name": "Top",
           "Value": "Top"
         },
         {
-          "Description": "Middle",
-          "DisplayName": "Middle",
+          "Description": "Medio",
+          "DisplayName": "Medio",
           "IsDefaultValue": true,
           "Name": "Middle",
           "Value": "Middle"
         },
         {
-          "Description": "Bottom",
-          "DisplayName": "Bottom",
+          "Description": "Inferior",
+          "DisplayName": "Inferior",
           "IsDefaultValue": false,
           "Name": "Bottom",
           "Value": "Bottom"
@@ -594,9 +594,9 @@
     {
       "Category": "data",
       "DefaultValue": "false",
-      "Description": "Container height will adjust to text content.",
+      "Description": "El alto del contenedor se ajustará al contenido del texto.",
       "DescriptionResourceString": "TextCanvas_AutoHeight_Desc",
-      "DisplayName": "Auto height",
+      "DisplayName": "Alto automático",
       "DisplayNameResourceString": "TextCanvas_AutoHeight",
       "EnumValues": [],
       "HelperUI": null,
@@ -622,9 +622,9 @@
     {
       "Category": "design",
       "DefaultValue": "32",
-      "Description": "The height of the control.",
+      "Description": "El alto del control.",
       "DescriptionResourceString": "TextCanvas_Height_Desc",
-      "DisplayName": "Text height",
+      "DisplayName": "Alto del texto",
       "DisplayNameResourceString": "TextCanvas_Height",
       "EnumValues": [],
       "HelperUI": null,
@@ -650,9 +650,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "The name of the family of fonts in which text appears",
+      "Description": "El nombre de la familia de fuentes en la que aparece el texto",
       "DescriptionResourceString": "Font_description",
-      "DisplayName": "Font",
+      "DisplayName": "Fuente",
       "DisplayNameResourceString": "Font",
       "EnumValues": [],
       "HelperUI": null,
@@ -678,9 +678,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "The color of text in the control",
+      "Description": "El color del texto del control",
       "DescriptionResourceString": "Font_Color_description",
-      "DisplayName": "Font color",
+      "DisplayName": "Color de fuente",
       "DisplayNameResourceString": "Font_Color",
       "EnumValues": [],
       "HelperUI": "color",
@@ -706,9 +706,9 @@
     {
       "Category": "data",
       "DefaultValue": "false",
-      "Description": "Display text using the italic font style.",
+      "Description": "Mostrar el texto utilizando el estilo de fuente cursiva.",
       "DescriptionResourceString": "TextCanvas_Italic_Desc",
-      "DisplayName": "Italic",
+      "DisplayName": "Cursiva",
       "DisplayNameResourceString": "TextCanvas_Italic",
       "EnumValues": [],
       "HelperUI": null,
@@ -734,9 +734,9 @@
     {
       "Category": "data",
       "DefaultValue": "false",
-      "Description": "Display text using the strikethrough font style.",
+      "Description": "Mostrar el texto utilizando el estilo de fuente tachado.",
       "DescriptionResourceString": "TextCanvas_Strikethrough_Desc",
-      "DisplayName": "Strikethrough",
+      "DisplayName": "Tachado",
       "DisplayNameResourceString": "TextCanvas_Strikethrough",
       "EnumValues": [],
       "HelperUI": null,
@@ -762,9 +762,9 @@
     {
       "Category": "data",
       "DefaultValue": "false",
-      "Description": "Display text using the underline font style.",
+      "Description": "Mostrar el texto utilizando el estilo de fuente subrayado.",
       "DescriptionResourceString": "TextCanvas_Underline_Desc",
-      "DisplayName": "Underline",
+      "DisplayName": "Subrayado",
       "DisplayNameResourceString": "TextCanvas_Underline",
       "EnumValues": [],
       "HelperUI": null,
@@ -790,9 +790,9 @@
     {
       "Category": "data",
       "DefaultValue": "true",
-      "Description": "Display overflow text as wrapped.",
+      "Description": "Mostrar el texto de desbordamiento como ajustado.",
       "DescriptionResourceString": "TextCanvas_Wrap_Desc",
-      "DisplayName": "Wrap",
+      "DisplayName": "Ajustar",
       "DisplayNameResourceString": "TextCanvas_Wrap",
       "EnumValues": [],
       "HelperUI": null,
@@ -1304,7 +1304,7 @@
       "IsControlSpecific": false,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"LocalizedStrings\",\"Data\":{\"LocStrings\":{\"TextCanvas\":\"Text\",\"TextCanvas_VerticalAlign\":\"Vertical align\",\"TextCanvas_VerticalAlign_Desc\":\"Display text using the selected text verlitcal alignment.\",\"TextCanvas_VerticalAlign_Top\":\"Top\",\"TextCanvas_VerticalAlign_Middle\":\"Middle\",\"TextCanvas_VerticalAlign_Bottom\":\"Bottom\",\"TextCanvas_Height\":\"Text height\",\"TextCanvas_Height_Desc\":\"The height of the control.\",\"TextCanvas_Align\":\"Align\",\"TextCanvas_Align_Desc\":\"Display text using the selected text alignment.\",\"TextCanvas_Align_Start\":\"Start\",\"TextCanvas_Align_End\":\"End\",\"TextCanvas_Align_Center\":\"Center\",\"TextCanvas_Align_Justify\":\"Justify\",\"TextCanvas_Desc\":\"Display text\",\"TextCanvas_AutoHeight\":\"Auto height\",\"TextCanvas_AutoHeight_Desc\":\"Container height will adjust to text content.\",\"TextCanvas_Italic\":\"Italic\",\"TextCanvas_Italic_Desc\":\"Display text using the italic font style.\",\"TextCanvas_Size\":\"Font size\",\"TextCanvas_Size_Desc\":\"Display text using the selected font sizes.\",\"TextCanvas_Strikethrough\":\"Strikethrough\",\"TextCanvas_Strikethrough_Desc\":\"Display text using the strikethrough font style.\",\"TextCanvas_Text\":\"Text\",\"TextCanvas_Text_Desc\":\"Text that appears on a control.\",\"TextCanvas_Underline\":\"Underline\",\"TextCanvas_Underline_Desc\":\"Display text using the underline font style.\",\"TextCanvas_Weight\":\"Font weight\",\"TextCanvas_Weight_Desc\":\"Display text using the selected font weights.\",\"TextCanvas_Weight_Medium\":\"Medium\",\"TextCanvas_Weight_Regular\":\"Regular\",\"TextCanvas_Weight_Semibold\":\"Semibold\",\"TextCanvas_Weight_Bold\":\"Bold\",\"TextCanvas_Wrap\":\"Wrap\",\"TextCanvas_Wrap_Desc\":\"Display overflow text as wrapped.\",\"Font\":\"Font\",\"Font_description\":\"The name of the family of fonts in which text appears\",\"Font_Color\":\"Font color\",\"Font_Color_description\":\"The color of text in the control\"}}}",
+      "Path": "{\"Id\":\"LocalizedStrings\",\"Data\":{\"LocStrings\":{\"TextCanvas\":\"Texto\",\"TextCanvas_VerticalAlign\":\"Alineación vertical\",\"TextCanvas_VerticalAlign_Desc\":\"Mostrar el texto utilizando la alineación vertical de texto seleccionada.\",\"TextCanvas_VerticalAlign_Top\":\"Superior\",\"TextCanvas_VerticalAlign_Middle\":\"Medio\",\"TextCanvas_VerticalAlign_Bottom\":\"Inferior\",\"TextCanvas_Height\":\"Alto del texto\",\"TextCanvas_Height_Desc\":\"El alto del control.\",\"TextCanvas_Align\":\"Alinear\",\"TextCanvas_Align_Desc\":\"Mostrar el texto utilizando la alineación de texto seleccionada.\",\"TextCanvas_Align_Start\":\"Inicio\",\"TextCanvas_Align_End\":\"Fin\",\"TextCanvas_Align_Center\":\"Centro\",\"TextCanvas_Align_Justify\":\"Justificar\",\"TextCanvas_Desc\":\"Texto para mostrar\",\"TextCanvas_AutoHeight\":\"Alto automático\",\"TextCanvas_AutoHeight_Desc\":\"El alto del contenedor se ajustará al contenido del texto.\",\"TextCanvas_Italic\":\"Cursiva\",\"TextCanvas_Italic_Desc\":\"Mostrar el texto utilizando el estilo de fuente cursiva.\",\"TextCanvas_Size\":\"Tamaño de fuente\",\"TextCanvas_Size_Desc\":\"Mostrar el texto utilizando los tamaños de fuente seleccionados.\",\"TextCanvas_Strikethrough\":\"Tachado\",\"TextCanvas_Strikethrough_Desc\":\"Mostrar el texto utilizando el estilo de fuente tachado.\",\"TextCanvas_Text\":\"Texto\",\"TextCanvas_Text_Desc\":\"Texto que aparece en un control.\",\"TextCanvas_Underline\":\"Subrayado\",\"TextCanvas_Underline_Desc\":\"Mostrar el texto utilizando el estilo de fuente subrayado.\",\"TextCanvas_Weight\":\"Espesor de la fuente\",\"TextCanvas_Weight_Desc\":\"Mostrar el texto utilizando los espesores de fuente seleccionados.\",\"TextCanvas_Weight_Medium\":\"Mediano\",\"TextCanvas_Weight_Regular\":\"Normal\",\"TextCanvas_Weight_Semibold\":\"Seminegrita\",\"TextCanvas_Weight_Bold\":\"Negrita\",\"TextCanvas_Wrap\":\"Ajustar\",\"TextCanvas_Wrap_Desc\":\"Mostrar el texto de desbordamiento como ajustado.\",\"Font\":\"Fuente\",\"Font_description\":\"El nombre de la familia de fuentes en la que aparece el texto\",\"Font_Color\":\"Color de fuente\",\"Font_Color_description\":\"El color del texto del control\"}}}",
       "Type": 3
     },
     {

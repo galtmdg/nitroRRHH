@@ -2,6 +2,41 @@
   "QualifiedValues": [
     {
       "Kind": "default.cds_crda0_rrhhbeneficios_forms",
+      "Namespace": "RRHHBeneficios (Formularios)",
+      "Values": {
+        "Información": "5d490864-1842-410a-a12c-f30d62398cd5"
+      }
+    },
+    {
+      "Kind": "default.cds_crda0_rrhhcolaborador_forms",
+      "Namespace": "RRHHcolaboradores (Formularios)",
+      "Values": {
+        "Información": "180b4f72-d0ac-4802-a122-c734db45d507"
+      }
+    },
+    {
+      "Kind": "default.cds_crda0_rrhhcontrato_forms",
+      "Namespace": "RRHHContratos (Formularios)",
+      "Values": {
+        "Información": "60b6cb4e-0c19-4825-bce3-f9d1d0b46abe"
+      }
+    },
+    {
+      "Kind": "default.cds_crda0_rrhhdeducciones_forms",
+      "Namespace": "RRHHDeducciones (Formularios)",
+      "Values": {
+        "Información": "e9ce476e-c1e5-436e-b48f-dff4bf375c4c"
+      }
+    },
+    {
+      "Kind": "default.cds_crda0_rrhhempresa_forms",
+      "Namespace": "RRHHEmpresas (Formularios)",
+      "Values": {
+        "Información": "65535942-e42b-472b-8a2e-da69611b5c6c"
+      }
+    },
+    {
+      "Kind": "default.cds_crda0_rrhhbeneficios_forms",
       "Namespace": "RRHHBeneficios (Forms)",
       "Values": {
         "Información": "5d490864-1842-410a-a12c-f30d62398cd5"

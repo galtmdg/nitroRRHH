@@ -33,7 +33,7 @@ NavBar As CanvasComponent:
             Width: =90
             ZIndex: =1
 
-        btnInicioNav_1 As Button:
+        btnInicioNav_1 As Botón:
             Appearance: ='ButtonCanvas.Appearance'.Subtle
             BasePaletteColor: =
             DisplayMode: =DisplayMode.Edit
@@ -49,7 +49,7 @@ NavBar As CanvasComponent:
             Y: =0
             ZIndex: =2
 
-        btnPlanillaNav_1 As Button:
+        btnPlanillaNav_1 As Botón:
             Appearance: ='ButtonCanvas.Appearance'.Subtle
             BasePaletteColor: =
             DisplayMode: =DisplayMode.Edit
@@ -65,7 +65,7 @@ NavBar As CanvasComponent:
             Y: =0
             ZIndex: =3
 
-        btnVacacionesNav_1 As Button:
+        btnVacacionesNav_1 As Botón:
             Appearance: ='ButtonCanvas.Appearance'.Subtle
             BasePaletteColor: =
             DisplayMode: =DisplayMode.Edit

@@ -1,8 +1,8 @@
-"detallesPlanillaScreen_1 As screen.'autoLayout_Sidebar_ver1.0'":
+"detallesPlanillaScreen_2 As screen.'autoLayout_Sidebar_ver1.0'":
     Fill: =Color.White
     LoadingSpinnerColor: =App.Theme.Colors.Primary
 
-    detallesPlanillaMainContainer_1 As groupContainer.verticalAutoLayoutContainer:
+    detallesPlanillaMainContainer_2 As groupContainer.verticalAutoLayoutContainer:
         BorderColor: =RGBA(255, 255, 255, 1)
         DropShadow: =DropShadow.Light
         Height: =Parent.Height
@@ -16,7 +16,7 @@
         Width: =Parent.Width
         ZIndex: =1
 
-        detallesPlanillaBottomContainer_1 As groupContainer.horizontalAutoLayoutContainer:
+        detallesPlanillaBottomContainer_2 As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             DropShadow: =DropShadow.Light
             Fill: =RGBA(45, 49, 66, 0.93)
@@ -35,7 +35,7 @@
             RadiusTopRight: =4
             ZIndex: =3
 
-            detallesPlanillaSideBarContainer_1 As groupContainer.verticalAutoLayoutContainer:
+            detallesPlanillaSideBarContainer_2 As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.Regular
                 Fill: =RGBA(45, 49, 66, 1)
@@ -52,12 +52,12 @@
                 RadiusTopRight: =4
                 ZIndex: =4
 
-                detallesPlanillaNavBar_1 As NavBar:
+                detallesPlanillaNavBar_2 As NavBar:
                     LayoutMinHeight: =640
                     LayoutMinWidth: =640
                     ZIndex: =5
 
-            detallesPlanillaContentContainer_1 As groupContainer.verticalAutoLayoutContainer:
+            detallesPlanillaContentContainer_2 As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.Light
                 Fill: =RGBA(45, 49, 66, 1)
@@ -75,7 +75,7 @@
                 RadiusTopRight: =4
                 ZIndex: =5
 
-                Container9_2 As groupContainer.horizontalAutoLayoutContainer:
+                Container9_3 As groupContainer.horizontalAutoLayoutContainer:
                     DropShadow: =DropShadow.Light
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
@@ -86,7 +86,7 @@
                     RadiusTopRight: =4
                     ZIndex: =1
 
-                    planillaTitleIcon_2 As icon.Trending:
+                    planillaTitleIcon_3 As icon.Trending:
                         BorderColor: =App.Theme.Colors.Darker40
                         Color: =App.Theme.Colors.Lighter80
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -94,7 +94,7 @@
                         Icon: =Icon.Journal
                         ZIndex: =1
 
-                    planillaTitleText_2 As Text:
+                    planillaTitleText_3 As Texto:
                         AutoHeight: =false
                         DisplayMode: =DisplayMode.Edit
                         Font: =Font.'Lato Black'

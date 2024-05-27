@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "crda0_rrhhbeneficios",
+    "MaxGetRowsCount": 500,
     "Name": "RRHHBeneficios",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Propietario",

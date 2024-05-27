@@ -1,6 +1,6 @@
 {
   "ControlStates": {
-    "Container9_2": {
+    "Container9_3": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "BorderColor",
@@ -74,7 +74,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Container9_2",
+      "Name": "Container9_3",
       "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
@@ -198,7 +198,7 @@
       "StyleName": "defaultGroupContainerStyle",
       "Type": "ControlInfo"
     },
-    "detallesPlanillaBottomContainer_1": {
+    "detallesPlanillaBottomContainer_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "BorderColor",
@@ -325,7 +325,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%BottomContainer.ID%",
-      "Name": "detallesPlanillaBottomContainer_1",
+      "Name": "detallesPlanillaBottomContainer_2",
       "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
@@ -469,7 +469,7 @@
       "StyleName": "defaultGroupContainerStyle",
       "Type": "ControlInfo"
     },
-    "detallesPlanillaContentContainer_1": {
+    "detallesPlanillaContentContainer_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "BorderColor",
@@ -580,7 +580,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%MainContainer.ID%",
-      "Name": "detallesPlanillaContentContainer_1",
+      "Name": "detallesPlanillaContentContainer_2",
       "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
@@ -714,7 +714,7 @@
       "StyleName": "defaultGroupContainerStyle",
       "Type": "ControlInfo"
     },
-    "detallesPlanillaMainContainer_1": {
+    "detallesPlanillaMainContainer_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -810,7 +810,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%ScreenContainer.ID%",
-      "Name": "detallesPlanillaMainContainer_1",
+      "Name": "detallesPlanillaMainContainer_2",
       "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
@@ -954,7 +954,7 @@
       "StyleName": "defaultGroupContainerStyle",
       "Type": "ControlInfo"
     },
-    "detallesPlanillaNavBar_1": {
+    "detallesPlanillaNavBar_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -1030,7 +1030,7 @@
         "Description": ""
       },
       "MetaDataIDKey": "",
-      "Name": "detallesPlanillaNavBar_1",
+      "Name": "detallesPlanillaNavBar_2",
       "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
@@ -1069,7 +1069,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "detallesPlanillaScreen_1": {
+    "detallesPlanillaScreen_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -1089,7 +1089,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "detallesPlanillaScreen_1",
+      "Name": "detallesPlanillaScreen_2",
       "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
@@ -1138,7 +1138,7 @@
       "StyleName": "defaultScreenStyle",
       "Type": "ControlInfo"
     },
-    "detallesPlanillaSideBarContainer_1": {
+    "detallesPlanillaSideBarContainer_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "BorderColor",
@@ -1263,7 +1263,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%SidebarContainer.ID%",
-      "Name": "detallesPlanillaSideBarContainer_1",
+      "Name": "detallesPlanillaSideBarContainer_2",
       "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
@@ -1397,7 +1397,7 @@
       "StyleName": "defaultGroupContainerStyle",
       "Type": "ControlInfo"
     },
-    "planillaTitleIcon_2": {
+    "planillaTitleIcon_3": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -1492,7 +1492,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "planillaTitleIcon_2",
+      "Name": "planillaTitleIcon_3",
       "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
@@ -1616,7 +1616,7 @@
       "StyleName": "defaultIconStyle",
       "Type": "ControlInfo"
     },
-    "planillaTitleText_2": {
+    "planillaTitleText_3": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -1742,7 +1742,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "planillaTitleText_2",
+      "Name": "planillaTitleText_3",
       "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
@@ -1812,5 +1812,5 @@
       "Type": "ControlInfo"
     }
   },
-  "TopParentName": "detallesPlanillaScreen_1"
+  "TopParentName": "detallesPlanillaScreen_2"
 }

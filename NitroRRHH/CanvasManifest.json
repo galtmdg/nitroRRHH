@@ -129,12 +129,13 @@
     "PublishDataLocally": false,
     "PublishResourcesLocally": false,
     "PublishTarget": "player",
-    "UserLocale": "en-US"
+    "UserLocale": "es-ES"
   },
   "ScreenOrder": [
     "overViewScreen",
     "planillaScreen",
+    "talonarioScreen",
     "detallesPlanillaScreen",
-    "detallesPlanillaScreen_1"
+    "detallesPlanillaScreen_2"
   ]
 }

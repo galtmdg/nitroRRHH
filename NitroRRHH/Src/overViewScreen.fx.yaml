@@ -97,7 +97,7 @@
                         Icon: =Icon.Trending
                         ZIndex: =1
 
-                    titleText As Text:
+                    titleText As Texto:
                         AlignInContainer: =AlignInContainer.Center
                         AutoHeight: =false
                         DisplayMode: =DisplayMode.Edit
