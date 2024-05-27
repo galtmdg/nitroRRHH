@@ -272,7 +272,7 @@
                             DisabledColor: =RGBA(244, 244, 244, 1)
                             Height: =32
                             Icon: =Icon.OpenInNewWindow
-                            OnSelect: =Select(Parent);Navigate(talonarioScreen,ScreenTransition.Fade)
+                            OnSelect: =Select(Parent);Navigate(detallesPlanillaScreen,ScreenTransition.Fade)
                             Width: =24
                             X: =934
                             Y: =17
