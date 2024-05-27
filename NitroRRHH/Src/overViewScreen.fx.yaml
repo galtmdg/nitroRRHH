@@ -107,7 +107,7 @@
                         LayoutMinHeight: =32
                         LayoutMinWidth: =96
                         Size: =60
-                        Text: ="Inicio"
+                        Text: ="hola"
                         Width: =200
                         Wrap: =true
                         X: =0
