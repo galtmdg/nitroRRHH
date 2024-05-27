@@ -284,6 +284,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "detallesPlanillaScreen.detallesPlanillaMainContainer_1.detallesPlanillaBottomContainer_1.detallesPlanillaContentContainer_1.Container5.TabList1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "detallesPlanillaScreen.detallesPlanillaMainContainer_1.detallesPlanillaBottomContainer_1.detallesPlanillaContentContainer_1.Container5.TabList1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "detallesPlanillaScreen",
+                "type": "detallesPlanillaScreen.detallesPlanillaMainContainer_1.detallesPlanillaBottomContainer_1.detallesPlanillaContentContainer_1.Container5.TabList1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "talonarioScreen.detallesPlanillaMainContainer.detallesPlanillaBottomContainer.detallesPlanillaContentContainer.Container15.HtmlText2.HtmlText"
                 }
               ],

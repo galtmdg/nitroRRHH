@@ -200,6 +200,21 @@
     "OverridableProperties": {},
     "Version": "2.5.1"
   },
+  "Lista de pestañas": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_TabList",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "PowerApps_CoreControls_TabList",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "Lista de pestañas",
+    "Version": "2.2.20"
+  },
   "pcfDataField": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,

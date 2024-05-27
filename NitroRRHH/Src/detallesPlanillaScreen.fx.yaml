@@ -110,6 +110,54 @@
                         Y: =0
                         ZIndex: =2
 
+                Container5 As groupContainer.horizontalAutoLayoutContainer:
+                    LayoutGap: =20
+                    LayoutMinHeight: =30
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingRight: =20
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    ZIndex: =2
+
+                    Icon1 As icon.BackArrow:
+                        AlignInContainer: =AlignInContainer.Center
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =App.Theme.Colors.Lighter80
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =40
+                        Icon: =Icon.BackArrow
+                        Width: =40
+                        ZIndex: =1
+
+                    "TabList1 As 'Lista de pestañas'.pcfdataset":
+                        AlignInContainer: =AlignInContainer.Stretch
+                        DisplayMode: =DisplayMode.Edit
+                        FillPortions: =1
+                        FontColor: =RGBA(255, 255, 255, 1)
+                        Height: =55
+                        Items: =["General", "Deducciones", "Beneficios","Contratos"]
+                        LayoutMinHeight: =55
+                        LayoutMinWidth: =450
+                        Width: =280
+                        X: =0
+                        Y: =0
+                        ZIndex: =2
+
+                    Icon3 As icon.Edit:
+                        AlignInContainer: =AlignInContainer.Center
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =App.Theme.Colors.Lighter80
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =40
+                        Icon: =Icon.Edit
+                        Width: =40
+                        ZIndex: =3
+
                 Container2 As groupContainer.verticalAutoLayoutContainer:
                     DropShadow: =DropShadow.Light
                     FillPortions: =7
@@ -121,7 +169,8 @@
                     RadiusBottomRight: =4
                     RadiusTopLeft: =4
                     RadiusTopRight: =4
-                    ZIndex: =2
+                    Visible: =TabList1.Selected.Value="General"
+                    ZIndex: =3
 
                     Container4 As groupContainer.horizontalAutoLayoutContainer:
                         DropShadow: =DropShadow.Light
@@ -1420,4 +1469,43 @@
                                     X: =0
                                     Y: =DataCardKey21.Y
                                     ZIndex: =4
+
+                Container6 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.Light
+                    FillPortions: =7
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Visible: =TabList1.Selected.Value="Deducciones"
+                    ZIndex: =4
+
+                Container7 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.Light
+                    FillPortions: =7
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Visible: =TabList1.Selected.Value="Beneficios"
+                    ZIndex: =5
+
+                Container8 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.Light
+                    FillPortions: =7
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Visible: =TabList1.Selected.Value="Contratos"
+                    ZIndex: =6
 
