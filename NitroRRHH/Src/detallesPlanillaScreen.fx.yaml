@@ -131,46 +131,6 @@
                         UseFluentV9Cards: =true
                         ZIndex: =1
 
-                        idcolaborador_DataCard1 As typedDataCard.fluentV9TextualViewCard:
-                            BorderColor: =App.Theme.Colors.Darker40
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="crda0_idcolaborador"
-                            Default: =ThisItem.idcolaborador
-                            DisplayMode: =DisplayMode.View
-                            DisplayName: =DataSourceInfo([@RRHHcolaboradores],DataSourceInfo.DisplayName,idcolaborador)
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =70
-                            Required: =false
-                            Width: =351
-                            X: =0
-                            Y: =0
-                            ZIndex: =2
-
-                            DataCardKey1 As Texto:
-                                DisplayMode: =DisplayMode.Edit
-                                FontColor: =
-                                Height: =22
-                                Text: =Parent.DisplayName
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            "DataCardValue1 As 'Entrada de texto'":
-                                BasePaletteColor: =
-                                DisplayMode: =DisplayMode.View
-                                FontColor: =
-                                Height: =32
-                                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Value: =Parent.Default
-                                Width: =Parent.Width - 48
-                                X: =24
-                                Y: =DataCardKey1.Y + DataCardKey1.Height + 4
-                                ZIndex: =2
-
                         Nombre_DataCard1 As typedDataCard.fluentV9TextualEditCard:
                             BorderColor: =App.Theme.Colors.Darker40
                             BorderStyle: =BorderStyle.Solid
@@ -184,7 +144,7 @@
                             Required: =false
                             Update: =DataCardValue2.Value
                             Width: =351
-                            X: =1
+                            X: =0
                             Y: =0
                             ZIndex: =2
 
@@ -252,7 +212,7 @@
                             Required: =false
                             Update: =DataCardValue3.Value
                             Width: =351
-                            X: =2
+                            X: =1
                             Y: =0
                             ZIndex: =2
 
@@ -320,8 +280,8 @@
                             Required: =false
                             Update: =DataCardValue4.Value
                             Width: =351
-                            X: =0
-                            Y: =1
+                            X: =2
+                            Y: =0
                             ZIndex: =2
 
                             DataCardKey4 As Texto:
@@ -388,7 +348,7 @@
                             Required: =false
                             Update: =DataCardValue5.Value
                             Width: =351
-                            X: =1
+                            X: =0
                             Y: =1
                             ZIndex: =2
 
@@ -456,7 +416,7 @@
                             Required: =false
                             Update: =DataCardValue6.Value
                             Width: =351
-                            X: =2
+                            X: =1
                             Y: =1
                             ZIndex: =2
 
@@ -524,8 +484,8 @@
                             Required: =false
                             Update: =DataCardValue7.Value
                             Width: =351
-                            X: =0
-                            Y: =2
+                            X: =2
+                            Y: =1
                             ZIndex: =2
 
                             DataCardKey7 As Texto:
@@ -592,7 +552,7 @@
                             Required: =false
                             Update: =DataCardValue8.Value
                             Width: =351
-                            X: =1
+                            X: =0
                             Y: =2
                             ZIndex: =2
 
@@ -660,7 +620,7 @@
                             Required: =false
                             Update: =DataCardValue9.Value
                             Width: =351
-                            X: =2
+                            X: =1
                             Y: =2
                             ZIndex: =2
 
@@ -727,8 +687,8 @@
                             Required: =false
                             Update: =Value(DataCardValue10.Value)
                             Width: =351
-                            X: =0
-                            Y: =3
+                            X: =2
+                            Y: =2
                             ZIndex: =2
 
                             DataCardKey10 As Texto:
@@ -793,7 +753,7 @@
                             Required: =false
                             Update: =DataCardValue11.Value
                             Width: =351
-                            X: =1
+                            X: =0
                             Y: =3
                             ZIndex: =2
 
@@ -861,7 +821,7 @@
                             Required: =false
                             Update: =DataCardValue12.Value
                             Width: =351
-                            X: =2
+                            X: =1
                             Y: =3
                             ZIndex: =2
 
@@ -928,8 +888,8 @@
                             Required: =false
                             Update: =DataCardValue13.Selected
                             Width: =351
-                            X: =0
-                            Y: =4
+                            X: =2
+                            Y: =3
                             ZIndex: =2
 
                             DataCardKey13 As Texto:
@@ -1040,7 +1000,7 @@
                             Required: =false
                             Update: =DataCardValue14.Selected.Value
                             Width: =351
-                            X: =1
+                            X: =0
                             Y: =4
                             ZIndex: =2
 
@@ -1104,7 +1064,7 @@
                             Required: =false
                             Update: =DataCardValue15.Selected.Value
                             Width: =351
-                            X: =2
+                            X: =1
                             Y: =4
                             ZIndex: =2
 
@@ -1169,8 +1129,8 @@
                             Required: =false
                             Update: =DataCardValue16.Value
                             Width: =351
-                            X: =0
-                            Y: =5
+                            X: =2
+                            Y: =4
                             ZIndex: =2
 
                             DataCardKey16 As Texto:
@@ -1236,7 +1196,7 @@
                             Required: =false
                             Update: =Value(DataCardValue17.Value)
                             Width: =351
-                            X: =1
+                            X: =0
                             Y: =5
                             ZIndex: =2
 
@@ -1301,7 +1261,7 @@
                             Required: =false
                             Update: =If(Not IsBlank(DateValue1.SelectedDate), DateTime(Year(DateValue1.SelectedDate), Month(DateValue1.SelectedDate), Day(DateValue1.SelectedDate), Value(HourValue1.Selected.Value), Value(MinuteValue1.Selected.Value), Second(DateValue1.SelectedDate)))
                             Width: =351
-                            X: =2
+                            X: =1
                             Y: =5
                             ZIndex: =2
 
@@ -1398,8 +1358,8 @@
                             Required: =false
                             Update: =DataCardValue20.Selected.Value
                             Width: =351
-                            X: =0
-                            Y: =6
+                            X: =2
+                            Y: =5
                             ZIndex: =2
 
                             DataCardKey21 As Texto:
@@ -1449,44 +1409,4 @@
                                 X: =0
                                 Y: =DataCardKey21.Y
                                 ZIndex: =4
-
-                        SalarioAnual_DataCard1 As typedDataCard.fluentV9TextualViewCard:
-                            BorderColor: =App.Theme.Colors.Darker40
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="crda0_salarioanual"
-                            Default: =ThisItem.SalarioAnual
-                            DisplayMode: =DisplayMode.View
-                            DisplayName: =DataSourceInfo([@RRHHcolaboradores],DataSourceInfo.DisplayName,SalarioAnual)
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =70
-                            Required: =false
-                            Width: =351
-                            X: =1
-                            Y: =6
-                            ZIndex: =2
-
-                            DataCardKey23 As Texto:
-                                DisplayMode: =DisplayMode.Edit
-                                FontColor: =
-                                Height: =22
-                                Text: =Parent.DisplayName
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            "DataCardValue22 As 'Entrada de texto'":
-                                BasePaletteColor: =
-                                DisplayMode: =DisplayMode.View
-                                FontColor: =
-                                Height: =32
-                                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Value: =Parent.Default
-                                Width: =Parent.Width - 48
-                                X: =24
-                                Y: =DataCardKey23.Y + DataCardKey23.Height + 4
-                                ZIndex: =2
 
