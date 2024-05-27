@@ -197,6 +197,29 @@
                             UseFluentV9Cards: =true
                             ZIndex: =1
 
+                            DataCard2 As typedDataCard.blankCard:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                BorderStyle: =BorderStyle.Solid
+                                DisplayMode: =DisplayMode.Edit
+                                Fill: =RGBA(0, 0, 0, 0)
+                                Height: =91
+                                Width: =1053
+                                X: =0
+                                Y: =6
+                                ZIndex: =1
+
+                                ButtonCanvas1 As Botón:
+                                    BasePaletteColor: =
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
+                                    Height: =32
+                                    OnSelect: =SubmitForm(Form1)
+                                    Text: ="Actualizar"
+                                    Width: =96
+                                    X: =490
+                                    Y: =30
+                                    ZIndex: =1
+
                             Nombre_DataCard1 As typedDataCard.fluentV9TextualEditCard:
                                 BorderColor: =App.Theme.Colors.Darker40
                                 BorderStyle: =BorderStyle.Solid
@@ -1476,21 +1499,6 @@
                                     Y: =DataCardKey21.Y
                                     ZIndex: =4
 
-                        ButtonCanvas1 As Botón:
-                            AlignInContainer: =AlignInContainer.Center
-                            BasePaletteColor: =
-                            DisplayMode: =DisplayMode.Edit
-                            FontColor: =
-                            Height: =32
-                            LayoutMinHeight: =32
-                            LayoutMinWidth: =96
-                            OnSelect: =SubmitForm(Form1)
-                            Text: ="Actualizar"
-                            Width: =96
-                            X: =0
-                            Y: =0
-                            ZIndex: =2
-
                 Container6 As groupContainer.horizontalAutoLayoutContainer:
                     FillPortions: =7
                     LayoutMinHeight: =100
@@ -1584,6 +1592,16 @@
                             Y: =12
                             ZIndex: =7
 
+                        Circle1 As circle:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Fill: =If(ThisItem.DeduccionActiva,Color.Green,Color.Red)
+                            Height: =10
+                            OnSelect: =Select(Parent)
+                            Width: =10
+                            X: =1
+                            Y: =19
+                            ZIndex: =8
+
                     Form2 As form.PowerApps_CoreControls_Form:
                         BorderColor: =App.Theme.Colors.Darker40
                         DataSource: =RRHHDeducciones
@@ -1593,6 +1611,29 @@
                         NumberOfColumns: =2
                         UseFluentV9Cards: =true
                         ZIndex: =2
+
+                        DataCard1 As typedDataCard.blankCard:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            BorderStyle: =BorderStyle.Solid
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =200
+                            Width: =528
+                            X: =0
+                            Y: =4
+                            ZIndex: =1
+
+                            ButtonCanvas2 As Botón:
+                                BasePaletteColor: =
+                                DisplayMode: =DisplayMode.Edit
+                                FontColor: =
+                                Height: =32
+                                OnSelect: =SubmitForm(Form2)
+                                Text: ="Actualizar"
+                                Width: =96
+                                X: =216
+                                Y: =84
+                                ZIndex: =1
 
                         IDDeduccion_DataCard1 As typedDataCard.fluentV9TextualViewCard:
                             BorderColor: =App.Theme.Colors.Darker40
@@ -1900,14 +1941,6 @@
                                 Y: =DataCardKey23.Y + DataCardKey23.Height + 4
                                 ZIndex: =2
 
-                                idcolaborador1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="idcolaborador"
-                                    FieldName: ="crda0_idcolaborador"
-                                    FieldType: ="s"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =1
-                                    ZIndex: =0
-
                                 Nombre2 As pcfDataField.textualColumn:
                                     FieldDisplayName: ="Nombre"
                                     FieldName: ="crda0_nombre"
@@ -2211,6 +2244,14 @@
                                     FieldVariantName: ="textualColumn"
                                     Order: =44
                                     ZIndex: =51
+
+                                idcolaborador1 As pcfDataField.textualColumn:
+                                    FieldDisplayName: ="idcolaborador"
+                                    FieldName: ="crda0_idcolaborador"
+                                    FieldType: ="s"
+                                    FieldVariantName: ="textualColumn"
+                                    Order: =1
+                                    ZIndex: =52
 
                             ErrorMessage22 As Texto:
                                 DisplayMode: =DisplayMode.Edit
