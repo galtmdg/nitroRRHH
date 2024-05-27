@@ -2,8 +2,8 @@
   "FormatVersion": "0.24",
   "Header": {
     "AnalysisOptions": {
-      "DataflowAnalysisEnabled": false,
-      "DataflowAnalysisFlagStateToggledByUser": false
+      "DataflowAnalysisEnabled": true,
+      "DataflowAnalysisFlagStateToggledByUser": true
     },
     "DocVersion": "1.341",
     "MinVersionToLoad": "1.331",
@@ -25,7 +25,7 @@
       "commentgeneratedformulas": true,
       "consistentreturnschemafortabularfunctions": true,
       "copyandmerge": true,
-      "dataflowanalysisenabled": false,
+      "dataflowanalysisenabled": true,
       "datatablev2control": true,
       "dataverseactionsenabled": true,
       "delaycontrolrendering": true,
@@ -34,7 +34,7 @@
       "disablecdsfileandlargeimage": false,
       "disableruntimepolicies": false,
       "dynamicschema": false,
-      "enableappembeddingux": false,
+      "enableappembeddingux": true,
       "enablechatbotfeature": true,
       "enablecomponentnamemaps": false,
       "enablecomponentscopeoldbehavior": false,
