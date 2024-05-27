@@ -11,7 +11,8 @@
       "Kind": "default.cds_crda0_rrhhcolaborador_forms",
       "Namespace": "RRHHcolaboradores (Formularios)",
       "Values": {
-        "Información": "180b4f72-d0ac-4802-a122-c734db45d507"
+        "Información": "180b4f72-d0ac-4802-a122-c734db45d507",
+        "RRHHcolaborador formulario principal": "de1e95b0-5f1c-ef11-840a-00224806fc27"
       }
     },
     {

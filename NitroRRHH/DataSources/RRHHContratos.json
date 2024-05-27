@@ -11,6 +11,8 @@
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Propietario",
       "crda0_asignado": "Asignado",
+      "crda0_contratoactivo": "ContratoActivo",
+      "crda0_contratoestatus": "ContratoEstatus",
       "crda0_fechafinalizacion": "FechaFinalizacion",
       "crda0_fechainicio": "FechaInicio",
       "crda0_name": "IDContrato",
@@ -84,6 +86,26 @@
     },
     "OptionSetTypeKey": "PicklistType",
     "RelatedColumnInvariantName": "crda0_asignado",
+    "RelatedEntityName": "RRHHContratos",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "ContratoEstatus (RRHHContratos)",
+    "Name": "crda0_rrhhcontrato_crda0_contratoestatus",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Sí"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crda0_contratoestatus",
+        "OptionSetReferenceEntityName": "RRHHContratos"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "crda0_contratoestatus",
     "RelatedEntityName": "RRHHContratos",
     "Type": "OptionSetInfo"
   },
