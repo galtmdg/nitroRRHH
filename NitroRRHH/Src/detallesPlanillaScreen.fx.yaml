@@ -1513,543 +1513,33 @@
                     Visible: =TabList1.Selected.Value="Deducciones"
                     ZIndex: =4
 
-                    Container3 As groupContainer.horizontalAutoLayoutContainer:
-                        DropShadow: =DropShadow.Light
-                        LayoutMinHeight: =100
+                    Container10 As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.End
+                        LayoutGap: =20
+                        LayoutMinHeight: =50
                         LayoutMinWidth: =250
                         LayoutMode: =LayoutMode.Auto
+                        PaddingLeft: =20
                         RadiusBottomLeft: =4
                         RadiusBottomRight: =4
                         RadiusTopLeft: =4
                         RadiusTopRight: =4
                         ZIndex: =1
 
-                    "Gallery2 As gallery.'BrowseLayout_Flexible_SocialFeed_ver5.0'":
-                        BorderColor: =App.Theme.Colors.Darker40
-                        DelayItemLoading: =true
-                        Items: =Colaboradores.Selected.RRHHDeducciones
-                        Layout: =Layout.Vertical
-                        LayoutMinHeight: =287
-                        LayoutMinWidth: =320
-                        LoadingSpinner: =LoadingSpinner.Data
-                        TemplatePadding: =4
-                        TemplateSize: =Min(870, Self.Height - 60)
-                        Visible: =!IsEmpty(Colaboradores.Selected.RRHHDeducciones)
-                        ZIndex: =2
-
-                        Title2 As label:
-                            Color: =RGBA(255, 255, 255, 1)
-                            DisabledColor: =RGBA(255, 255, 255, 1)
-                            Font: =App.Theme.Font
-                            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                            Height: =25
-                            OnSelect: =Select(Parent)
-                            PaddingBottom: =0
-                            PaddingLeft: =0
-                            PaddingRight: =0
-                            PaddingTop: =0
-                            Text: =ThisItem.FechaFInalizacion
-                            VerticalAlign: =VerticalAlign.Top
-                            Width: =112
-                            X: =21
-                            Y: =36
-                            ZIndex: =2
-
-                        Body1 As label:
-                            Color: =RGBA(255, 255, 255, 1)
-                            DisabledColor: =RGBA(255, 255, 255, 1)
-                            Font: =App.Theme.Font
-                            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                            Height: =24
-                            OnSelect: =Select(Parent)
-                            PaddingBottom: =0
-                            PaddingLeft: =0
-                            PaddingRight: =0
-                            PaddingTop: =0
-                            Size: =12
-                            Text: =ThisItem.Deduccion
-                            VerticalAlign: =VerticalAlign.Top
-                            Width: =241
-                            X: =21
-                            Y: =12
-                            ZIndex: =4
-
-                        Body1_1 As label:
-                            Color: =RGBA(255, 255, 255, 1)
-                            DisabledColor: =RGBA(255, 255, 255, 1)
-                            Font: =App.Theme.Font
-                            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                            Height: =24
-                            OnSelect: =Select(Parent)
-                            PaddingBottom: =0
-                            PaddingLeft: =0
-                            PaddingRight: =0
-                            PaddingTop: =0
-                            Size: =12
-                            Text: ="$"&ThisItem.'Monto (base)'
-                            VerticalAlign: =VerticalAlign.Top
-                            Width: =241
-                            X: =21
-                            Y: =61
-                            ZIndex: =6
-
-                        Icon5 As icon.Edit:
-                            BorderColor: =App.Theme.Colors.Darker40
-                            Color: =App.Theme.Colors.Lighter80
-                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                            DisabledColor: =RGBA(244, 244, 244, 1)
-                            Height: =30
-                            Icon: =Icon.Edit
-                            OnSelect: =Select(Parent)
-                            Width: =30
-                            X: =408
-                            Y: =12
-                            ZIndex: =7
-
-                        Circle1 As circle:
-                            BorderColor: =App.Theme.Colors.Darker40
-                            Fill: =If(ThisItem.DeduccionActiva,Color.Green,Color.Red)
-                            Height: =10
-                            OnSelect: =Select(Parent)
-                            Width: =10
-                            X: =1
-                            Y: =19
-                            ZIndex: =8
-
-                    Form2 As form.PowerApps_CoreControls_Form:
-                        BorderColor: =App.Theme.Colors.Darker40
-                        DataSource: =RRHHDeducciones
-                        Item: =Gallery2.Selected
-                        LayoutMinHeight: =250
-                        LayoutMinWidth: =400
-                        NumberOfColumns: =2
-                        UseFluentV9Cards: =true
-                        Visible: =!IsEmpty(Colaboradores.Selected.RRHHDeducciones)
-                        ZIndex: =3
-
-                        DataCard1 As typedDataCard.blankCard:
-                            BorderColor: =App.Theme.Colors.Darker40
-                            BorderStyle: =BorderStyle.Solid
+                        ButtonCanvas3 As Botón:
+                            AlignInContainer: =AlignInContainer.Center
                             DisplayMode: =DisplayMode.Edit
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =200
-                            Width: =528
+                            Height: =32
+                            LayoutMinHeight: =32
+                            LayoutMinWidth: =96
+                            Width: =96
                             X: =0
-                            Y: =3
+                            Y: =0
                             ZIndex: =1
 
-                            ButtonCanvas2 As Botón:
-                                BasePaletteColor: =
-                                DisplayMode: =DisplayMode.Edit
-                                FontColor: =
-                                Height: =32
-                                OnSelect: =SubmitForm(Form2)
-                                Text: ="Actualizar"
-                                Width: =96
-                                X: =216
-                                Y: =84
-                                ZIndex: =1
-
-                        IDDeduccion_DataCard1 As typedDataCard.fluentV9TextualViewCard:
-                            BorderColor: =App.Theme.Colors.Darker40
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="crda0_name"
-                            Default: =ThisItem.IDDeduccion
-                            DisplayMode: =DisplayMode.View
-                            DisplayName: =DataSourceInfo([@RRHHDeducciones],DataSourceInfo.DisplayName,crda0_name)
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =70
-                            Required: =false
-                            Width: =264
-                            X: =0
-                            Y: =0
-                            ZIndex: =3
-
-                            DataCardKey1 As Texto:
-                                DisplayMode: =DisplayMode.Edit
-                                FontColor: =RGBA(255, 255, 255, 1)
-                                Height: =22
-                                Text: =Parent.DisplayName
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            "DataCardValue1 As 'Entrada de texto'":
-                                BasePaletteColor: =
-                                DisplayMode: =DisplayMode.View
-                                FontColor: =
-                                Height: =32
-                                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Value: =Parent.Default
-                                Width: =Parent.Width - 48
-                                X: =24
-                                Y: =DataCardKey1.Y + DataCardKey1.Height + 4
-                                ZIndex: =2
-
-                        Deduccion_DataCard1 As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard:
-                            BorderColor: =App.Theme.Colors.Darker40
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="crda0_deduccion"
-                            Default: =ThisItem.Deduccion
-                            DisplayMode: =Parent.DisplayMode
-                            DisplayName: =DataSourceInfo([@RRHHDeducciones],DataSourceInfo.DisplayName,crda0_deduccion)
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =70
-                            Required: =false
-                            Update: =DataCardValue18.Selected.Value
-                            Width: =264
-                            X: =1
-                            Y: =0
-                            ZIndex: =3
-
-                            DataCardKey19 As Texto:
-                                DisplayMode: =DisplayMode.Edit
-                                FontColor: =RGBA(255, 255, 255, 1)
-                                Height: =22
-                                Text: =Parent.DisplayName
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            "DataCardValue18 As 'Cuadro combinado'.pcfdataset":
-                                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                                DefaultSelectedItems: =[Parent.Default]
-                                DisplayMode: =Parent.DisplayMode
-                                Height: =32
-                                Items: =Choices(Deduccion)
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Width: =Parent.Width - 48
-                                X: =24
-                                Y: =DataCardKey19.Y + DataCardKey19.Height + 4
-                                ZIndex: =2
-
-                            ErrorMessage19 As Texto:
-                                DisplayMode: =DisplayMode.Edit
-                                FontColor: =
-                                Height: =30
-                                Text: =Parent.Error
-                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =Parent.Width - 48
-                                Wrap: =true
-                                X: =24
-                                Y: =DataCardValue18.Y + DataCardValue18.Height
-                                ZIndex: =3
-
-                            StarVisible19 As Texto:
-                                Align: ='TextCanvas.Align'.Center
-                                DisplayMode: =DisplayMode.Edit
-                                FontColor: =
-                                Height: =20
-                                Text: ="*"
-                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =30
-                                X: =0
-                                Y: =DataCardKey19.Y
-                                ZIndex: =4
-
-                        Monto_DataCard1 As typedDataCard.fluentV9CurrencyEditCard:
-                            BorderColor: =App.Theme.Colors.Darker40
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="crda0_monto"
-                            Default: =ThisItem.Monto
-                            DisplayMode: =Parent.DisplayMode
-                            DisplayName: =DataSourceInfo([@RRHHDeducciones],DataSourceInfo.DisplayName,crda0_monto)
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =70
-                            Required: =false
-                            Update: =Value(DataCardValue19.Value)
-                            Width: =264
-                            X: =0
-                            Y: =1
-                            ZIndex: =3
-
-                            DataCardKey20 As Texto:
-                                DisplayMode: =DisplayMode.Edit
-                                FontColor: =RGBA(255, 255, 255, 1)
-                                Height: =22
-                                Text: =Parent.DisplayName
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            "DataCardValue19 As 'Entrada de texto'":
-                                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                                BasePaletteColor: =
-                                DisplayMode: =Parent.DisplayMode
-                                FontColor: =
-                                Height: =32
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Value: =Parent.Default
-                                Width: =Parent.Width - 48
-                                X: =24
-                                Y: =DataCardKey20.Y + DataCardKey20.Height + 4
-                                ZIndex: =2
-
-                            ErrorMessage20 As Texto:
-                                DisplayMode: =DisplayMode.Edit
-                                FontColor: =
-                                Height: =30
-                                Text: =Parent.Error
-                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =Parent.Width - 48
-                                Wrap: =true
-                                X: =24
-                                Y: =DataCardValue19.Y + DataCardValue19.Height
-                                ZIndex: =3
-
-                            StarVisible20 As Texto:
-                                Align: ='TextCanvas.Align'.Center
-                                DisplayMode: =DisplayMode.Edit
-                                FontColor: =
-                                Height: =30
-                                Text: ="*"
-                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =30
-                                X: =0
-                                Y: =DataCardKey20.Y
-                                ZIndex: =4
-
-                        FechaFInalizacion_DataCard1 As typedDataCard.fluentV9DateTimeEditCard:
-                            BorderColor: =App.Theme.Colors.Darker40
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="crda0_fechafinalizacion"
-                            Default: =ThisItem.FechaFInalizacion
-                            DisplayMode: =Parent.DisplayMode
-                            DisplayName: =DataSourceInfo([@RRHHDeducciones],DataSourceInfo.DisplayName,crda0_fechafinalizacion)
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =70
-                            Required: =false
-                            Update: =If(Not IsBlank(DateValue2.SelectedDate), DateTime(Year(DateValue2.SelectedDate), Month(DateValue2.SelectedDate), Day(DateValue2.SelectedDate), Value(HourValue2.Selected.Value), Value(MinuteValue2.Selected.Value), Second(DateValue2.SelectedDate)))
-                            Width: =264
-                            X: =1
-                            Y: =1
-                            ZIndex: =3
-
-                            DataCardKey22 As Texto:
-                                DisplayMode: =DisplayMode.Edit
-                                FontColor: =RGBA(255, 255, 255, 1)
-                                Height: =22
-                                Text: =Parent.DisplayName
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            "DateValue2 As 'Selector de fecha'":
-                                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                                BasePaletteColor: =
-                                DisplayMode: =Parent.DisplayMode
-                                FontColor: =
-                                Height: =32
-                                SelectedDate: =Parent.Default
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Width: =(Parent.Width - 48) / 2
-                                X: =24
-                                Y: =DataCardKey22.Y + DataCardKey22.Height + 4
-                                ZIndex: =2
-
-                            HourValue2 As Desplegable.pcfdataset:
-                                DefaultSelectedItems: =[Text(Hour(Parent.Default),"00")]
-                                DisplayMode: =Parent.DisplayMode
-                                Height: =28
-                                Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23"]
-                                Width: =DateValue2.Width / 2 - 10
-                                X: =DateValue2.X + DateValue2.Width + 10
-                                Y: =DateValue2.Y + 1
-                                ZIndex: =3
-
-                            Separator4 As Texto:
-                                Align: ='TextCanvas.Align'.Center
-                                DisplayMode: =DisplayMode.Edit
-                                FontColor: =
-                                Height: =HourValue2.Height
-                                Text: |-
-                                    =":"
-                                Width: =10
-                                X: =HourValue2.X + HourValue2.Width
-                                Y: =HourValue2.Y
-                                ZIndex: =4
-
-                            MinuteValue2 As Desplegable.pcfdataset:
-                                DefaultSelectedItems: =[Text(Minute(Parent.Default),"00")]
-                                DisplayMode: =Parent.DisplayMode
-                                Height: =28
-                                Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59"]
-                                Width: =HourValue2.Width
-                                X: =HourValue2.X + HourValue2.Width + Separator4.Width
-                                Y: =HourValue2.Y + 1
-                                ZIndex: =5
-
-                            ErrorMessage21 As Texto:
-                                DisplayMode: =DisplayMode.Edit
-                                FontColor: =
-                                Height: =30
-                                Text: =Parent.Error
-                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =Parent.Width - 48
-                                Wrap: =true
-                                X: =24
-                                Y: =DateValue2.Y + DateValue2.Height
-                                ZIndex: =6
-
-                            StarVisible21 As Texto:
-                                Align: ='TextCanvas.Align'.Center
-                                DisplayMode: =DisplayMode.Edit
-                                FontColor: =
-                                Height: =20
-                                Text: ="*"
-                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =30
-                                X: =0
-                                Y: =DataCardKey22.Y
-                                ZIndex: =7
-
-                        NumeroPrestamo_DataCard1 As typedDataCard.fluentV9TextualEditCard:
-                            BorderColor: =App.Theme.Colors.Darker40
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="crda0_numeroprestamo"
-                            Default: =ThisItem.NumeroPrestamo
-                            DisplayMode: =Parent.DisplayMode
-                            DisplayName: =DataSourceInfo([@RRHHDeducciones],DataSourceInfo.DisplayName,crda0_numeroprestamo)
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =70
-                            MaxLength: =DataSourceInfo([@RRHHDeducciones], DataSourceInfo.MaxLength, crda0_numeroprestamo)
-                            Required: =false
-                            Update: =DataCardValue22.Value
-                            Width: =264
-                            X: =0
-                            Y: =2
-                            ZIndex: =3
-
-                            DataCardKey24 As Texto:
-                                DisplayMode: =DisplayMode.Edit
-                                FontColor: =RGBA(255, 255, 255, 1)
-                                Height: =22
-                                Text: =Parent.DisplayName
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            "DataCardValue22 As 'Entrada de texto'":
-                                AccessibleLabel: =Parent.DisplayName
-                                BasePaletteColor: =
-                                DisplayMode: =Parent.DisplayMode
-                                FontColor: =
-                                Height: =32
-                                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                                Required: =Parent.Required
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Value: =Parent.Default
-                                Width: =Parent.Width - 48
-                                X: =24
-                                Y: =DataCardKey24.Y + DataCardKey24.Height + 4
-                                ZIndex: =2
-
-                            ErrorMessage23 As Texto:
-                                DisplayMode: =DisplayMode.Edit
-                                FontColor: =
-                                Height: =30
-                                Text: =Parent.Error
-                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =Parent.Width - 48
-                                Wrap: =true
-                                X: =24
-                                Y: =DataCardValue22.Y + DataCardValue22.Height
-                                ZIndex: =3
-
-                            StarVisible23 As Texto:
-                                Align: ='TextCanvas.Align'.Center
-                                DisplayMode: =DisplayMode.Edit
-                                FontColor: =
-                                Height: =30
-                                Text: ="*"
-                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =30
-                                X: =0
-                                Y: =DataCardKey24.Y
-                                ZIndex: =4
-
-                        DeduccionActiva_DataCard1 As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard:
-                            BorderColor: =App.Theme.Colors.Darker40
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="crda0_deduccionactiva"
-                            Default: =ThisItem.DeduccionActiva
-                            DisplayMode: =Parent.DisplayMode
-                            DisplayName: =DataSourceInfo([@RRHHDeducciones],DataSourceInfo.DisplayName,crda0_deduccionactiva)
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =70
-                            Required: =false
-                            Update: =DataCardValue24.Selected.Value
-                            Width: =264
-                            X: =1
-                            Y: =2
-                            ZIndex: =3
-
-                            DataCardKey26 As Texto:
-                                DisplayMode: =DisplayMode.Edit
-                                FontColor: =RGBA(255, 255, 255, 1)
-                                Height: =22
-                                Text: =Parent.DisplayName
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            "DataCardValue24 As 'Cuadro combinado'.pcfdataset":
-                                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                                DefaultSelectedItems: =[Parent.Default]
-                                DisplayMode: =Parent.DisplayMode
-                                Height: =32
-                                Items: =Choices('DeduccionActiva (RRHHDeducciones)')
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Width: =Parent.Width - 48
-                                X: =24
-                                Y: =DataCardKey26.Y + DataCardKey26.Height + 4
-                                ZIndex: =2
-
-                            ErrorMessage24 As Texto:
-                                DisplayMode: =DisplayMode.Edit
-                                FontColor: =
-                                Height: =30
-                                Text: =Parent.Error
-                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =Parent.Width - 48
-                                Wrap: =true
-                                X: =24
-                                Y: =DataCardValue24.Y + DataCardValue24.Height
-                                ZIndex: =3
-
-                            StarVisible24 As Texto:
-                                Align: ='TextCanvas.Align'.Center
-                                DisplayMode: =DisplayMode.Edit
-                                FontColor: =
-                                Height: =20
-                                Text: ="*"
-                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =30
-                                X: =0
-                                Y: =DataCardKey26.Y
-                                ZIndex: =4
-
-                    Container10 As groupContainer.horizontalAutoLayoutContainer:
+                    Container3 As groupContainer.horizontalAutoLayoutContainer:
                         DropShadow: =DropShadow.Light
+                        FillPortions: =7
                         LayoutMinHeight: =100
                         LayoutMinWidth: =250
                         LayoutMode: =LayoutMode.Auto
@@ -2057,7 +1547,427 @@
                         RadiusBottomRight: =4
                         RadiusTopLeft: =4
                         RadiusTopRight: =4
-                        ZIndex: =4
+                        ZIndex: =2
+
+                        "Gallery2 As gallery.'BrowseLayout_Flexible_SocialFeed_ver5.0'":
+                            BorderColor: =App.Theme.Colors.Darker40
+                            DelayItemLoading: =true
+                            Items: =Colaboradores.Selected.RRHHDeducciones
+                            Layout: =Layout.Vertical
+                            LayoutMinHeight: =287
+                            LayoutMinWidth: =320
+                            LoadingSpinner: =LoadingSpinner.Data
+                            TemplatePadding: =4
+                            TemplateSize: =Min(870, Self.Height - 60)
+                            Visible: =!IsEmpty(Colaboradores.Selected.RRHHDeducciones)
+                            ZIndex: =1
+
+                            Title2 As label:
+                                Color: =RGBA(255, 255, 255, 1)
+                                DisabledColor: =RGBA(255, 255, 255, 1)
+                                Font: =App.Theme.Font
+                                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                                Height: =25
+                                OnSelect: =Select(Parent)
+                                PaddingBottom: =0
+                                PaddingLeft: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Text: =ThisItem.FechaFInalizacion
+                                VerticalAlign: =VerticalAlign.Top
+                                Width: =112
+                                X: =21
+                                Y: =36
+                                ZIndex: =2
+
+                            Body1 As label:
+                                Color: =RGBA(255, 255, 255, 1)
+                                DisabledColor: =RGBA(255, 255, 255, 1)
+                                Font: =App.Theme.Font
+                                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                                Height: =24
+                                OnSelect: =Select(Parent)
+                                PaddingBottom: =0
+                                PaddingLeft: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Size: =12
+                                Text: =ThisItem.Deduccion
+                                VerticalAlign: =VerticalAlign.Top
+                                Width: =241
+                                X: =21
+                                Y: =12
+                                ZIndex: =4
+
+                            Body1_1 As label:
+                                Color: =RGBA(255, 255, 255, 1)
+                                DisabledColor: =RGBA(255, 255, 255, 1)
+                                Font: =App.Theme.Font
+                                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                                Height: =24
+                                OnSelect: =Select(Parent)
+                                PaddingBottom: =0
+                                PaddingLeft: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Size: =12
+                                Text: ="$"&ThisItem.'Monto (base)'
+                                VerticalAlign: =VerticalAlign.Top
+                                Width: =241
+                                X: =21
+                                Y: =61
+                                ZIndex: =6
+
+                            Icon5 As icon.Edit:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                Color: =App.Theme.Colors.Lighter80
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(244, 244, 244, 1)
+                                Height: =30
+                                Icon: =Icon.Edit
+                                OnSelect: =Select(Parent)
+                                Width: =30
+                                X: =408
+                                Y: =12
+                                ZIndex: =7
+
+                            Circle1 As circle:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                Fill: =If(ThisItem.DeduccionActiva,Color.Green,Color.Red)
+                                Height: =10
+                                OnSelect: =Select(Parent)
+                                Width: =10
+                                X: =1
+                                Y: =19
+                                ZIndex: =8
+
+                        Form2 As form.PowerApps_CoreControls_Form:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            DataSource: =RRHHDeducciones
+                            Item: =Gallery2.Selected
+                            LayoutMinHeight: =250
+                            LayoutMinWidth: =400
+                            NumberOfColumns: =2
+                            UseFluentV9Cards: =true
+                            Visible: =!IsEmpty(Colaboradores.Selected.RRHHDeducciones)
+                            ZIndex: =2
+
+                            DataCard1 As typedDataCard.blankCard:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                BorderStyle: =BorderStyle.Solid
+                                DisplayMode: =DisplayMode.Edit
+                                Fill: =RGBA(0, 0, 0, 0)
+                                Height: =200
+                                Width: =528
+                                X: =0
+                                Y: =2
+                                ZIndex: =1
+
+                                ButtonCanvas2 As Botón:
+                                    BasePaletteColor: =
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
+                                    Height: =32
+                                    OnSelect: =SubmitForm(Form2)
+                                    Text: ="Actualizar"
+                                    Width: =96
+                                    X: =216
+                                    Y: =84
+                                    ZIndex: =1
+
+                            Deduccion_DataCard1 As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                BorderStyle: =BorderStyle.Solid
+                                DataField: ="crda0_deduccion"
+                                Default: =ThisItem.Deduccion
+                                DisplayMode: =Parent.DisplayMode
+                                DisplayName: =DataSourceInfo([@RRHHDeducciones],DataSourceInfo.DisplayName,crda0_deduccion)
+                                Fill: =RGBA(0, 0, 0, 0)
+                                Height: =70
+                                Required: =false
+                                Update: =DataCardValue18.Selected.Value
+                                Width: =264
+                                X: =0
+                                Y: =0
+                                ZIndex: =3
+
+                                DataCardKey19 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontColor: =RGBA(255, 255, 255, 1)
+                                    Height: =22
+                                    Text: =Parent.DisplayName
+                                    Weight: ='TextCanvas.Weight'.Semibold
+                                    Width: =Parent.Width - 48
+                                    Wrap: =false
+                                    X: =24
+                                    Y: =10
+                                    ZIndex: =1
+
+                                "DataCardValue18 As 'Cuadro combinado'.pcfdataset":
+                                    AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                    DefaultSelectedItems: =[Parent.Default]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Height: =32
+                                    Items: =Choices(Deduccion)
+                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                    Width: =Parent.Width - 48
+                                    X: =24
+                                    Y: =DataCardKey19.Y + DataCardKey19.Height + 4
+                                    ZIndex: =2
+
+                                ErrorMessage19 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
+                                    Height: =30
+                                    Text: =Parent.Error
+                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =Parent.Width - 48
+                                    Wrap: =true
+                                    X: =24
+                                    Y: =DataCardValue18.Y + DataCardValue18.Height
+                                    ZIndex: =3
+
+                                StarVisible19 As Texto:
+                                    Align: ='TextCanvas.Align'.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
+                                    Height: =20
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =30
+                                    X: =0
+                                    Y: =DataCardKey19.Y
+                                    ZIndex: =4
+
+                            Monto_DataCard1 As typedDataCard.fluentV9CurrencyEditCard:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                BorderStyle: =BorderStyle.Solid
+                                DataField: ="crda0_monto"
+                                Default: =ThisItem.Monto
+                                DisplayMode: =Parent.DisplayMode
+                                DisplayName: =DataSourceInfo([@RRHHDeducciones],DataSourceInfo.DisplayName,crda0_monto)
+                                Fill: =RGBA(0, 0, 0, 0)
+                                Height: =70
+                                Required: =false
+                                Update: =Value(DataCardValue19.Value)
+                                Width: =264
+                                X: =1
+                                Y: =0
+                                ZIndex: =3
+
+                                DataCardKey20 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontColor: =RGBA(255, 255, 255, 1)
+                                    Height: =22
+                                    Text: =Parent.DisplayName
+                                    Weight: ='TextCanvas.Weight'.Semibold
+                                    Width: =Parent.Width - 48
+                                    Wrap: =false
+                                    X: =24
+                                    Y: =10
+                                    ZIndex: =1
+
+                                "DataCardValue19 As 'Entrada de texto'":
+                                    AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                    BasePaletteColor: =
+                                    DisplayMode: =Parent.DisplayMode
+                                    FontColor: =
+                                    Height: =32
+                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                    Value: =Parent.Default
+                                    Width: =Parent.Width - 48
+                                    X: =24
+                                    Y: =DataCardKey20.Y + DataCardKey20.Height + 4
+                                    ZIndex: =2
+
+                                ErrorMessage20 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
+                                    Height: =30
+                                    Text: =Parent.Error
+                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =Parent.Width - 48
+                                    Wrap: =true
+                                    X: =24
+                                    Y: =DataCardValue19.Y + DataCardValue19.Height
+                                    ZIndex: =3
+
+                                StarVisible20 As Texto:
+                                    Align: ='TextCanvas.Align'.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
+                                    Height: =30
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =30
+                                    X: =0
+                                    Y: =DataCardKey20.Y
+                                    ZIndex: =4
+
+                            FechaFInalizacion_DataCard1 As typedDataCard.fluentV9DateTimeEditCard:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                BorderStyle: =BorderStyle.Solid
+                                DataField: ="crda0_fechafinalizacion"
+                                Default: =ThisItem.FechaFInalizacion
+                                DisplayMode: =Parent.DisplayMode
+                                DisplayName: =DataSourceInfo([@RRHHDeducciones],DataSourceInfo.DisplayName,crda0_fechafinalizacion)
+                                Fill: =RGBA(0, 0, 0, 0)
+                                Height: =70
+                                Required: =false
+                                Update: =If(Not IsBlank(DateValue2.SelectedDate), DateTime(Year(DateValue2.SelectedDate), Month(DateValue2.SelectedDate), Day(DateValue2.SelectedDate), Value(HourValue2.Selected.Value), Value(MinuteValue2.Selected.Value), Second(DateValue2.SelectedDate)))
+                                Width: =264
+                                X: =0
+                                Y: =1
+                                ZIndex: =3
+
+                                DataCardKey22 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontColor: =RGBA(255, 255, 255, 1)
+                                    Height: =22
+                                    Text: =Parent.DisplayName
+                                    Weight: ='TextCanvas.Weight'.Semibold
+                                    Width: =Parent.Width - 48
+                                    Wrap: =false
+                                    X: =24
+                                    Y: =10
+                                    ZIndex: =1
+
+                                "DateValue2 As 'Selector de fecha'":
+                                    AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                    BasePaletteColor: =
+                                    DisplayMode: =Parent.DisplayMode
+                                    FontColor: =
+                                    Height: =32
+                                    SelectedDate: =Parent.Default
+                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                    Width: =(Parent.Width - 48) / 2
+                                    X: =24
+                                    Y: =DataCardKey22.Y + DataCardKey22.Height + 4
+                                    ZIndex: =2
+
+                                HourValue2 As Desplegable.pcfdataset:
+                                    DefaultSelectedItems: =[Text(Hour(Parent.Default),"00")]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Height: =28
+                                    Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23"]
+                                    Width: =DateValue2.Width / 2 - 10
+                                    X: =DateValue2.X + DateValue2.Width + 10
+                                    Y: =DateValue2.Y + 1
+                                    ZIndex: =3
+
+                                Separator4 As Texto:
+                                    Align: ='TextCanvas.Align'.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
+                                    Height: =HourValue2.Height
+                                    Text: |-
+                                        =":"
+                                    Width: =10
+                                    X: =HourValue2.X + HourValue2.Width
+                                    Y: =HourValue2.Y
+                                    ZIndex: =4
+
+                                MinuteValue2 As Desplegable.pcfdataset:
+                                    DefaultSelectedItems: =[Text(Minute(Parent.Default),"00")]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Height: =28
+                                    Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59"]
+                                    Width: =HourValue2.Width
+                                    X: =HourValue2.X + HourValue2.Width + Separator4.Width
+                                    Y: =HourValue2.Y + 1
+                                    ZIndex: =5
+
+                                ErrorMessage21 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
+                                    Height: =30
+                                    Text: =Parent.Error
+                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =Parent.Width - 48
+                                    Wrap: =true
+                                    X: =24
+                                    Y: =DateValue2.Y + DateValue2.Height
+                                    ZIndex: =6
+
+                                StarVisible21 As Texto:
+                                    Align: ='TextCanvas.Align'.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
+                                    Height: =20
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =30
+                                    X: =0
+                                    Y: =DataCardKey22.Y
+                                    ZIndex: =7
+
+                            NumeroPrestamo_DataCard1 As typedDataCard.fluentV9TextualEditCard:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                BorderStyle: =BorderStyle.Solid
+                                DataField: ="crda0_numeroprestamo"
+                                Default: =ThisItem.NumeroPrestamo
+                                DisplayMode: =Parent.DisplayMode
+                                DisplayName: =DataSourceInfo([@RRHHDeducciones],DataSourceInfo.DisplayName,crda0_numeroprestamo)
+                                Fill: =RGBA(0, 0, 0, 0)
+                                Height: =70
+                                MaxLength: =DataSourceInfo([@RRHHDeducciones], DataSourceInfo.MaxLength, crda0_numeroprestamo)
+                                Required: =false
+                                Update: =DataCardValue22.Value
+                                Width: =264
+                                X: =1
+                                Y: =1
+                                ZIndex: =3
+
+                                DataCardKey24 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontColor: =RGBA(255, 255, 255, 1)
+                                    Height: =22
+                                    Text: =Parent.DisplayName
+                                    Weight: ='TextCanvas.Weight'.Semibold
+                                    Width: =Parent.Width - 48
+                                    Wrap: =false
+                                    X: =24
+                                    Y: =10
+                                    ZIndex: =1
+
+                                "DataCardValue22 As 'Entrada de texto'":
+                                    AccessibleLabel: =Parent.DisplayName
+                                    BasePaletteColor: =
+                                    DisplayMode: =Parent.DisplayMode
+                                    FontColor: =
+                                    Height: =32
+                                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                                    Required: =Parent.Required
+                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                    Value: =Parent.Default
+                                    Width: =Parent.Width - 48
+                                    X: =24
+                                    Y: =DataCardKey24.Y + DataCardKey24.Height + 4
+                                    ZIndex: =2
+
+                                ErrorMessage23 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
+                                    Height: =30
+                                    Text: =Parent.Error
+                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =Parent.Width - 48
+                                    Wrap: =true
+                                    X: =24
+                                    Y: =DataCardValue22.Y + DataCardValue22.Height
+                                    ZIndex: =3
+
+                                StarVisible23 As Texto:
+                                    Align: ='TextCanvas.Align'.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
+                                    Height: =30
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =30
+                                    X: =0
+                                    Y: =DataCardKey24.Y
+                                    ZIndex: =4
 
                 Container7 As groupContainer.horizontalAutoLayoutContainer:
                     DropShadow: =DropShadow.Light

@@ -2,7 +2,7 @@
   "DatasetName": "default.cds",
   "EntityName": "RRHHBeneficios",
   "environmentVariableName": "",
-  "InstanceUrl": "https://org7d44635a.crm.dynamics.com",
+  "InstanceUrl": "https://org7d44635a.crm.dynamics.com/",
   "LocalReferenceDSJson": {
     "entitySetName": "crda0_rrhhbeneficioses",
     "logicalName": "crda0_rrhhbeneficios"

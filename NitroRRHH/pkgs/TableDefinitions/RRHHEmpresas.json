@@ -2,7 +2,7 @@
   "DatasetName": "default.cds",
   "EntityName": "RRHHEmpresas",
   "environmentVariableName": "",
-  "InstanceUrl": "https://org7d44635a.crm.dynamics.com",
+  "InstanceUrl": "https://org7d44635a.crm.dynamics.com/",
   "LocalReferenceDSJson": {
     "entitySetName": "crda0_rrhhempresas",
     "logicalName": "crda0_rrhhempresa"
