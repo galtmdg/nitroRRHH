@@ -1652,7 +1652,7 @@
 
                             DataCardKey1 As Texto:
                                 DisplayMode: =DisplayMode.Edit
-                                FontColor: =
+                                FontColor: =RGBA(255, 255, 255, 1)
                                 Height: =22
                                 Text: =Parent.DisplayName
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -1693,7 +1693,7 @@
 
                             DataCardKey19 As Texto:
                                 DisplayMode: =DisplayMode.Edit
-                                FontColor: =
+                                FontColor: =RGBA(255, 255, 255, 1)
                                 Height: =22
                                 Text: =Parent.DisplayName
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -1757,7 +1757,7 @@
 
                             DataCardKey20 As Texto:
                                 DisplayMode: =DisplayMode.Edit
-                                FontColor: =
+                                FontColor: =RGBA(255, 255, 255, 1)
                                 Height: =22
                                 Text: =Parent.DisplayName
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -1822,7 +1822,7 @@
 
                             DataCardKey22 As Texto:
                                 DisplayMode: =DisplayMode.Edit
-                                FontColor: =
+                                FontColor: =RGBA(255, 255, 255, 1)
                                 Height: =22
                                 Text: =Parent.DisplayName
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -1919,7 +1919,7 @@
 
                             DataCardKey23 As Texto:
                                 DisplayMode: =DisplayMode.Edit
-                                FontColor: =
+                                FontColor: =RGBA(255, 255, 255, 1)
                                 Height: =22
                                 Text: =Parent.DisplayName
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -2296,7 +2296,7 @@
 
                             DataCardKey24 As Texto:
                                 DisplayMode: =DisplayMode.Edit
-                                FontColor: =
+                                FontColor: =RGBA(255, 255, 255, 1)
                                 Height: =22
                                 Text: =Parent.DisplayName
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -2362,7 +2362,7 @@
 
                             DataCardKey25 As Texto:
                                 DisplayMode: =DisplayMode.Edit
-                                FontColor: =
+                                FontColor: =RGBA(255, 255, 255, 1)
                                 Height: =22
                                 Text: =Parent.DisplayName
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -2401,7 +2401,7 @@
 
                             DataCardKey26 As Texto:
                                 DisplayMode: =DisplayMode.Edit
-                                FontColor: =
+                                FontColor: =RGBA(255, 255, 255, 1)
                                 Height: =22
                                 Text: =Parent.DisplayName
                                 Weight: ='TextCanvas.Weight'.Semibold
