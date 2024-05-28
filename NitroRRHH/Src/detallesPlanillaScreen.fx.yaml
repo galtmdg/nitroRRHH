@@ -135,6 +135,7 @@
                         DisabledColor: =RGBA(244, 244, 244, 1)
                         Height: =40
                         Icon: =Icon.BackArrow
+                        OnSelect: =Navigate(planillaScreen,ScreenTransition.Fade)
                         Width: =40
                         ZIndex: =1
 
@@ -1501,6 +1502,7 @@
 
                 Container6 As groupContainer.horizontalAutoLayoutContainer:
                     FillPortions: =7
+                    LayoutDirection: =LayoutDirection.Vertical
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
@@ -1510,6 +1512,17 @@
                     RadiusTopRight: =4
                     Visible: =TabList1.Selected.Value="Deducciones"
                     ZIndex: =4
+
+                    Container3 As groupContainer.horizontalAutoLayoutContainer:
+                        DropShadow: =DropShadow.Light
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        ZIndex: =1
 
                     "Gallery2 As gallery.'BrowseLayout_Flexible_SocialFeed_ver5.0'":
                         BorderColor: =App.Theme.Colors.Darker40
@@ -1521,7 +1534,8 @@
                         LoadingSpinner: =LoadingSpinner.Data
                         TemplatePadding: =4
                         TemplateSize: =Min(870, Self.Height - 60)
-                        ZIndex: =1
+                        Visible: =!IsEmpty(Colaboradores.Selected.RRHHDeducciones)
+                        ZIndex: =2
 
                         Title2 As label:
                             Color: =RGBA(255, 255, 255, 1)
@@ -1610,7 +1624,8 @@
                         LayoutMinWidth: =400
                         NumberOfColumns: =2
                         UseFluentV9Cards: =true
-                        ZIndex: =2
+                        Visible: =!IsEmpty(Colaboradores.Selected.RRHHDeducciones)
+                        ZIndex: =3
 
                         DataCard1 As typedDataCard.blankCard:
                             BorderColor: =App.Theme.Colors.Darker40
@@ -1620,7 +1635,7 @@
                             Height: =200
                             Width: =528
                             X: =0
-                            Y: =4
+                            Y: =3
                             ZIndex: =1
 
                             ButtonCanvas2 As Botón:
@@ -1901,382 +1916,6 @@
                                 Y: =DataCardKey22.Y
                                 ZIndex: =7
 
-                        RRHHcolaborador_DataCard1 As typedDataCard.fluentV9ComboBoxEditCard:
-                            BorderColor: =App.Theme.Colors.Darker40
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="crda0_RRHHcolaborador"
-                            Default: =ThisItem.RRHHcolaborador
-                            DisplayMode: =Parent.DisplayMode
-                            DisplayName: =DataSourceInfo([@RRHHDeducciones],DataSourceInfo.DisplayName,crda0_RRHHcolaborador)
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =70
-                            Required: =false
-                            Update: =DataCardValue21.Selected
-                            Width: =264
-                            X: =0
-                            Y: =2
-                            ZIndex: =3
-
-                            DataCardKey23 As Texto:
-                                DisplayMode: =DisplayMode.Edit
-                                FontColor: =RGBA(255, 255, 255, 1)
-                                Height: =22
-                                Text: =Parent.DisplayName
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            "DataCardValue21 As 'Cuadro combinado'.pcfdataset":
-                                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                                DefaultSelectedItems: =[Parent.Default]
-                                DisplayMode: =Parent.DisplayMode
-                                Height: =32
-                                Items: =Choices([@RRHHDeducciones].crda0_RRHHcolaborador)
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Width: =Parent.Width - 48
-                                X: =24
-                                Y: =DataCardKey23.Y + DataCardKey23.Height + 4
-                                ZIndex: =2
-
-                                Nombre2 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="Nombre"
-                                    FieldName: ="crda0_nombre"
-                                    FieldType: ="s"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =2
-                                    ZIndex: =14
-
-                                Apellido1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="Apellido"
-                                    FieldName: ="crda0_apellido"
-                                    FieldType: ="s"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =3
-                                    ZIndex: =15
-
-                                NIdentificacion1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="NIdentificacion"
-                                    FieldName: ="crda0_nidentificacion"
-                                    FieldType: ="s"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =4
-                                    ZIndex: =16
-
-                                Nacionalidad1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="Nacionalidad"
-                                    FieldName: ="crda0_nacionalidad"
-                                    FieldType: ="s"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =5
-                                    ZIndex: =17
-
-                                Direccion2 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="Direccion"
-                                    FieldName: ="crda0_direccion"
-                                    FieldType: ="s"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =6
-                                    ZIndex: =18
-
-                                CorreoPersonal1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="CorreoPersonal"
-                                    FieldName: ="crda0_correopersonal"
-                                    FieldType: ="s"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =7
-                                    ZIndex: =19
-
-                                Celular1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="Celular"
-                                    FieldName: ="crda0_celular"
-                                    FieldType: ="s"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =8
-                                    ZIndex: =20
-
-                                Cargo1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="Cargo"
-                                    FieldName: ="crda0_cargo"
-                                    FieldType: ="s"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =9
-                                    ZIndex: =21
-
-                                SalarioBruto1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="SalarioBruto"
-                                    FieldName: ="crda0_salariobruto"
-                                    FieldType: ="$"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =10
-                                    ZIndex: =22
-
-                                "'SalarioBruto (base)1' As pcfDataField.textualColumn":
-                                    FieldDisplayName: ="SalarioBruto (base)"
-                                    FieldName: ="crda0_salariobruto_base"
-                                    FieldType: ="$"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =11
-                                    ZIndex: =23
-
-                                MontoLetras1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="MontoLetras"
-                                    FieldName: ="crda0_montoletras"
-                                    FieldType: ="s"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =12
-                                    ZIndex: =24
-
-                                TipoSangre1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="TipoSangre"
-                                    FieldName: ="crda0_tiposangre"
-                                    FieldType: ="s"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =13
-                                    ZIndex: =25
-
-                                Banco1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="Banco"
-                                    FieldName: ="crda0_banco"
-                                    FieldType: ="l"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =16
-                                    ZIndex: =26
-
-                                TipoCuenta1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="TipoCuenta"
-                                    FieldName: ="crda0_tipocuenta"
-                                    FieldType: ="l"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =18
-                                    ZIndex: =27
-
-                                NumeroCuenta1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="NumeroCuenta"
-                                    FieldName: ="crda0_numerocuenta"
-                                    FieldType: ="s"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =20
-                                    ZIndex: =28
-
-                                GastoRepresentacion1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="GastoRepresentacion"
-                                    FieldName: ="crda0_gastorepresentacion"
-                                    FieldType: ="$"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =21
-                                    ZIndex: =29
-
-                                "'GastoRepresentacion (base)1' As pcfDataField.textualColumn":
-                                    FieldDisplayName: ="GastoRepresentacion (base)"
-                                    FieldName: ="crda0_gastorepresentacion_base"
-                                    FieldType: ="$"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =22
-                                    ZIndex: =30
-
-                                FechaNacimiento1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="FechaNacimiento"
-                                    FieldName: ="crda0_fechanacimiento"
-                                    FieldType: ="d"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =23
-                                    ZIndex: =31
-
-                                SS1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="SS"
-                                    FieldName: ="crda0_ss"
-                                    FieldType: ="$"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =24
-                                    ZIndex: =32
-
-                                "'SS (base)1' As pcfDataField.textualColumn":
-                                    FieldDisplayName: ="SS (base)"
-                                    FieldName: ="crda0_ss_base"
-                                    FieldType: ="$"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =25
-                                    ZIndex: =33
-
-                                SE1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="SE"
-                                    FieldName: ="crda0_se"
-                                    FieldType: ="n"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =26
-                                    ZIndex: =34
-
-                                TipoColaborador1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="TipoColaborador"
-                                    FieldName: ="crda0_tipocolaborador"
-                                    FieldType: ="l"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =27
-                                    ZIndex: =35
-
-                                ISR1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="ISR"
-                                    FieldName: ="crda0_isr"
-                                    FieldType: ="n"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =29
-                                    ZIndex: =36
-
-                                SalarioAnual1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="SalarioAnual"
-                                    FieldName: ="crda0_salarioanual"
-                                    FieldType: ="n"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =30
-                                    ZIndex: =37
-
-                                ISRAnual1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="ISRAnual"
-                                    FieldName: ="crda0_isranual"
-                                    FieldType: ="n"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =31
-                                    ZIndex: =38
-
-                                Descuento1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="Descuento"
-                                    FieldName: ="crda0_descuento"
-                                    FieldType: ="$"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =32
-                                    ZIndex: =39
-
-                                "'Descuento (base)1' As pcfDataField.textualColumn":
-                                    FieldDisplayName: ="Descuento (base)"
-                                    FieldName: ="crda0_descuento_base"
-                                    FieldType: ="$"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =33
-                                    ZIndex: =40
-
-                                "'Descuento (fecha de última actualización)1' As pcfDataField.textualColumn":
-                                    FieldDisplayName: ="Descuento (fecha de última actualización)"
-                                    FieldName: ="crda0_descuento_date"
-                                    FieldType: ="d"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =34
-                                    ZIndex: =41
-
-                                "'Descuento (estado)1' As pcfDataField.textualColumn":
-                                    FieldDisplayName: ="Descuento (estado)"
-                                    FieldName: ="crda0_descuento_state"
-                                    FieldType: ="n"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =35
-                                    ZIndex: =42
-
-                                SalarioNeto1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="SalarioNeto"
-                                    FieldName: ="crda0_salarioneto"
-                                    FieldType: ="$"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =36
-                                    ZIndex: =43
-
-                                "'SalarioNeto (base)1' As pcfDataField.textualColumn":
-                                    FieldDisplayName: ="SalarioNeto (base)"
-                                    FieldName: ="crda0_salarioneto_base"
-                                    FieldType: ="$"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =37
-                                    ZIndex: =44
-
-                                SalarioBrutoMensual1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="SalarioBrutoMensual"
-                                    FieldName: ="crda0_salariobrutomensual"
-                                    FieldType: ="n"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =38
-                                    ZIndex: =45
-
-                                GRMensual1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="GRMensual"
-                                    FieldName: ="crda0_grmensual"
-                                    FieldType: ="n"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =39
-                                    ZIndex: =46
-
-                                SalarioNetoMensual1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="SalarioNetoMensual"
-                                    FieldName: ="crda0_salarionetomensual"
-                                    FieldType: ="n"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =40
-                                    ZIndex: =47
-
-                                ContratoActivo1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="ContratoActivo"
-                                    FieldName: ="crda0_contratoactivo"
-                                    FieldType: ="n"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =41
-                                    ZIndex: =48
-
-                                "'ContratoActivo (fecha de última actualización)1' As pcfDataField.textualColumn":
-                                    FieldDisplayName: ="ContratoActivo (fecha de última actualización)"
-                                    FieldName: ="crda0_contratoactivo_date"
-                                    FieldType: ="d"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =42
-                                    ZIndex: =49
-
-                                "'ContratoActivo (estado)1' As pcfDataField.textualColumn":
-                                    FieldDisplayName: ="ContratoActivo (estado)"
-                                    FieldName: ="crda0_contratoactivo_state"
-                                    FieldType: ="n"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =43
-                                    ZIndex: =50
-
-                                Edad1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="Edad"
-                                    FieldName: ="crda0_edad"
-                                    FieldType: ="n"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =44
-                                    ZIndex: =51
-
-                                idcolaborador1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="idcolaborador"
-                                    FieldName: ="crda0_idcolaborador"
-                                    FieldType: ="s"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =1
-                                    ZIndex: =52
-
-                            ErrorMessage22 As Texto:
-                                DisplayMode: =DisplayMode.Edit
-                                FontColor: =
-                                Height: =30
-                                Text: =Parent.Error
-                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =Parent.Width - 48
-                                Wrap: =true
-                                X: =24
-                                Y: =DataCardValue21.Y + DataCardValue21.Height
-                                ZIndex: =3
-
-                            StarVisible22 As Texto:
-                                Align: ='TextCanvas.Align'.Center
-                                DisplayMode: =DisplayMode.Edit
-                                FontColor: =
-                                Height: =20
-                                Text: ="*"
-                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =30
-                                X: =0
-                                Y: =DataCardKey23.Y
-                                ZIndex: =4
-
                         NumeroPrestamo_DataCard1 As typedDataCard.fluentV9TextualEditCard:
                             BorderColor: =App.Theme.Colors.Darker40
                             BorderStyle: =BorderStyle.Solid
@@ -2290,7 +1929,7 @@
                             Required: =false
                             Update: =DataCardValue22.Value
                             Width: =264
-                            X: =1
+                            X: =0
                             Y: =2
                             ZIndex: =3
 
@@ -2345,44 +1984,6 @@
                                 Y: =DataCardKey24.Y
                                 ZIndex: =4
 
-                        Activo_DataCard1 As typedDataCard.fluentV9ComboBoxOptionSetSingleViewCard:
-                            BorderColor: =App.Theme.Colors.Darker40
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="crda0_activo"
-                            Default: =ThisItem.Activo
-                            DisplayMode: =DisplayMode.View
-                            DisplayName: =DataSourceInfo([@RRHHDeducciones],DataSourceInfo.DisplayName,crda0_activo)
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =70
-                            Required: =false
-                            Width: =264
-                            X: =0
-                            Y: =3
-                            ZIndex: =3
-
-                            DataCardKey25 As Texto:
-                                DisplayMode: =DisplayMode.Edit
-                                FontColor: =RGBA(255, 255, 255, 1)
-                                Height: =22
-                                Text: =Parent.DisplayName
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            "DataCardValue23 As 'Cuadro combinado'.pcfdataset":
-                                DefaultSelectedItems: =[Parent.Default]
-                                DisplayMode: =DisplayMode.View
-                                Height: =32
-                                Items: =Choices('Activo (RRHHDeducciones)')
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Width: =Parent.Width - 48
-                                X: =24
-                                Y: =DataCardKey25.Y + DataCardKey25.Height + 4
-                                ZIndex: =2
-
                         DeduccionActiva_DataCard1 As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard:
                             BorderColor: =App.Theme.Colors.Darker40
                             BorderStyle: =BorderStyle.Solid
@@ -2396,7 +1997,7 @@
                             Update: =DataCardValue24.Selected.Value
                             Width: =264
                             X: =1
-                            Y: =3
+                            Y: =2
                             ZIndex: =3
 
                             DataCardKey26 As Texto:
@@ -2446,6 +2047,17 @@
                                 X: =0
                                 Y: =DataCardKey26.Y
                                 ZIndex: =4
+
+                    Container10 As groupContainer.horizontalAutoLayoutContainer:
+                        DropShadow: =DropShadow.Light
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        ZIndex: =4
 
                 Container7 As groupContainer.horizontalAutoLayoutContainer:
                     DropShadow: =DropShadow.Light

@@ -13,6 +13,7 @@
       "crda0_asignado": "Asignado",
       "crda0_contratoestatus": "ContratoEstatusIndefinido",
       "crda0_contratoestatusdefinido": "ContratoEstatusDefinido",
+      "crda0_contratosinfechafinalizacion": "ContratosinfechaFinalizacion",
       "crda0_fechaactual": "FechaActual",
       "crda0_fechafinalizacion": "FechaFinalizacion",
       "crda0_fechainicio": "FechaInicio",
@@ -127,6 +128,26 @@
     },
     "OptionSetTypeKey": "BooleanType",
     "RelatedColumnInvariantName": "crda0_contratoestatusdefinido",
+    "RelatedEntityName": "RRHHContratos",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "ContratosinfechaFinalizacion (RRHHContratos)",
+    "Name": "crda0_rrhhcontrato_crda0_contratosinfechafinalizacion",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Sí"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crda0_contratosinfechafinalizacion",
+        "OptionSetReferenceEntityName": "RRHHContratos"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "crda0_contratosinfechafinalizacion",
     "RelatedEntityName": "RRHHContratos",
     "Type": "OptionSetInfo"
   },
