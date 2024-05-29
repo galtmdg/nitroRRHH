@@ -76,9 +76,10 @@
 
                 Container9 As groupContainer.horizontalAutoLayoutContainer:
                     DropShadow: =DropShadow.Light
-                    LayoutMinHeight: =100
+                    LayoutMinHeight: =50
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
+                    PaddingRight: =20
                     RadiusBottomLeft: =4
                     RadiusBottomRight: =4
                     RadiusTopLeft: =4
@@ -86,28 +87,93 @@
                     ZIndex: =1
 
                     planillaTitleIcon As icon.Trending:
+                        AlignInContainer: =AlignInContainer.Center
                         BorderColor: =App.Theme.Colors.Darker40
                         Color: =App.Theme.Colors.Lighter80
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                         DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =30
                         Icon: =Icon.Journal
+                        Width: =30
                         ZIndex: =1
 
                     planillaTitleText As Texto:
+                        AlignInContainer: =AlignInContainer.Center
                         AutoHeight: =false
                         DisplayMode: =DisplayMode.Edit
+                        FillPortions: =1
                         Font: =Font.'Lato Black'
                         FontColor: =RGBA(255, 255, 255, 0)
                         Height: =72
                         LayoutMinHeight: =32
                         LayoutMinWidth: =96
-                        Size: =60
-                        Text: ="Planilla"
+                        Size: =40
+                        Text: ="Directorio colaboradores"
                         Width: =250
                         Wrap: =true
                         X: =0
                         Y: =0
                         ZIndex: =2
+
+                    DropdownCanvas1 As Desplegable.pcfdataset:
+                        AlignInContainer: =AlignInContainer.Center
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =32
+                        Items: =RRHHEmpresas
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =320
+                        Width: =320
+                        X: =0
+                        Y: =0
+                        ZIndex: =3
+
+                        IDEmpresa2 As pcfDataField.textualColumn:
+                            FieldDisplayName: ="IDEmpresa"
+                            FieldName: ="crda0_name"
+                            FieldType: ="s"
+                            FieldVariantName: ="textualColumn"
+                            Order: =1
+                            ZIndex: =7
+
+                        Nombre2 As pcfDataField.textualColumn:
+                            FieldDisplayName: ="Nombre"
+                            FieldName: ="crda0_nombre"
+                            FieldType: ="s"
+                            FieldVariantName: ="textualColumn"
+                            Order: =2
+                            ZIndex: =8
+
+                        Direccion2 As pcfDataField.textualColumn:
+                            FieldDisplayName: ="Direccion"
+                            FieldName: ="crda0_direccion"
+                            FieldType: ="s"
+                            FieldVariantName: ="textualColumn"
+                            Order: =3
+                            ZIndex: =9
+
+                        Telefono2 As pcfDataField.textualColumn:
+                            FieldDisplayName: ="Telefono"
+                            FieldName: ="crda0_telefono"
+                            FieldType: ="s"
+                            FieldVariantName: ="textualColumn"
+                            Order: =4
+                            ZIndex: =10
+
+                        Correo2 As pcfDataField.textualColumn:
+                            FieldDisplayName: ="Correo"
+                            FieldName: ="crda0_correo"
+                            FieldType: ="s"
+                            FieldVariantName: ="textualColumn"
+                            Order: =5
+                            ZIndex: =11
+
+                        RUC2 As pcfDataField.textualColumn:
+                            FieldDisplayName: ="RUC"
+                            FieldName: ="crda0_ruc"
+                            FieldType: ="s"
+                            FieldVariantName: ="textualColumn"
+                            Order: =6
+                            ZIndex: =12
 
                 Container13 As groupContainer.horizontalAutoLayoutContainer:
                     FillPortions: =0.5
@@ -156,23 +222,12 @@
                             DisplayMode: =DisplayMode.Edit
                             FontColor: =RGBA(255, 255, 255, 1)
                             Height: =32
-                            Text: ="Colaborador"
+                            Text: ="Empresa"
                             Weight: ='TextCanvas.Weight'.Bold
                             Width: =96
-                            X: =361
+                            X: =576
                             Y: =12
                             ZIndex: =2
-
-                        TextCanvas2_2 As Texto:
-                            DisplayMode: =DisplayMode.Edit
-                            FontColor: =RGBA(255, 255, 255, 1)
-                            Height: =32
-                            Text: ="Colaborador"
-                            Weight: ='TextCanvas.Weight'.Bold
-                            Width: =96
-                            X: =655
-                            Y: =12
-                            ZIndex: =3
 
                         TextCanvas2_3 As Texto:
                             DisplayMode: =DisplayMode.Edit
@@ -202,7 +257,7 @@
                         AlignInContainer: =AlignInContainer.SetByContainer
                         BorderColor: =App.Theme.Colors.Darker40
                         DelayItemLoading: =true
-                        Items: =RRHHcolaboradores
+                        Items: =Filter(RRHHcolaboradores,RRHHEmpresa.IDEmpresa=DropdownCanvas1.Selected.IDEmpresa)
                         Layout: =Layout.Vertical
                         LayoutMinHeight: =0
                         LayoutMinWidth: =320
@@ -227,8 +282,8 @@
                             Text: =ThisItem.Nombre & " " & ThisItem.Apellido
                             VerticalAlign: =VerticalAlign.Top
                             Width: =280
-                            X: =91
-                            Y: =49
+                            X: =96
+                            Y: =59
                             ZIndex: =2
 
                         Image9 As image:
@@ -243,7 +298,7 @@
                             RadiusTopLeft: =90
                             RadiusTopRight: =90
                             Width: =60
-                            X: =18
+                            X: =10
                             Y: =32
                             ZIndex: =3
 
@@ -277,4 +332,33 @@
                             X: =934
                             Y: =17
                             ZIndex: =6
+
+                        Circle1_1 As circle:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Fill: =If(ThisItem.ContratoActivo,Color.Green,Color.Red)
+                            Height: =10
+                            OnSelect: =Select(Parent)
+                            Width: =10
+                            X: =76
+                            Y: =62
+                            ZIndex: =7
+
+                        Body3_1 As label:
+                            Color: =RGBA(255, 255, 255, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                            Height: =25
+                            OnSelect: =Select(Parent)
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Size: =12
+                            Text: =ThisItem.RRHHEmpresa.Nombre
+                            VerticalAlign: =VerticalAlign.Top
+                            Width: =280
+                            X: =558
+                            Y: =62
+                            ZIndex: =8
 
