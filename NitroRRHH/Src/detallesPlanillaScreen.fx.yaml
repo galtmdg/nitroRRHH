@@ -2466,6 +2466,7 @@
 
                                 ErrorMessage22 As Texto:
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =30
                                     Text: =Parent.Error
                                     Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -2478,6 +2479,7 @@
                                 StarVisible22 As Texto:
                                     Align: ='TextCanvas.Align'.Center
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =20
                                     Text: ="*"
                                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -2498,7 +2500,9 @@
                                 ZIndex: =1
 
                                 ButtonCanvas5 As Botón:
+                                    BasePaletteColor: =
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =32
                                     Text: ="Actualizar"
                                     Width: =96
@@ -2648,6 +2652,7 @@
 
                                 ErrorMessage24 As Texto:
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =30
                                     Text: =Parent.Error
                                     Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -2660,6 +2665,7 @@
                                 StarVisible24 As Texto:
                                     Align: ='TextCanvas.Align'.Center
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =20
                                     Text: ="*"
                                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -2680,7 +2686,9 @@
                                 ZIndex: =1
 
                                 ButtonCanvas4 As Botón:
+                                    BasePaletteColor: =
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =34
                                     Text: ="Crear"
                                     Width: =96
@@ -2943,6 +2951,7 @@
 
                                 ErrorMessage25 As Texto:
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =30
                                     Text: =Parent.Error
                                     Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -2955,6 +2964,7 @@
                                 StarVisible25 As Texto:
                                     Align: ='TextCanvas.Align'.Center
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =20
                                     Text: ="*"
                                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -2993,7 +3003,9 @@
 
                                 "DateValue3 As 'Selector de fecha'":
                                     AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                    BasePaletteColor: =
                                     DisplayMode: =Parent.DisplayMode
+                                    FontColor: =
                                     Height: =32
                                     SelectedDate: =Parent.Default
                                     ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -3015,6 +3027,7 @@
                                 Separator2 As Texto:
                                     Align: ='TextCanvas.Align'.Center
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =HourValue3.Height
                                     Text: |-
                                         =":"
@@ -3035,6 +3048,7 @@
 
                                 ErrorMessage26 As Texto:
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =30
                                     Text: =Parent.Error
                                     Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -3047,6 +3061,7 @@
                                 StarVisible26 As Texto:
                                     Align: ='TextCanvas.Align'.Center
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =20
                                     Text: ="*"
                                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -3085,7 +3100,9 @@
 
                                 "DateValue4 As 'Selector de fecha'":
                                     AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                    BasePaletteColor: =
                                     DisplayMode: =Parent.DisplayMode
+                                    FontColor: =
                                     Height: =32
                                     SelectedDate: =Parent.Default
                                     ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -3107,6 +3124,7 @@
                                 Separator5 As Texto:
                                     Align: ='TextCanvas.Align'.Center
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =HourValue4.Height
                                     Text: |-
                                         =":"
@@ -3127,6 +3145,7 @@
 
                                 ErrorMessage27 As Texto:
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =30
                                     Text: =Parent.Error
                                     Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -3139,6 +3158,7 @@
                                 StarVisible27 As Texto:
                                     Align: ='TextCanvas.Align'.Center
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =20
                                     Text: ="*"
                                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -3175,7 +3195,9 @@
                                     ZIndex: =1
 
                                 "DataCardValue24 As 'Entrada de texto'":
+                                    BasePaletteColor: =
                                     DisplayMode: =DisplayMode.View
+                                    FontColor: =
                                     Height: =32
                                     Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                                     ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -3227,6 +3249,7 @@
 
                                 ErrorMessage28 As Texto:
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =30
                                     Text: =Parent.Error
                                     Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -3239,6 +3262,7 @@
                                 StarVisible28 As Texto:
                                     Align: ='TextCanvas.Align'.Center
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =20
                                     Text: ="*"
                                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -3289,6 +3313,7 @@
 
                                 ErrorMessage29 As Texto:
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =30
                                     Text: =Parent.Error
                                     Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -3301,6 +3326,7 @@
                                 StarVisible29 As Texto:
                                     Align: ='TextCanvas.Align'.Center
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =20
                                     Text: ="*"
                                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -3360,6 +3386,7 @@
 
                                 DataCardKey31 As Texto:
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =22
                                     Text: =Parent.DisplayName
                                     Weight: ='TextCanvas.Weight'.Semibold
@@ -3370,7 +3397,9 @@
                                     ZIndex: =1
 
                                 "DataCardValue27 As 'Entrada de texto'":
+                                    BasePaletteColor: =
                                     DisplayMode: =DisplayMode.View
+                                    FontColor: =
                                     Height: =32
                                     Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                                     ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -3398,6 +3427,7 @@
 
                                 DataCardKey32 As Texto:
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =22
                                     Text: =Parent.DisplayName
                                     Weight: ='TextCanvas.Weight'.Semibold
@@ -3409,7 +3439,9 @@
 
                                 "DateValue5 As 'Selector de fecha'":
                                     AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                    BasePaletteColor: =
                                     DisplayMode: =Parent.DisplayMode
+                                    FontColor: =
                                     Height: =32
                                     SelectedDate: =Parent.Default
                                     ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -3431,6 +3463,7 @@
                                 Separator6 As Texto:
                                     Align: ='TextCanvas.Align'.Center
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =HourValue5.Height
                                     Text: |-
                                         =":"
@@ -3451,6 +3484,7 @@
 
                                 ErrorMessage30 As Texto:
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =30
                                     Text: =Parent.Error
                                     Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -3463,6 +3497,7 @@
                                 StarVisible30 As Texto:
                                     Align: ='TextCanvas.Align'.Center
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =20
                                     Text: ="*"
                                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -3489,6 +3524,7 @@
 
                                 DataCardKey33 As Texto:
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =22
                                     Text: =Parent.DisplayName
                                     Weight: ='TextCanvas.Weight'.Semibold
@@ -3500,7 +3536,9 @@
 
                                 "DateValue6 As 'Selector de fecha'":
                                     AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                    BasePaletteColor: =
                                     DisplayMode: =Parent.DisplayMode
+                                    FontColor: =
                                     Height: =32
                                     SelectedDate: =Parent.Default
                                     ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -3522,6 +3560,7 @@
                                 Separator7 As Texto:
                                     Align: ='TextCanvas.Align'.Center
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =HourValue6.Height
                                     Text: |-
                                         =":"
@@ -3542,6 +3581,7 @@
 
                                 ErrorMessage31 As Texto:
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =30
                                     Text: =Parent.Error
                                     Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -3554,6 +3594,7 @@
                                 StarVisible31 As Texto:
                                     Align: ='TextCanvas.Align'.Center
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =20
                                     Text: ="*"
                                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -3580,6 +3621,7 @@
 
                                 DataCardKey34 As Texto:
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =22
                                     Text: =Parent.DisplayName
                                     Weight: ='TextCanvas.Weight'.Semibold
@@ -3603,6 +3645,7 @@
 
                                 ErrorMessage32 As Texto:
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =30
                                     Text: =Parent.Error
                                     Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -3615,6 +3658,7 @@
                                 StarVisible32 As Texto:
                                     Align: ='TextCanvas.Align'.Center
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =20
                                     Text: ="*"
                                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -3641,6 +3685,7 @@
 
                                 DataCardKey35 As Texto:
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =22
                                     Text: =Parent.DisplayName
                                     Weight: ='TextCanvas.Weight'.Semibold
@@ -3664,6 +3709,7 @@
 
                                 ErrorMessage33 As Texto:
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =30
                                     Text: =Parent.Error
                                     Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -3676,6 +3722,7 @@
                                 StarVisible33 As Texto:
                                     Align: ='TextCanvas.Align'.Center
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =20
                                     Text: ="*"
                                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -3702,6 +3749,7 @@
 
                                 DataCardKey36 As Texto:
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =22
                                     Text: =Parent.DisplayName
                                     Weight: ='TextCanvas.Weight'.Semibold
@@ -3725,6 +3773,7 @@
 
                                 ErrorMessage34 As Texto:
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =30
                                     Text: =Parent.Error
                                     Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -3737,6 +3786,7 @@
                                 StarVisible34 As Texto:
                                     Align: ='TextCanvas.Align'.Center
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =20
                                     Text: ="*"
                                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -3763,6 +3813,7 @@
 
                                 DataCardKey37 As Texto:
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =22
                                     Text: =Parent.DisplayName
                                     Weight: ='TextCanvas.Weight'.Semibold
@@ -4138,6 +4189,7 @@
 
                                 ErrorMessage35 As Texto:
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =30
                                     Text: =Parent.Error
                                     Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -4150,6 +4202,7 @@
                                 StarVisible35 As Texto:
                                     Align: ='TextCanvas.Align'.Center
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =20
                                     Text: ="*"
                                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -4176,6 +4229,7 @@
 
                                 DataCardKey38 As Texto:
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =22
                                     Text: =Parent.DisplayName
                                     Weight: ='TextCanvas.Weight'.Semibold
@@ -4199,6 +4253,7 @@
 
                                 ErrorMessage36 As Texto:
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =30
                                     Text: =Parent.Error
                                     Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -4211,6 +4266,7 @@
                                 StarVisible36 As Texto:
                                     Align: ='TextCanvas.Align'.Center
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =20
                                     Text: ="*"
                                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -4236,6 +4292,7 @@
 
                                 DataCardKey39 As Texto:
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =22
                                     Text: =Parent.DisplayName
                                     Weight: ='TextCanvas.Weight'.Semibold
@@ -4246,7 +4303,9 @@
                                     ZIndex: =1
 
                                 "DataCardValue33 As 'Entrada de texto'":
+                                    BasePaletteColor: =
                                     DisplayMode: =DisplayMode.View
+                                    FontColor: =
                                     Height: =32
                                     Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                                     ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -4274,6 +4333,7 @@
 
                                 DataCardKey40 As Texto:
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =22
                                     Text: =Parent.DisplayName
                                     Weight: ='TextCanvas.Weight'.Semibold
@@ -4297,6 +4357,7 @@
 
                                 ErrorMessage37 As Texto:
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =30
                                     Text: =Parent.Error
                                     Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -4309,6 +4370,7 @@
                                 StarVisible37 As Texto:
                                     Align: ='TextCanvas.Align'.Center
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =20
                                     Text: ="*"
                                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -4335,6 +4397,7 @@
 
                                 DataCardKey41 As Texto:
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =22
                                     Text: =Parent.DisplayName
                                     Weight: ='TextCanvas.Weight'.Semibold
@@ -4358,6 +4421,7 @@
 
                                 ErrorMessage38 As Texto:
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =30
                                     Text: =Parent.Error
                                     Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -4370,6 +4434,7 @@
                                 StarVisible38 As Texto:
                                     Align: ='TextCanvas.Align'.Center
                                     DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
                                     Height: =20
                                     Text: ="*"
                                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
