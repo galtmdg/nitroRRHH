@@ -8,8 +8,11 @@ previewPlanilla As CanvasComponent:
 
     Table2 As Tabla.pcfdataset:
         DisplayMode: =DisplayMode.Edit
+        FontSize: =11
+        HeaderFontSize: =12
+        HeaderFontWeight: =FontWeight.Semibold
         Height: =Parent.Height
-        Items: =RRHHcolaboradores
+        Items: =Filter(RRHHcolaboradores,RRHHEmpresa.IDEmpresa=DropdownCanvas1.Selected.IDEmpresa)
         onCellValueChange: =false
         onFilter: =false
         onNavigate: =false

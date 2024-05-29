@@ -36,7 +36,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Table2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 448,
+            "PublishOrderIndex": 449,
             "Rules": [
               {
                 "Category": "Data",
@@ -144,7 +144,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Table2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 449,
+            "PublishOrderIndex": 450,
             "Rules": [
               {
                 "Category": "Data",
@@ -252,7 +252,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Table2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 450,
+            "PublishOrderIndex": 451,
             "Rules": [
               {
                 "Category": "Data",
@@ -360,7 +360,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Table2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 451,
+            "PublishOrderIndex": 452,
             "Rules": [
               {
                 "Category": "Data",
@@ -468,7 +468,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Table2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 452,
+            "PublishOrderIndex": 453,
             "Rules": [
               {
                 "Category": "Data",
@@ -576,7 +576,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Table2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 453,
+            "PublishOrderIndex": 454,
             "Rules": [
               {
                 "Category": "Data",
@@ -684,7 +684,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Table2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 454,
+            "PublishOrderIndex": 455,
             "Rules": [
               {
                 "Category": "Data",
@@ -792,7 +792,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Table2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 455,
+            "PublishOrderIndex": 456,
             "Rules": [
               {
                 "Category": "Data",
@@ -900,7 +900,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Table2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 456,
+            "PublishOrderIndex": 457,
             "Rules": [
               {
                 "Category": "Data",
@@ -1022,6 +1022,30 @@
             "InvariantPropertyName": "ReflowBehavior",
             "IsLockable": false,
             "NameMapSourceSchema": "?"
+          },
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "HeaderFontSize",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "HeaderFontWeight",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "FontSize",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
           }
         ],
         "ControlUniqueId": "616",
@@ -1038,11 +1062,11 @@
         "OptimizeForDevices": "Off",
         "Parent": "previewPlanilla",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 447,
+        "PublishOrderIndex": 448,
         "Rules": [
           {
             "Category": "Data",
-            "InvariantScript": "RRHHcolaboradores",
+            "InvariantScript": "Filter(RRHHcolaboradores,RRHHEmpresa.IDEmpresa=DropdownCanvas1.Selected.IDEmpresa)",
             "Property": "Items",
             "RuleProviderType": "Unknown"
           },
@@ -1050,6 +1074,24 @@
             "Category": "Data",
             "InvariantScript": "'PowerAppsOneGrid.ReflowBehavior'.Reflow",
             "Property": "ReflowBehavior",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Data",
+            "InvariantScript": "12",
+            "Property": "HeaderFontSize",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Data",
+            "InvariantScript": "FontWeight.Semibold",
+            "Property": "HeaderFontWeight",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Data",
+            "InvariantScript": "11",
+            "Property": "FontSize",
             "RuleProviderType": "Unknown"
           },
           {
@@ -1166,7 +1208,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638526144126575875",
+    "LastModifiedTimestamp": "638526150315001062",
     "Name": "previewPlanilla",
     "Rules": [
       {
@@ -1225,7 +1267,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638526144126575875",
+  "LastModifiedTimestamp": "638526150315001062",
   "Name": "77b75029268345fdb87f034df390822c",
   "OverridableProperties": {},
   "Version": "1.0"

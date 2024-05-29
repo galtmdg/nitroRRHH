@@ -136,7 +136,7 @@
                         DisabledColor: =RGBA(244, 244, 244, 1)
                         Height: =40
                         Icon: =Icon.BackArrow
-                        OnSelect: =Navigate(planillaScreen,ScreenTransition.Fade)
+                        OnSelect: =Navigate(directorioScreen,ScreenTransition.Fade)
                         Width: =40
                         ZIndex: =1
 

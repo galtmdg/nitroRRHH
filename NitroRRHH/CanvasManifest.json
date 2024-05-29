@@ -133,6 +133,7 @@
   },
   "ScreenOrder": [
     "overViewScreen",
+    "directorioScreen",
     "planillaScreen",
     "talonarioScreen",
     "detallesPlanillaScreen",

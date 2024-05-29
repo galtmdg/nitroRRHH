@@ -58,8 +58,8 @@ NavBar As CanvasComponent:
             Height: =32
             LayoutMinHeight: =32
             LayoutMinWidth: =96
-            OnSelect: =Navigate(planillaScreen,ScreenTransition.Fade)
-            Text: ="Planilla"
+            OnSelect: =Navigate(directorioScreen,ScreenTransition.Fade)
+            Text: ="Directorio"
             Width: =Parent.Width
             X: =0
             Y: =0
@@ -74,9 +74,24 @@ NavBar As CanvasComponent:
             Height: =32
             LayoutMinHeight: =32
             LayoutMinWidth: =96
-            Text: ="Vacaciones"
+            Text: ="Planilla"
             Width: =Parent.Width
             X: =0
             Y: =0
             ZIndex: =4
+
+        btnVacacionesNav_2 As Botón:
+            Appearance: ='ButtonCanvas.Appearance'.Subtle
+            BasePaletteColor: =
+            DisplayMode: =DisplayMode.Edit
+            FontColor: =RGBA(240, 98, 15, 1)
+            FontSize: =20
+            Height: =32
+            LayoutMinHeight: =32
+            LayoutMinWidth: =96
+            Text: ="Vacaciones"
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =5
 
