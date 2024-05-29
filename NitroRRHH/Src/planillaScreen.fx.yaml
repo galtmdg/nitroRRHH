@@ -77,7 +77,7 @@
 
                 Container9_4 As groupContainer.horizontalAutoLayoutContainer:
                     DropShadow: =DropShadow.Light
-                    LayoutMinHeight: =100
+                    LayoutMinHeight: =50
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     RadiusBottomLeft: =4
@@ -87,26 +87,107 @@
                     ZIndex: =1
 
                     planillaTitleIcon_4 As icon.Trending:
+                        AlignInContainer: =AlignInContainer.Center
                         BorderColor: =App.Theme.Colors.Darker40
                         Color: =App.Theme.Colors.Lighter80
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                         DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =40
                         Icon: =Icon.Journal
+                        Width: =40
                         ZIndex: =1
 
                     planillaTitleText_4 As Texto:
+                        AlignInContainer: =AlignInContainer.Center
                         AutoHeight: =false
                         DisplayMode: =DisplayMode.Edit
+                        FillPortions: =1
                         Font: =Font.'Lato Black'
                         FontColor: =RGBA(255, 255, 255, 0)
                         Height: =72
                         LayoutMinHeight: =32
                         LayoutMinWidth: =96
-                        Size: =60
+                        Size: =40
                         Text: ="Planilla"
                         Width: =Parent.Width
                         Wrap: =true
                         X: =0
                         Y: =0
                         ZIndex: =2
+
+                    DropdownCanvas1_1 As Desplegable.pcfdataset:
+                        AlignInContainer: =AlignInContainer.Center
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =32
+                        Items: =RRHHEmpresas
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =320
+                        Width: =320
+                        X: =0
+                        Y: =0
+                        ZIndex: =3
+
+                        IDEmpresa2_1 As pcfDataField.textualColumn:
+                            FieldDisplayName: ="IDEmpresa"
+                            FieldName: ="crda0_name"
+                            FieldType: ="s"
+                            FieldVariantName: ="textualColumn"
+                            Order: =1
+                            ZIndex: =7
+
+                        Nombre2_1 As pcfDataField.textualColumn:
+                            FieldDisplayName: ="Nombre"
+                            FieldName: ="crda0_nombre"
+                            FieldType: ="s"
+                            FieldVariantName: ="textualColumn"
+                            Order: =2
+                            ZIndex: =8
+
+                        Direccion2_1 As pcfDataField.textualColumn:
+                            FieldDisplayName: ="Direccion"
+                            FieldName: ="crda0_direccion"
+                            FieldType: ="s"
+                            FieldVariantName: ="textualColumn"
+                            Order: =3
+                            ZIndex: =9
+
+                        Telefono2_1 As pcfDataField.textualColumn:
+                            FieldDisplayName: ="Telefono"
+                            FieldName: ="crda0_telefono"
+                            FieldType: ="s"
+                            FieldVariantName: ="textualColumn"
+                            Order: =4
+                            ZIndex: =10
+
+                        Correo2_1 As pcfDataField.textualColumn:
+                            FieldDisplayName: ="Correo"
+                            FieldName: ="crda0_correo"
+                            FieldType: ="s"
+                            FieldVariantName: ="textualColumn"
+                            Order: =5
+                            ZIndex: =11
+
+                        RUC2_1 As pcfDataField.textualColumn:
+                            FieldDisplayName: ="RUC"
+                            FieldName: ="crda0_ruc"
+                            FieldType: ="s"
+                            FieldVariantName: ="textualColumn"
+                            Order: =6
+                            ZIndex: =12
+
+                Container12 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.Light
+                    FillPortions: =7
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    ZIndex: =2
+
+                    previewPlanilla_2 As previewPlanilla:
+                        LayoutMinHeight: =640
+                        LayoutMinWidth: =640
 

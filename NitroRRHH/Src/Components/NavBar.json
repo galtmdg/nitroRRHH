@@ -160,7 +160,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Container1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 443,
+            "PublishOrderIndex": 460,
             "Rules": [
               {
                 "Category": "Data",
@@ -489,7 +489,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Container1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 444,
+            "PublishOrderIndex": 461,
             "Rules": [
               {
                 "Category": "Data",
@@ -711,7 +711,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Container1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 445,
+            "PublishOrderIndex": 462,
             "Rules": [
               {
                 "Category": "Data",
@@ -860,6 +860,14 @@
                 "InvariantPropertyName": "FontSize",
                 "IsLockable": false,
                 "NameMapSourceSchema": "?"
+              },
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "false",
+                "InvariantPropertyName": "OnSelect",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
               }
             ],
             "ControlUniqueId": "9",
@@ -925,7 +933,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Container1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 446,
+            "PublishOrderIndex": 463,
             "Rules": [
               {
                 "Category": "Data",
@@ -992,6 +1000,12 @@
                 "InvariantScript": "Parent.Width",
                 "Property": "Width",
                 "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Behavior",
+                "InvariantScript": "Navigate(planillaScreen, ScreenTransition.Fade)",
+                "Property": "OnSelect",
+                "RuleProviderType": "User"
               }
             ],
             "StyleName": "",
@@ -1133,7 +1147,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Container1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 447,
+            "PublishOrderIndex": 464,
             "Rules": [
               {
                 "Category": "Data",
@@ -1274,7 +1288,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "NavBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 442,
+        "PublishOrderIndex": 459,
         "Rules": [
           {
             "Category": "Design",
@@ -1454,7 +1468,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638526154525678469",
+    "LastModifiedTimestamp": "638526157918495031",
     "Name": "NavBar",
     "Rules": [
       {
@@ -1513,7 +1527,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638526154525678469",
+  "LastModifiedTimestamp": "638526157918495031",
   "Name": "71428d0d927a497684587358f4e97225",
   "OverridableProperties": {},
   "Version": "1.0"

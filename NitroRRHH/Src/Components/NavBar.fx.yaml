@@ -74,6 +74,7 @@ NavBar As CanvasComponent:
             Height: =32
             LayoutMinHeight: =32
             LayoutMinWidth: =96
+            OnSelect: =Navigate(planillaScreen, ScreenTransition.Fade)
             Text: ="Planilla"
             Width: =Parent.Width
             X: =0

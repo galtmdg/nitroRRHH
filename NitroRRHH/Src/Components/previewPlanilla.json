@@ -36,7 +36,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Table2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 449,
+            "PublishOrderIndex": 466,
             "Rules": [
               {
                 "Category": "Data",
@@ -144,7 +144,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Table2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 450,
+            "PublishOrderIndex": 467,
             "Rules": [
               {
                 "Category": "Data",
@@ -252,7 +252,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Table2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 451,
+            "PublishOrderIndex": 468,
             "Rules": [
               {
                 "Category": "Data",
@@ -360,7 +360,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Table2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 452,
+            "PublishOrderIndex": 469,
             "Rules": [
               {
                 "Category": "Data",
@@ -468,7 +468,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Table2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 453,
+            "PublishOrderIndex": 470,
             "Rules": [
               {
                 "Category": "Data",
@@ -576,7 +576,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Table2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 454,
+            "PublishOrderIndex": 471,
             "Rules": [
               {
                 "Category": "Data",
@@ -684,7 +684,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Table2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 455,
+            "PublishOrderIndex": 472,
             "Rules": [
               {
                 "Category": "Data",
@@ -792,7 +792,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Table2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 456,
+            "PublishOrderIndex": 473,
             "Rules": [
               {
                 "Category": "Data",
@@ -900,7 +900,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Table2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 457,
+            "PublishOrderIndex": 474,
             "Rules": [
               {
                 "Category": "Data",
@@ -1062,11 +1062,11 @@
         "OptimizeForDevices": "Off",
         "Parent": "previewPlanilla",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 448,
+        "PublishOrderIndex": 465,
         "Rules": [
           {
             "Category": "Data",
-            "InvariantScript": "Filter(RRHHcolaboradores,RRHHEmpresa.IDEmpresa=DropdownCanvas1.Selected.IDEmpresa)",
+            "InvariantScript": "Filter(RRHHcolaboradores,RRHHEmpresa.IDEmpresa=DropdownCanvas1_1.Selected.IDEmpresa)",
             "Property": "Items",
             "RuleProviderType": "Unknown"
           },
@@ -1208,7 +1208,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638526150315001062",
+    "LastModifiedTimestamp": "638526158888907978",
     "Name": "previewPlanilla",
     "Rules": [
       {
@@ -1267,7 +1267,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638526150315001062",
+  "LastModifiedTimestamp": "638526158888907978",
   "Name": "77b75029268345fdb87f034df390822c",
   "OverridableProperties": {},
   "Version": "1.0"

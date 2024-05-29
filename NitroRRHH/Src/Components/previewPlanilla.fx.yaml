@@ -12,7 +12,7 @@ previewPlanilla As CanvasComponent:
         HeaderFontSize: =12
         HeaderFontWeight: =FontWeight.Semibold
         Height: =Parent.Height
-        Items: =Filter(RRHHcolaboradores,RRHHEmpresa.IDEmpresa=DropdownCanvas1.Selected.IDEmpresa)
+        Items: =Filter(RRHHcolaboradores,RRHHEmpresa.IDEmpresa=DropdownCanvas1_1.Selected.IDEmpresa)
         onCellValueChange: =false
         onFilter: =false
         onNavigate: =false
