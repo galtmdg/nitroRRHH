@@ -1,0 +1,96 @@
+previewPlanilla As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =Parent.Height
+    Width: =Parent.Width
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Table2 As Tabla.pcfdataset:
+        DisplayMode: =DisplayMode.Edit
+        Height: =Parent.Height
+        Items: =RRHHcolaboradores
+        onCellValueChange: =false
+        onFilter: =false
+        onNavigate: =false
+        onRowSelect: =false
+        onSave: =false
+        OnSelect: =false
+        ReflowBehavior: ='PowerAppsOneGrid.ReflowBehavior'.Reflow
+        Width: =Parent.Width
+        X: =0
+        Y: =0
+        ZIndex: =1
+
+        Nombre4 As pcfDataField.textualColumn:
+            FieldDisplayName: ="Nombre"
+            FieldName: ="crda0_nombre"
+            FieldType: ="s"
+            FieldVariantName: ="textualColumn"
+            Order: =2
+            ZIndex: =1
+
+        Apellido2 As pcfDataField.textualColumn:
+            FieldDisplayName: ="Apellido"
+            FieldName: ="crda0_apellido"
+            FieldType: ="s"
+            FieldVariantName: ="textualColumn"
+            Order: =3
+            ZIndex: =2
+
+        SalarioBruto2 As pcfDataField.textualColumn:
+            FieldDisplayName: ="SalarioBruto"
+            FieldName: ="crda0_salariobruto"
+            FieldType: ="$"
+            FieldVariantName: ="textualColumn"
+            Order: =10
+            ZIndex: =3
+
+        GastoRepresentacion2 As pcfDataField.textualColumn:
+            FieldDisplayName: ="GastoRepresentacion"
+            FieldName: ="crda0_gastorepresentacion"
+            FieldType: ="$"
+            FieldVariantName: ="textualColumn"
+            Order: =21
+            ZIndex: =4
+
+        SS2 As pcfDataField.textualColumn:
+            FieldDisplayName: ="SS"
+            FieldName: ="crda0_ss"
+            FieldType: ="$"
+            FieldVariantName: ="textualColumn"
+            Order: =24
+            ZIndex: =5
+
+        SE2 As pcfDataField.textualColumn:
+            FieldDisplayName: ="SE"
+            FieldName: ="crda0_se"
+            FieldType: ="n"
+            FieldVariantName: ="textualColumn"
+            Order: =26
+            ZIndex: =6
+
+        ISR2 As pcfDataField.textualColumn:
+            FieldDisplayName: ="ISR"
+            FieldName: ="crda0_isr"
+            FieldType: ="n"
+            FieldVariantName: ="textualColumn"
+            Order: =29
+            ZIndex: =7
+
+        Descuento2 As pcfDataField.textualColumn:
+            FieldDisplayName: ="Descuento"
+            FieldName: ="crda0_descuento"
+            FieldType: ="$"
+            FieldVariantName: ="textualColumn"
+            Order: =32
+            ZIndex: =8
+
+        SalarioNeto2 As pcfDataField.textualColumn:
+            FieldDisplayName: ="SalarioNeto"
+            FieldName: ="crda0_salarioneto"
+            FieldType: ="$"
+            FieldVariantName: ="textualColumn"
+            Order: =36
+            ZIndex: =9
+

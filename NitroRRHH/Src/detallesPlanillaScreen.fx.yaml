@@ -2424,26 +2424,6 @@
                             Visible: =!IsEmpty(Colaboradores.Selected.RRHHDeducciones) And !IsBlank(Gallery2_1.Selected)
                             ZIndex: =2
 
-                            DataCard6 As typedDataCard.blankCard:
-                                BorderColor: =App.Theme.Colors.Darker40
-                                BorderStyle: =BorderStyle.Solid
-                                DisplayMode: =DisplayMode.Edit
-                                Fill: =RGBA(0, 0, 0, 0)
-                                Height: =200
-                                Width: =528
-                                X: =0
-                                Y: =1
-                                ZIndex: =1
-
-                                ButtonCanvas5 As Botón:
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =32
-                                    Text: ="Actualizar"
-                                    Width: =96
-                                    X: =206
-                                    Y: =92
-                                    ZIndex: =1
-
                             Beneficio_DataCard1 As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard:
                                 BorderColor: =App.Theme.Colors.Darker40
                                 BorderStyle: =BorderStyle.Solid
@@ -2505,6 +2485,26 @@
                                     X: =0
                                     Y: =DataCardKey1.Y
                                     ZIndex: =4
+
+                            DataCard6 As typedDataCard.blankCard:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                BorderStyle: =BorderStyle.Solid
+                                DisplayMode: =DisplayMode.Edit
+                                Fill: =RGBA(0, 0, 0, 0)
+                                Height: =200
+                                Width: =528
+                                X: =0
+                                Y: =1
+                                ZIndex: =1
+
+                                ButtonCanvas5 As Botón:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =32
+                                    Text: ="Actualizar"
+                                    Width: =96
+                                    X: =206
+                                    Y: =92
+                                    ZIndex: =1
 
                             Monto_DataCard1_2 As typedDataCard.fluentV9CurrencyEditCard:
                                 BorderColor: =App.Theme.Colors.Darker40
@@ -2765,4 +2765,1616 @@
                     RadiusTopRight: =4
                     Visible: =TabList1.Selected.Value="Contratos"
                     ZIndex: =6
+
+                    Container3_2 As groupContainer.horizontalAutoLayoutContainer:
+                        DropShadow: =DropShadow.Light
+                        FillPortions: =7
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        ZIndex: =1
+
+                        "Gallery2_2 As gallery.'BrowseLayout_Flexible_SocialFeed_ver5.0'":
+                            BorderColor: =App.Theme.Colors.Darker40
+                            DelayItemLoading: =true
+                            Items: =Colaboradores.Selected.RRHHContratos
+                            Layout: =Layout.Vertical
+                            LayoutMinHeight: =287
+                            LayoutMinWidth: =320
+                            LoadingSpinner: =LoadingSpinner.Data
+                            TemplatePadding: =4
+                            TemplateSize: =Min(870, Self.Height - 60)
+                            Visible: =!IsEmpty(Colaboradores.Selected.RRHHDeducciones)
+                            ZIndex: =1
+
+                            Body1_4 As label:
+                                Color: =RGBA(255, 255, 255, 1)
+                                DisabledColor: =RGBA(255, 255, 255, 1)
+                                Font: =App.Theme.Font
+                                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                                Height: =24
+                                OnSelect: =Select(Parent)
+                                PaddingBottom: =0
+                                PaddingLeft: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Size: =12
+                                Text: =ThisItem.FechaInicio
+                                VerticalAlign: =VerticalAlign.Top
+                                Width: =241
+                                X: =21
+                                Y: =42
+                                ZIndex: =4
+
+                            Body1_5 As label:
+                                Color: =RGBA(255, 255, 255, 1)
+                                DisabledColor: =RGBA(255, 255, 255, 1)
+                                Font: =App.Theme.Font
+                                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                                Height: =24
+                                OnSelect: =Select(Parent)
+                                PaddingBottom: =0
+                                PaddingLeft: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Size: =12
+                                Text: =ThisItem.FechaFinalizacion
+                                VerticalAlign: =VerticalAlign.Top
+                                Width: =241
+                                X: =21
+                                Y: =66
+                                ZIndex: =6
+
+                            Icon5_2 As icon.Edit:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                Color: =App.Theme.Colors.Lighter80
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(244, 244, 244, 1)
+                                Height: =30
+                                Icon: =Icon.Edit
+                                OnSelect: =Select(Parent)
+                                Width: =30
+                                X: =408
+                                Y: =12
+                                ZIndex: =7
+
+                            Circle1_3 As circle:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                Fill: =Color.Red
+                                Height: =10
+                                OnSelect: =Select(Parent)
+                                Width: =10
+                                X: =1
+                                Y: =19
+                                ZIndex: =8
+
+                            Body1_6 As label:
+                                Color: =RGBA(255, 255, 255, 1)
+                                DisabledColor: =RGBA(255, 255, 255, 1)
+                                Font: =App.Theme.Font
+                                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                                Height: =24
+                                OnSelect: =Select(Parent)
+                                PaddingBottom: =0
+                                PaddingLeft: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Size: =12
+                                Text: =ThisItem.TipoContrato
+                                VerticalAlign: =VerticalAlign.Top
+                                Width: =241
+                                X: =21
+                                Y: =15
+                                ZIndex: =9
+
+                            Body1_7 As label:
+                                Color: =RGBA(255, 255, 255, 1)
+                                DisabledColor: =RGBA(255, 255, 255, 1)
+                                Font: =App.Theme.Font
+                                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                                Height: =24
+                                OnSelect: =Select(Parent)
+                                PaddingBottom: =0
+                                PaddingLeft: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Size: =12
+                                Text: =ThisItem.Asignado
+                                VerticalAlign: =VerticalAlign.Top
+                                Width: =241
+                                X: =21
+                                Y: =90
+                                ZIndex: =10
+
+                        Form2_5 As form.PowerApps_CoreControls_Form:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            DataSource: =RRHHContratos
+                            Item: =Gallery2_2.Selected
+                            LayoutMinHeight: =250
+                            LayoutMinWidth: =400
+                            NumberOfColumns: =2
+                            UseFluentV9Cards: =true
+                            Visible: =!IsEmpty(Colaboradores.Selected.RRHHDeducciones) And !IsBlank(Gallery2_2.Selected)
+                            ZIndex: =2
+
+                            Asignado_DataCard1 As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                BorderStyle: =BorderStyle.Solid
+                                DataField: ="crda0_asignado"
+                                Default: =ThisItem.Asignado
+                                DisplayMode: =Parent.DisplayMode
+                                DisplayName: =DataSourceInfo([@RRHHContratos],DataSourceInfo.DisplayName,crda0_asignado)
+                                Fill: =RGBA(0, 0, 0, 0)
+                                Height: =70
+                                Required: =false
+                                Update: =DataCardValue23.Selected.Value
+                                Width: =264
+                                X: =0
+                                Y: =0
+                                ZIndex: =1
+
+                                DataCardKey25 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontColor: =RGBA(255, 255, 255, 1)
+                                    Height: =22
+                                    Text: =Parent.DisplayName
+                                    Weight: ='TextCanvas.Weight'.Semibold
+                                    Width: =Parent.Width - 48
+                                    Wrap: =false
+                                    X: =24
+                                    Y: =10
+                                    ZIndex: =1
+
+                                "DataCardValue23 As 'Cuadro combinado'.pcfdataset":
+                                    AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                    DefaultSelectedItems: =[Parent.Default]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Height: =32
+                                    Items: =Choices(Asignado)
+                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                    Width: =Parent.Width - 48
+                                    X: =24
+                                    Y: =DataCardKey25.Y + DataCardKey25.Height + 4
+                                    ZIndex: =2
+
+                                ErrorMessage25 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =30
+                                    Text: =Parent.Error
+                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =Parent.Width - 48
+                                    Wrap: =true
+                                    X: =24
+                                    Y: =DataCardValue23.Y + DataCardValue23.Height
+                                    ZIndex: =3
+
+                                StarVisible25 As Texto:
+                                    Align: ='TextCanvas.Align'.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =20
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =30
+                                    X: =0
+                                    Y: =DataCardKey25.Y
+                                    ZIndex: =4
+
+                            FechaInicio_DataCard1 As typedDataCard.fluentV9DateTimeEditCard:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                BorderStyle: =BorderStyle.Solid
+                                DataField: ="crda0_fechainicio"
+                                Default: =ThisItem.FechaInicio
+                                DisplayMode: =Parent.DisplayMode
+                                DisplayName: =DataSourceInfo([@RRHHContratos],DataSourceInfo.DisplayName,crda0_fechainicio)
+                                Fill: =RGBA(0, 0, 0, 0)
+                                Height: =70
+                                Required: =false
+                                Update: =If(Not IsBlank(DateValue3.SelectedDate), DateTime(Year(DateValue3.SelectedDate), Month(DateValue3.SelectedDate), Day(DateValue3.SelectedDate), Value(HourValue3.Selected.Value), Value(MinuteValue3.Selected.Value), Second(DateValue3.SelectedDate)))
+                                Width: =264
+                                X: =1
+                                Y: =0
+                                ZIndex: =1
+
+                                DataCardKey26 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontColor: =RGBA(255, 255, 255, 1)
+                                    Height: =22
+                                    Text: =Parent.DisplayName
+                                    Weight: ='TextCanvas.Weight'.Semibold
+                                    Width: =Parent.Width - 48
+                                    Wrap: =false
+                                    X: =24
+                                    Y: =10
+                                    ZIndex: =1
+
+                                "DateValue3 As 'Selector de fecha'":
+                                    AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                    DisplayMode: =Parent.DisplayMode
+                                    Height: =32
+                                    SelectedDate: =Parent.Default
+                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                    Width: =(Parent.Width - 48) / 2
+                                    X: =24
+                                    Y: =DataCardKey26.Y + DataCardKey26.Height + 4
+                                    ZIndex: =2
+
+                                HourValue3 As Desplegable.pcfdataset:
+                                    DefaultSelectedItems: =[Text(Hour(Parent.Default),"00")]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Height: =28
+                                    Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23"]
+                                    Width: =DateValue3.Width / 2 - 10
+                                    X: =DateValue3.X + DateValue3.Width + 10
+                                    Y: =DateValue3.Y + 1
+                                    ZIndex: =3
+
+                                Separator2 As Texto:
+                                    Align: ='TextCanvas.Align'.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =HourValue3.Height
+                                    Text: |-
+                                        =":"
+                                    Width: =10
+                                    X: =HourValue3.X + HourValue3.Width
+                                    Y: =HourValue3.Y
+                                    ZIndex: =4
+
+                                MinuteValue3 As Desplegable.pcfdataset:
+                                    DefaultSelectedItems: =[Text(Minute(Parent.Default),"00")]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Height: =28
+                                    Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59"]
+                                    Width: =HourValue3.Width
+                                    X: =HourValue3.X + HourValue3.Width + Separator2.Width
+                                    Y: =HourValue3.Y + 1
+                                    ZIndex: =5
+
+                                ErrorMessage26 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =30
+                                    Text: =Parent.Error
+                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =Parent.Width - 48
+                                    Wrap: =true
+                                    X: =24
+                                    Y: =DateValue3.Y + DateValue3.Height
+                                    ZIndex: =6
+
+                                StarVisible26 As Texto:
+                                    Align: ='TextCanvas.Align'.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =20
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =30
+                                    X: =0
+                                    Y: =DataCardKey26.Y
+                                    ZIndex: =7
+
+                            FechaFinalizacion_DataCard1 As typedDataCard.fluentV9DateTimeEditCard:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                BorderStyle: =BorderStyle.Solid
+                                DataField: ="crda0_fechafinalizacion"
+                                Default: =ThisItem.FechaFinalizacion
+                                DisplayMode: =Parent.DisplayMode
+                                DisplayName: =DataSourceInfo([@RRHHContratos],DataSourceInfo.DisplayName,crda0_fechafinalizacion)
+                                Fill: =RGBA(0, 0, 0, 0)
+                                Height: =70
+                                Required: =false
+                                Update: =If(Not IsBlank(DateValue4.SelectedDate), DateTime(Year(DateValue4.SelectedDate), Month(DateValue4.SelectedDate), Day(DateValue4.SelectedDate), Value(HourValue4.Selected.Value), Value(MinuteValue4.Selected.Value), Second(DateValue4.SelectedDate)))
+                                Width: =264
+                                X: =0
+                                Y: =1
+                                ZIndex: =1
+
+                                DataCardKey27 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontColor: =RGBA(255, 255, 255, 1)
+                                    Height: =22
+                                    Text: =Parent.DisplayName
+                                    Weight: ='TextCanvas.Weight'.Semibold
+                                    Width: =Parent.Width - 48
+                                    Wrap: =false
+                                    X: =24
+                                    Y: =10
+                                    ZIndex: =1
+
+                                "DateValue4 As 'Selector de fecha'":
+                                    AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                    DisplayMode: =Parent.DisplayMode
+                                    Height: =32
+                                    SelectedDate: =Parent.Default
+                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                    Width: =(Parent.Width - 48) / 2
+                                    X: =24
+                                    Y: =DataCardKey27.Y + DataCardKey27.Height + 4
+                                    ZIndex: =2
+
+                                HourValue4 As Desplegable.pcfdataset:
+                                    DefaultSelectedItems: =[Text(Hour(Parent.Default),"00")]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Height: =28
+                                    Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23"]
+                                    Width: =DateValue4.Width / 2 - 10
+                                    X: =DateValue4.X + DateValue4.Width + 10
+                                    Y: =DateValue4.Y + 1
+                                    ZIndex: =3
+
+                                Separator5 As Texto:
+                                    Align: ='TextCanvas.Align'.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =HourValue4.Height
+                                    Text: |-
+                                        =":"
+                                    Width: =10
+                                    X: =HourValue4.X + HourValue4.Width
+                                    Y: =HourValue4.Y
+                                    ZIndex: =4
+
+                                MinuteValue4 As Desplegable.pcfdataset:
+                                    DefaultSelectedItems: =[Text(Minute(Parent.Default),"00")]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Height: =28
+                                    Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59"]
+                                    Width: =HourValue4.Width
+                                    X: =HourValue4.X + HourValue4.Width + Separator5.Width
+                                    Y: =HourValue4.Y + 1
+                                    ZIndex: =5
+
+                                ErrorMessage27 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =30
+                                    Text: =Parent.Error
+                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =Parent.Width - 48
+                                    Wrap: =true
+                                    X: =24
+                                    Y: =DateValue4.Y + DateValue4.Height
+                                    ZIndex: =6
+
+                                StarVisible27 As Texto:
+                                    Align: ='TextCanvas.Align'.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =20
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =30
+                                    X: =0
+                                    Y: =DataCardKey27.Y
+                                    ZIndex: =7
+
+                            RRHHContrato_DataCard1 As typedDataCard.fluentV9TextualViewCard:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                BorderStyle: =BorderStyle.Solid
+                                DataField: ="crda0_rrhhcontratoid"
+                                Default: =ThisItem.RRHHContrato
+                                DisplayMode: =DisplayMode.View
+                                DisplayName: =DataSourceInfo([@RRHHContratos],DataSourceInfo.DisplayName,crda0_rrhhcontratoid)
+                                Fill: =RGBA(0, 0, 0, 0)
+                                Height: =70
+                                Required: =false
+                                Width: =264
+                                X: =1
+                                Y: =1
+                                ZIndex: =1
+
+                                DataCardKey28 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontColor: =RGBA(255, 255, 255, 1)
+                                    Height: =22
+                                    Text: =Parent.DisplayName
+                                    Weight: ='TextCanvas.Weight'.Semibold
+                                    Width: =Parent.Width - 48
+                                    Wrap: =false
+                                    X: =24
+                                    Y: =10
+                                    ZIndex: =1
+
+                                "DataCardValue24 As 'Entrada de texto'":
+                                    DisplayMode: =DisplayMode.View
+                                    Height: =32
+                                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                    Value: =Parent.Default
+                                    Width: =Parent.Width - 48
+                                    X: =24
+                                    Y: =DataCardKey28.Y + DataCardKey28.Height + 4
+                                    ZIndex: =2
+
+                            TipoContrato_DataCard1 As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                BorderStyle: =BorderStyle.Solid
+                                DataField: ="crda0_tipocontrato"
+                                Default: =ThisItem.TipoContrato
+                                DisplayMode: =Parent.DisplayMode
+                                DisplayName: =DataSourceInfo([@RRHHContratos],DataSourceInfo.DisplayName,crda0_tipocontrato)
+                                Fill: =RGBA(0, 0, 0, 0)
+                                Height: =70
+                                Required: =false
+                                Update: =DataCardValue25.Selected.Value
+                                Width: =264
+                                X: =0
+                                Y: =2
+                                ZIndex: =1
+
+                                DataCardKey29 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontColor: =RGBA(255, 255, 255, 1)
+                                    Height: =22
+                                    Text: =Parent.DisplayName
+                                    Weight: ='TextCanvas.Weight'.Semibold
+                                    Width: =Parent.Width - 48
+                                    Wrap: =false
+                                    X: =24
+                                    Y: =10
+                                    ZIndex: =1
+
+                                "DataCardValue25 As 'Cuadro combinado'.pcfdataset":
+                                    AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                    DefaultSelectedItems: =[Parent.Default]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Height: =32
+                                    Items: =Choices(TipoContrato)
+                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                    Width: =Parent.Width - 48
+                                    X: =24
+                                    Y: =DataCardKey29.Y + DataCardKey29.Height + 4
+                                    ZIndex: =2
+
+                                ErrorMessage28 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =30
+                                    Text: =Parent.Error
+                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =Parent.Width - 48
+                                    Wrap: =true
+                                    X: =24
+                                    Y: =DataCardValue25.Y + DataCardValue25.Height
+                                    ZIndex: =3
+
+                                StarVisible28 As Texto:
+                                    Align: ='TextCanvas.Align'.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =20
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =30
+                                    X: =0
+                                    Y: =DataCardKey29.Y
+                                    ZIndex: =4
+
+                            TipoColaborador_DataCard2 As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                BorderStyle: =BorderStyle.Solid
+                                DataField: ="crda0_tipocolaborador"
+                                Default: =ThisItem.TipoColaborador
+                                DisplayMode: =Parent.DisplayMode
+                                DisplayName: =DataSourceInfo([@RRHHContratos],DataSourceInfo.DisplayName,crda0_tipocolaborador)
+                                Fill: =RGBA(0, 0, 0, 0)
+                                Height: =70
+                                Required: =false
+                                Update: =DataCardValue26.Selected.Value
+                                Width: =264
+                                X: =1
+                                Y: =2
+                                ZIndex: =1
+
+                                DataCardKey30 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontColor: =RGBA(255, 255, 255, 1)
+                                    Height: =22
+                                    Text: =Parent.DisplayName
+                                    Weight: ='TextCanvas.Weight'.Semibold
+                                    Width: =Parent.Width - 48
+                                    Wrap: =false
+                                    X: =24
+                                    Y: =10
+                                    ZIndex: =1
+
+                                "DataCardValue26 As 'Cuadro combinado'.pcfdataset":
+                                    AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                    DefaultSelectedItems: =[Parent.Default]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Height: =32
+                                    Items: =Choices('Tipo Colaborador')
+                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                    Width: =Parent.Width - 48
+                                    X: =24
+                                    Y: =DataCardKey30.Y + DataCardKey30.Height + 4
+                                    ZIndex: =2
+
+                                ErrorMessage29 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =30
+                                    Text: =Parent.Error
+                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =Parent.Width - 48
+                                    Wrap: =true
+                                    X: =24
+                                    Y: =DataCardValue26.Y + DataCardValue26.Height
+                                    ZIndex: =3
+
+                                StarVisible29 As Texto:
+                                    Align: ='TextCanvas.Align'.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =20
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =30
+                                    X: =0
+                                    Y: =DataCardKey30.Y
+                                    ZIndex: =4
+
+                            DataCard6_1 As typedDataCard.blankCard:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                BorderStyle: =BorderStyle.Solid
+                                DisplayMode: =DisplayMode.Edit
+                                Fill: =RGBA(0, 0, 0, 0)
+                                Height: =74
+                                Width: =528
+                                X: =0
+                                Y: =3
+                                ZIndex: =1
+
+                                ButtonCanvas5_1 As Botón:
+                                    BasePaletteColor: =
+                                    DisplayMode: =DisplayMode.Edit
+                                    FontColor: =
+                                    Height: =32
+                                    Text: ="Actualizar"
+                                    Width: =96
+                                    X: =207
+                                    Y: =27
+                                    ZIndex: =1
+
+                        Form2_4 As form.PowerApps_CoreControls_Form:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            DataSource: =RRHHContratos
+                            DefaultMode: =FormMode.New
+                            Item: =Gallery2_2.Selected
+                            LayoutMinHeight: =250
+                            LayoutMinWidth: =400
+                            NumberOfColumns: =2
+                            UseFluentV9Cards: =true
+                            Visible: =IsBlank(Gallery2_2.Selected) Or ! newDeduction
+                            ZIndex: =3
+
+                            IDContrato_DataCard1 As typedDataCard.fluentV9TextualViewCard:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                BorderStyle: =BorderStyle.Solid
+                                DataField: ="crda0_name"
+                                Default: =ThisItem.IDContrato
+                                DisplayMode: =DisplayMode.View
+                                DisplayName: =DataSourceInfo([@RRHHContratos],DataSourceInfo.DisplayName,crda0_name)
+                                Fill: =RGBA(0, 0, 0, 0)
+                                Height: =70
+                                Required: =false
+                                Width: =264
+                                X: =0
+                                Y: =0
+                                ZIndex: =4
+
+                                DataCardKey31 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =22
+                                    Text: =Parent.DisplayName
+                                    Weight: ='TextCanvas.Weight'.Semibold
+                                    Width: =Parent.Width - 48
+                                    Wrap: =false
+                                    X: =24
+                                    Y: =10
+                                    ZIndex: =1
+
+                                "DataCardValue27 As 'Entrada de texto'":
+                                    DisplayMode: =DisplayMode.View
+                                    Height: =32
+                                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                    Value: =Parent.Default
+                                    Width: =Parent.Width - 48
+                                    X: =24
+                                    Y: =DataCardKey31.Y + DataCardKey31.Height + 4
+                                    ZIndex: =2
+
+                            FechaInicio_DataCard2 As typedDataCard.fluentV9DateTimeEditCard:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                BorderStyle: =BorderStyle.Solid
+                                DataField: ="crda0_fechainicio"
+                                Default: =ThisItem.FechaInicio
+                                DisplayMode: =Parent.DisplayMode
+                                DisplayName: =DataSourceInfo([@RRHHContratos],DataSourceInfo.DisplayName,crda0_fechainicio)
+                                Fill: =RGBA(0, 0, 0, 0)
+                                Height: =70
+                                Required: =false
+                                Update: =If(Not IsBlank(DateValue5.SelectedDate), DateTime(Year(DateValue5.SelectedDate), Month(DateValue5.SelectedDate), Day(DateValue5.SelectedDate), Value(HourValue5.Selected.Value), Value(MinuteValue5.Selected.Value), Second(DateValue5.SelectedDate)))
+                                Width: =264
+                                X: =1
+                                Y: =0
+                                ZIndex: =4
+
+                                DataCardKey32 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =22
+                                    Text: =Parent.DisplayName
+                                    Weight: ='TextCanvas.Weight'.Semibold
+                                    Width: =Parent.Width - 48
+                                    Wrap: =false
+                                    X: =24
+                                    Y: =10
+                                    ZIndex: =1
+
+                                "DateValue5 As 'Selector de fecha'":
+                                    AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                    DisplayMode: =Parent.DisplayMode
+                                    Height: =32
+                                    SelectedDate: =Parent.Default
+                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                    Width: =(Parent.Width - 48) / 2
+                                    X: =24
+                                    Y: =DataCardKey32.Y + DataCardKey32.Height + 4
+                                    ZIndex: =2
+
+                                HourValue5 As Desplegable.pcfdataset:
+                                    DefaultSelectedItems: =[Text(Hour(Parent.Default),"00")]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Height: =28
+                                    Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23"]
+                                    Width: =DateValue5.Width / 2 - 10
+                                    X: =DateValue5.X + DateValue5.Width + 10
+                                    Y: =DateValue5.Y + 1
+                                    ZIndex: =3
+
+                                Separator6 As Texto:
+                                    Align: ='TextCanvas.Align'.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =HourValue5.Height
+                                    Text: |-
+                                        =":"
+                                    Width: =10
+                                    X: =HourValue5.X + HourValue5.Width
+                                    Y: =HourValue5.Y
+                                    ZIndex: =4
+
+                                MinuteValue5 As Desplegable.pcfdataset:
+                                    DefaultSelectedItems: =[Text(Minute(Parent.Default),"00")]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Height: =28
+                                    Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59"]
+                                    Width: =HourValue5.Width
+                                    X: =HourValue5.X + HourValue5.Width + Separator6.Width
+                                    Y: =HourValue5.Y + 1
+                                    ZIndex: =5
+
+                                ErrorMessage30 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =30
+                                    Text: =Parent.Error
+                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =Parent.Width - 48
+                                    Wrap: =true
+                                    X: =24
+                                    Y: =DateValue5.Y + DateValue5.Height
+                                    ZIndex: =6
+
+                                StarVisible30 As Texto:
+                                    Align: ='TextCanvas.Align'.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =20
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =30
+                                    X: =0
+                                    Y: =DataCardKey32.Y
+                                    ZIndex: =7
+
+                            FechaFinalizacion_DataCard2 As typedDataCard.fluentV9DateTimeEditCard:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                BorderStyle: =BorderStyle.Solid
+                                DataField: ="crda0_fechafinalizacion"
+                                Default: =ThisItem.FechaFinalizacion
+                                DisplayMode: =Parent.DisplayMode
+                                DisplayName: =DataSourceInfo([@RRHHContratos],DataSourceInfo.DisplayName,crda0_fechafinalizacion)
+                                Fill: =RGBA(0, 0, 0, 0)
+                                Height: =70
+                                Required: =false
+                                Update: =If(Not IsBlank(DateValue6.SelectedDate), DateTime(Year(DateValue6.SelectedDate), Month(DateValue6.SelectedDate), Day(DateValue6.SelectedDate), Value(HourValue6.Selected.Value), Value(MinuteValue6.Selected.Value), Second(DateValue6.SelectedDate)))
+                                Width: =264
+                                X: =0
+                                Y: =1
+                                ZIndex: =4
+
+                                DataCardKey33 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =22
+                                    Text: =Parent.DisplayName
+                                    Weight: ='TextCanvas.Weight'.Semibold
+                                    Width: =Parent.Width - 48
+                                    Wrap: =false
+                                    X: =24
+                                    Y: =10
+                                    ZIndex: =1
+
+                                "DateValue6 As 'Selector de fecha'":
+                                    AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                    DisplayMode: =Parent.DisplayMode
+                                    Height: =32
+                                    SelectedDate: =Parent.Default
+                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                    Width: =(Parent.Width - 48) / 2
+                                    X: =24
+                                    Y: =DataCardKey33.Y + DataCardKey33.Height + 4
+                                    ZIndex: =2
+
+                                HourValue6 As Desplegable.pcfdataset:
+                                    DefaultSelectedItems: =[Text(Hour(Parent.Default),"00")]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Height: =28
+                                    Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23"]
+                                    Width: =DateValue6.Width / 2 - 10
+                                    X: =DateValue6.X + DateValue6.Width + 10
+                                    Y: =DateValue6.Y + 1
+                                    ZIndex: =3
+
+                                Separator7 As Texto:
+                                    Align: ='TextCanvas.Align'.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =HourValue6.Height
+                                    Text: |-
+                                        =":"
+                                    Width: =10
+                                    X: =HourValue6.X + HourValue6.Width
+                                    Y: =HourValue6.Y
+                                    ZIndex: =4
+
+                                MinuteValue6 As Desplegable.pcfdataset:
+                                    DefaultSelectedItems: =[Text(Minute(Parent.Default),"00")]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Height: =28
+                                    Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59"]
+                                    Width: =HourValue6.Width
+                                    X: =HourValue6.X + HourValue6.Width + Separator7.Width
+                                    Y: =HourValue6.Y + 1
+                                    ZIndex: =5
+
+                                ErrorMessage31 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =30
+                                    Text: =Parent.Error
+                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =Parent.Width - 48
+                                    Wrap: =true
+                                    X: =24
+                                    Y: =DateValue6.Y + DateValue6.Height
+                                    ZIndex: =6
+
+                                StarVisible31 As Texto:
+                                    Align: ='TextCanvas.Align'.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =20
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =30
+                                    X: =0
+                                    Y: =DataCardKey33.Y
+                                    ZIndex: =7
+
+                            TipoColaborador_DataCard3 As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                BorderStyle: =BorderStyle.Solid
+                                DataField: ="crda0_tipocolaborador"
+                                Default: =ThisItem.TipoColaborador
+                                DisplayMode: =Parent.DisplayMode
+                                DisplayName: =DataSourceInfo([@RRHHContratos],DataSourceInfo.DisplayName,crda0_tipocolaborador)
+                                Fill: =RGBA(0, 0, 0, 0)
+                                Height: =70
+                                Required: =false
+                                Update: =DataCardValue28.Selected.Value
+                                Width: =264
+                                X: =1
+                                Y: =1
+                                ZIndex: =4
+
+                                DataCardKey34 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =22
+                                    Text: =Parent.DisplayName
+                                    Weight: ='TextCanvas.Weight'.Semibold
+                                    Width: =Parent.Width - 48
+                                    Wrap: =false
+                                    X: =24
+                                    Y: =10
+                                    ZIndex: =1
+
+                                "DataCardValue28 As 'Cuadro combinado'.pcfdataset":
+                                    AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                    DefaultSelectedItems: =[Parent.Default]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Height: =32
+                                    Items: =Choices('Tipo Colaborador')
+                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                    Width: =Parent.Width - 48
+                                    X: =24
+                                    Y: =DataCardKey34.Y + DataCardKey34.Height + 4
+                                    ZIndex: =2
+
+                                ErrorMessage32 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =30
+                                    Text: =Parent.Error
+                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =Parent.Width - 48
+                                    Wrap: =true
+                                    X: =24
+                                    Y: =DataCardValue28.Y + DataCardValue28.Height
+                                    ZIndex: =3
+
+                                StarVisible32 As Texto:
+                                    Align: ='TextCanvas.Align'.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =20
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =30
+                                    X: =0
+                                    Y: =DataCardKey34.Y
+                                    ZIndex: =4
+
+                            TipoContrato_DataCard2 As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                BorderStyle: =BorderStyle.Solid
+                                DataField: ="crda0_tipocontrato"
+                                Default: =ThisItem.TipoContrato
+                                DisplayMode: =Parent.DisplayMode
+                                DisplayName: =DataSourceInfo([@RRHHContratos],DataSourceInfo.DisplayName,crda0_tipocontrato)
+                                Fill: =RGBA(0, 0, 0, 0)
+                                Height: =70
+                                Required: =false
+                                Update: =DataCardValue29.Selected.Value
+                                Width: =264
+                                X: =0
+                                Y: =2
+                                ZIndex: =4
+
+                                DataCardKey35 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =22
+                                    Text: =Parent.DisplayName
+                                    Weight: ='TextCanvas.Weight'.Semibold
+                                    Width: =Parent.Width - 48
+                                    Wrap: =false
+                                    X: =24
+                                    Y: =10
+                                    ZIndex: =1
+
+                                "DataCardValue29 As 'Cuadro combinado'.pcfdataset":
+                                    AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                    DefaultSelectedItems: =[Parent.Default]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Height: =32
+                                    Items: =Choices(TipoContrato)
+                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                    Width: =Parent.Width - 48
+                                    X: =24
+                                    Y: =DataCardKey35.Y + DataCardKey35.Height + 4
+                                    ZIndex: =2
+
+                                ErrorMessage33 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =30
+                                    Text: =Parent.Error
+                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =Parent.Width - 48
+                                    Wrap: =true
+                                    X: =24
+                                    Y: =DataCardValue29.Y + DataCardValue29.Height
+                                    ZIndex: =3
+
+                                StarVisible33 As Texto:
+                                    Align: ='TextCanvas.Align'.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =20
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =30
+                                    X: =0
+                                    Y: =DataCardKey35.Y
+                                    ZIndex: =4
+
+                            Asignado_DataCard2 As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                BorderStyle: =BorderStyle.Solid
+                                DataField: ="crda0_asignado"
+                                Default: =ThisItem.Asignado
+                                DisplayMode: =Parent.DisplayMode
+                                DisplayName: =DataSourceInfo([@RRHHContratos],DataSourceInfo.DisplayName,crda0_asignado)
+                                Fill: =RGBA(0, 0, 0, 0)
+                                Height: =70
+                                Required: =false
+                                Update: =DataCardValue30.Selected.Value
+                                Width: =264
+                                X: =1
+                                Y: =2
+                                ZIndex: =4
+
+                                DataCardKey36 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =22
+                                    Text: =Parent.DisplayName
+                                    Weight: ='TextCanvas.Weight'.Semibold
+                                    Width: =Parent.Width - 48
+                                    Wrap: =false
+                                    X: =24
+                                    Y: =10
+                                    ZIndex: =1
+
+                                "DataCardValue30 As 'Cuadro combinado'.pcfdataset":
+                                    AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                    DefaultSelectedItems: =[Parent.Default]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Height: =32
+                                    Items: =Choices(Asignado)
+                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                    Width: =Parent.Width - 48
+                                    X: =24
+                                    Y: =DataCardKey36.Y + DataCardKey36.Height + 4
+                                    ZIndex: =2
+
+                                ErrorMessage34 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =30
+                                    Text: =Parent.Error
+                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =Parent.Width - 48
+                                    Wrap: =true
+                                    X: =24
+                                    Y: =DataCardValue30.Y + DataCardValue30.Height
+                                    ZIndex: =3
+
+                                StarVisible34 As Texto:
+                                    Align: ='TextCanvas.Align'.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =20
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =30
+                                    X: =0
+                                    Y: =DataCardKey36.Y
+                                    ZIndex: =4
+
+                            RRHHcolaborador_DataCard1 As typedDataCard.fluentV9ComboBoxEditCard:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                BorderStyle: =BorderStyle.Solid
+                                DataField: ="crda0_RRHHcolaborador"
+                                Default: =ThisItem.RRHHcolaborador
+                                DisplayMode: =Parent.DisplayMode
+                                DisplayName: =DataSourceInfo([@RRHHContratos],DataSourceInfo.DisplayName,crda0_RRHHcolaborador)
+                                Fill: =RGBA(0, 0, 0, 0)
+                                Height: =70
+                                Required: =false
+                                Update: =DataCardValue31.Selected
+                                Width: =264
+                                X: =0
+                                Y: =3
+                                ZIndex: =4
+
+                                DataCardKey37 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =22
+                                    Text: =Parent.DisplayName
+                                    Weight: ='TextCanvas.Weight'.Semibold
+                                    Width: =Parent.Width - 48
+                                    Wrap: =false
+                                    X: =24
+                                    Y: =10
+                                    ZIndex: =1
+
+                                "DataCardValue31 As 'Cuadro combinado'.pcfdataset":
+                                    AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                    DefaultSelectedItems: =[Parent.Default]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Height: =32
+                                    Items: =Choices([@RRHHContratos].crda0_RRHHcolaborador)
+                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                    Width: =Parent.Width - 48
+                                    X: =24
+                                    Y: =DataCardKey37.Y + DataCardKey37.Height + 4
+                                    ZIndex: =2
+
+                                    idcolaborador1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="idcolaborador"
+                                        FieldName: ="crda0_idcolaborador"
+                                        FieldType: ="s"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =1
+                                        ZIndex: =0
+
+                                    Nombre3 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="Nombre"
+                                        FieldName: ="crda0_nombre"
+                                        FieldType: ="s"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =2
+                                        ZIndex: =14
+
+                                    Apellido1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="Apellido"
+                                        FieldName: ="crda0_apellido"
+                                        FieldType: ="s"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =3
+                                        ZIndex: =15
+
+                                    NIdentificacion1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="NIdentificacion"
+                                        FieldName: ="crda0_nidentificacion"
+                                        FieldType: ="s"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =4
+                                        ZIndex: =16
+
+                                    Nacionalidad1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="Nacionalidad"
+                                        FieldName: ="crda0_nacionalidad"
+                                        FieldType: ="s"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =5
+                                        ZIndex: =17
+
+                                    Direccion3 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="Direccion"
+                                        FieldName: ="crda0_direccion"
+                                        FieldType: ="s"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =6
+                                        ZIndex: =18
+
+                                    CorreoPersonal1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="CorreoPersonal"
+                                        FieldName: ="crda0_correopersonal"
+                                        FieldType: ="s"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =7
+                                        ZIndex: =19
+
+                                    Celular1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="Celular"
+                                        FieldName: ="crda0_celular"
+                                        FieldType: ="s"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =8
+                                        ZIndex: =20
+
+                                    Cargo1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="Cargo"
+                                        FieldName: ="crda0_cargo"
+                                        FieldType: ="s"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =9
+                                        ZIndex: =21
+
+                                    SalarioBruto1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="SalarioBruto"
+                                        FieldName: ="crda0_salariobruto"
+                                        FieldType: ="$"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =10
+                                        ZIndex: =22
+
+                                    "'SalarioBruto (base)1' As pcfDataField.textualColumn":
+                                        FieldDisplayName: ="SalarioBruto (base)"
+                                        FieldName: ="crda0_salariobruto_base"
+                                        FieldType: ="$"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =11
+                                        ZIndex: =23
+
+                                    MontoLetras1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="MontoLetras"
+                                        FieldName: ="crda0_montoletras"
+                                        FieldType: ="s"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =12
+                                        ZIndex: =24
+
+                                    TipoSangre1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="TipoSangre"
+                                        FieldName: ="crda0_tiposangre"
+                                        FieldType: ="s"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =13
+                                        ZIndex: =25
+
+                                    Banco1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="Banco"
+                                        FieldName: ="crda0_banco"
+                                        FieldType: ="l"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =16
+                                        ZIndex: =26
+
+                                    TipoCuenta1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="TipoCuenta"
+                                        FieldName: ="crda0_tipocuenta"
+                                        FieldType: ="l"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =18
+                                        ZIndex: =27
+
+                                    NumeroCuenta1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="NumeroCuenta"
+                                        FieldName: ="crda0_numerocuenta"
+                                        FieldType: ="s"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =20
+                                        ZIndex: =28
+
+                                    GastoRepresentacion1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="GastoRepresentacion"
+                                        FieldName: ="crda0_gastorepresentacion"
+                                        FieldType: ="$"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =21
+                                        ZIndex: =29
+
+                                    "'GastoRepresentacion (base)1' As pcfDataField.textualColumn":
+                                        FieldDisplayName: ="GastoRepresentacion (base)"
+                                        FieldName: ="crda0_gastorepresentacion_base"
+                                        FieldType: ="$"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =22
+                                        ZIndex: =30
+
+                                    FechaNacimiento1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="FechaNacimiento"
+                                        FieldName: ="crda0_fechanacimiento"
+                                        FieldType: ="d"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =23
+                                        ZIndex: =31
+
+                                    SS1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="SS"
+                                        FieldName: ="crda0_ss"
+                                        FieldType: ="$"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =24
+                                        ZIndex: =32
+
+                                    "'SS (base)1' As pcfDataField.textualColumn":
+                                        FieldDisplayName: ="SS (base)"
+                                        FieldName: ="crda0_ss_base"
+                                        FieldType: ="$"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =25
+                                        ZIndex: =33
+
+                                    SE1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="SE"
+                                        FieldName: ="crda0_se"
+                                        FieldType: ="n"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =26
+                                        ZIndex: =34
+
+                                    TipoColaborador1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="TipoColaborador"
+                                        FieldName: ="crda0_tipocolaborador"
+                                        FieldType: ="l"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =27
+                                        ZIndex: =35
+
+                                    ISR1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="ISR"
+                                        FieldName: ="crda0_isr"
+                                        FieldType: ="n"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =29
+                                        ZIndex: =36
+
+                                    SalarioAnual1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="SalarioAnual"
+                                        FieldName: ="crda0_salarioanual"
+                                        FieldType: ="n"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =30
+                                        ZIndex: =37
+
+                                    ISRAnual1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="ISRAnual"
+                                        FieldName: ="crda0_isranual"
+                                        FieldType: ="n"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =31
+                                        ZIndex: =38
+
+                                    Descuento1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="Descuento"
+                                        FieldName: ="crda0_descuento"
+                                        FieldType: ="$"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =32
+                                        ZIndex: =39
+
+                                    "'Descuento (base)1' As pcfDataField.textualColumn":
+                                        FieldDisplayName: ="Descuento (base)"
+                                        FieldName: ="crda0_descuento_base"
+                                        FieldType: ="$"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =33
+                                        ZIndex: =40
+
+                                    "'Descuento (fecha de última actualización)1' As pcfDataField.textualColumn":
+                                        FieldDisplayName: ="Descuento (fecha de última actualización)"
+                                        FieldName: ="crda0_descuento_date"
+                                        FieldType: ="d"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =34
+                                        ZIndex: =41
+
+                                    "'Descuento (estado)1' As pcfDataField.textualColumn":
+                                        FieldDisplayName: ="Descuento (estado)"
+                                        FieldName: ="crda0_descuento_state"
+                                        FieldType: ="n"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =35
+                                        ZIndex: =42
+
+                                    SalarioNeto1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="SalarioNeto"
+                                        FieldName: ="crda0_salarioneto"
+                                        FieldType: ="$"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =36
+                                        ZIndex: =43
+
+                                    "'SalarioNeto (base)1' As pcfDataField.textualColumn":
+                                        FieldDisplayName: ="SalarioNeto (base)"
+                                        FieldName: ="crda0_salarioneto_base"
+                                        FieldType: ="$"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =37
+                                        ZIndex: =44
+
+                                    SalarioBrutoMensual1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="SalarioBrutoMensual"
+                                        FieldName: ="crda0_salariobrutomensual"
+                                        FieldType: ="n"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =38
+                                        ZIndex: =45
+
+                                    GRMensual1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="GRMensual"
+                                        FieldName: ="crda0_grmensual"
+                                        FieldType: ="n"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =39
+                                        ZIndex: =46
+
+                                    SalarioNetoMensual1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="SalarioNetoMensual"
+                                        FieldName: ="crda0_salarionetomensual"
+                                        FieldType: ="n"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =40
+                                        ZIndex: =47
+
+                                    ContratoActivo1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="ContratoActivo"
+                                        FieldName: ="crda0_contratoactivo"
+                                        FieldType: ="n"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =41
+                                        ZIndex: =48
+
+                                    "'ContratoActivo (fecha de última actualización)1' As pcfDataField.textualColumn":
+                                        FieldDisplayName: ="ContratoActivo (fecha de última actualización)"
+                                        FieldName: ="crda0_contratoactivo_date"
+                                        FieldType: ="d"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =42
+                                        ZIndex: =49
+
+                                    "'ContratoActivo (estado)1' As pcfDataField.textualColumn":
+                                        FieldDisplayName: ="ContratoActivo (estado)"
+                                        FieldName: ="crda0_contratoactivo_state"
+                                        FieldType: ="n"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =43
+                                        ZIndex: =50
+
+                                    Edad1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="Edad"
+                                        FieldName: ="crda0_edad"
+                                        FieldType: ="n"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =44
+                                        ZIndex: =51
+
+                                    ColaboradorConContrato1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="ColaboradorConContrato"
+                                        FieldName: ="crda0_colaboradorconcontrato"
+                                        FieldType: ="n"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =45
+                                        ZIndex: =52
+
+                                    "'ColaboradorConContrato (fecha de última actualización)1' As pcfDataField.textualColumn":
+                                        FieldDisplayName: ="ColaboradorConContrato (fecha de última actualización)"
+                                        FieldName: ="crda0_colaboradorconcontrato_date"
+                                        FieldType: ="d"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =46
+                                        ZIndex: =53
+
+                                    "'ColaboradorConContrato (estado)1' As pcfDataField.textualColumn":
+                                        FieldDisplayName: ="ColaboradorConContrato (estado)"
+                                        FieldName: ="crda0_colaboradorconcontrato_state"
+                                        FieldType: ="n"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =47
+                                        ZIndex: =54
+
+                                    ColaboradorActivo1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="ColaboradorActivo"
+                                        FieldName: ="crda0_colaboradoractivo"
+                                        FieldType: ="l"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =48
+                                        ZIndex: =55
+
+                                    FechaActual1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="FechaActual"
+                                        FieldName: ="crda0_fechaactual"
+                                        FieldType: ="d"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =50
+                                        ZIndex: =56
+
+                                ErrorMessage35 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =30
+                                    Text: =Parent.Error
+                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =Parent.Width - 48
+                                    Wrap: =true
+                                    X: =24
+                                    Y: =DataCardValue31.Y + DataCardValue31.Height
+                                    ZIndex: =3
+
+                                StarVisible35 As Texto:
+                                    Align: ='TextCanvas.Align'.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =20
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =30
+                                    X: =0
+                                    Y: =DataCardKey37.Y
+                                    ZIndex: =4
+
+                            ContratoEstatusIndefinido_DataCard1 As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                BorderStyle: =BorderStyle.Solid
+                                DataField: ="crda0_contratoestatus"
+                                Default: =ThisItem.ContratoEstatusIndefinido
+                                DisplayMode: =Parent.DisplayMode
+                                DisplayName: =DataSourceInfo([@RRHHContratos],DataSourceInfo.DisplayName,crda0_contratoestatus)
+                                Fill: =RGBA(0, 0, 0, 0)
+                                Height: =70
+                                Required: =false
+                                Update: =DataCardValue32.Selected.Value
+                                Width: =264
+                                X: =1
+                                Y: =3
+                                ZIndex: =4
+
+                                DataCardKey38 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =22
+                                    Text: =Parent.DisplayName
+                                    Weight: ='TextCanvas.Weight'.Semibold
+                                    Width: =Parent.Width - 48
+                                    Wrap: =false
+                                    X: =24
+                                    Y: =10
+                                    ZIndex: =1
+
+                                "DataCardValue32 As 'Cuadro combinado'.pcfdataset":
+                                    AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                    DefaultSelectedItems: =[Parent.Default]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Height: =32
+                                    Items: =Choices('ContratoEstatusIndefinido (RRHHContratos)')
+                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                    Width: =Parent.Width - 48
+                                    X: =24
+                                    Y: =DataCardKey38.Y + DataCardKey38.Height + 4
+                                    ZIndex: =2
+
+                                ErrorMessage36 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =30
+                                    Text: =Parent.Error
+                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =Parent.Width - 48
+                                    Wrap: =true
+                                    X: =24
+                                    Y: =DataCardValue32.Y + DataCardValue32.Height
+                                    ZIndex: =3
+
+                                StarVisible36 As Texto:
+                                    Align: ='TextCanvas.Align'.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =20
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =30
+                                    X: =0
+                                    Y: =DataCardKey38.Y
+                                    ZIndex: =4
+
+                            FechaActual_DataCard1 As typedDataCard.fluentV9TextualViewCard:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                BorderStyle: =BorderStyle.Solid
+                                DataField: ="crda0_fechaactual"
+                                Default: =ThisItem.FechaActual
+                                DisplayMode: =DisplayMode.View
+                                DisplayName: =DataSourceInfo([@RRHHContratos],DataSourceInfo.DisplayName,crda0_fechaactual)
+                                Fill: =RGBA(0, 0, 0, 0)
+                                Height: =70
+                                Required: =false
+                                Width: =264
+                                X: =0
+                                Y: =4
+                                ZIndex: =4
+
+                                DataCardKey39 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =22
+                                    Text: =Parent.DisplayName
+                                    Weight: ='TextCanvas.Weight'.Semibold
+                                    Width: =Parent.Width - 48
+                                    Wrap: =false
+                                    X: =24
+                                    Y: =10
+                                    ZIndex: =1
+
+                                "DataCardValue33 As 'Entrada de texto'":
+                                    DisplayMode: =DisplayMode.View
+                                    Height: =32
+                                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                    Value: =Parent.Default
+                                    Width: =Parent.Width - 48
+                                    X: =24
+                                    Y: =DataCardKey39.Y + DataCardKey39.Height + 4
+                                    ZIndex: =2
+
+                            ContratoEstatusDefinido_DataCard1 As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                BorderStyle: =BorderStyle.Solid
+                                DataField: ="crda0_contratoestatusdefinido"
+                                Default: =ThisItem.ContratoEstatusDefinido
+                                DisplayMode: =Parent.DisplayMode
+                                DisplayName: =DataSourceInfo([@RRHHContratos],DataSourceInfo.DisplayName,crda0_contratoestatusdefinido)
+                                Fill: =RGBA(0, 0, 0, 0)
+                                Height: =70
+                                Required: =false
+                                Update: =DataCardValue34.Selected.Value
+                                Width: =264
+                                X: =1
+                                Y: =4
+                                ZIndex: =4
+
+                                DataCardKey40 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =22
+                                    Text: =Parent.DisplayName
+                                    Weight: ='TextCanvas.Weight'.Semibold
+                                    Width: =Parent.Width - 48
+                                    Wrap: =false
+                                    X: =24
+                                    Y: =10
+                                    ZIndex: =1
+
+                                "DataCardValue34 As 'Cuadro combinado'.pcfdataset":
+                                    AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                    DefaultSelectedItems: =[Parent.Default]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Height: =32
+                                    Items: =Choices('ContratoEstatusDefinido (RRHHContratos)')
+                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                    Width: =Parent.Width - 48
+                                    X: =24
+                                    Y: =DataCardKey40.Y + DataCardKey40.Height + 4
+                                    ZIndex: =2
+
+                                ErrorMessage37 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =30
+                                    Text: =Parent.Error
+                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =Parent.Width - 48
+                                    Wrap: =true
+                                    X: =24
+                                    Y: =DataCardValue34.Y + DataCardValue34.Height
+                                    ZIndex: =3
+
+                                StarVisible37 As Texto:
+                                    Align: ='TextCanvas.Align'.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =20
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =30
+                                    X: =0
+                                    Y: =DataCardKey40.Y
+                                    ZIndex: =4
+
+                            ContratosinfechaFinalizacion_DataCard1 As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                BorderStyle: =BorderStyle.Solid
+                                DataField: ="crda0_contratosinfechafinalizacion"
+                                Default: =ThisItem.ContratosinfechaFinalizacion
+                                DisplayMode: =Parent.DisplayMode
+                                DisplayName: =DataSourceInfo([@RRHHContratos],DataSourceInfo.DisplayName,crda0_contratosinfechafinalizacion)
+                                Fill: =RGBA(0, 0, 0, 0)
+                                Height: =70
+                                Required: =false
+                                Update: =DataCardValue35.Selected.Value
+                                Width: =264
+                                X: =0
+                                Y: =5
+                                ZIndex: =4
+
+                                DataCardKey41 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =22
+                                    Text: =Parent.DisplayName
+                                    Weight: ='TextCanvas.Weight'.Semibold
+                                    Width: =Parent.Width - 48
+                                    Wrap: =false
+                                    X: =24
+                                    Y: =10
+                                    ZIndex: =1
+
+                                "DataCardValue35 As 'Cuadro combinado'.pcfdataset":
+                                    AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                    DefaultSelectedItems: =[Parent.Default]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Height: =32
+                                    Items: =Choices('ContratosinfechaFinalizacion (RRHHContratos)')
+                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                    Width: =Parent.Width - 48
+                                    X: =24
+                                    Y: =DataCardKey41.Y + DataCardKey41.Height + 4
+                                    ZIndex: =2
+
+                                ErrorMessage38 As Texto:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =30
+                                    Text: =Parent.Error
+                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =Parent.Width - 48
+                                    Wrap: =true
+                                    X: =24
+                                    Y: =DataCardValue35.Y + DataCardValue35.Height
+                                    ZIndex: =3
+
+                                StarVisible38 As Texto:
+                                    Align: ='TextCanvas.Align'.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =20
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =30
+                                    X: =0
+                                    Y: =DataCardKey41.Y
+                                    ZIndex: =4
 

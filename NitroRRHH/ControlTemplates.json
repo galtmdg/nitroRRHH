@@ -286,6 +286,21 @@
     "TemplateDisplayName": "Selector de fecha",
     "Version": "0.0.20"
   },
+  "Tabla": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerAppsOneGrid",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "PowerAppsOneGrid",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "Tabla",
+    "Version": "1.0.198"
+  },
   "Texto": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
