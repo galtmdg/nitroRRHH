@@ -96,6 +96,8 @@
 
                     planillaTitleText_1 As Texto:
                         AutoHeight: =false
+                        BorderColor: =""
+                        BorderStyle: =""
                         DisplayMode: =DisplayMode.Edit
                         Font: =Font.'Lato Black'
                         FontColor: =RGBA(255, 255, 255, 0)

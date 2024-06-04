@@ -100,6 +100,8 @@
                     planillaTitleText_4 As Texto:
                         AlignInContainer: =AlignInContainer.Center
                         AutoHeight: =false
+                        BorderColor: =""
+                        BorderStyle: =""
                         DisplayMode: =DisplayMode.Edit
                         FillPortions: =1
                         Font: =Font.'Lato Black'
@@ -117,11 +119,18 @@
 
                     DropdownCanvas1_1 As Desplegable.pcfdataset:
                         AlignInContainer: =AlignInContainer.Center
+                        Appearance: ="FilledDarker"
+                        BorderColor: =""
+                        BorderStyle: =""
+                        DisabledBorderColor: =""
                         DisplayMode: =DisplayMode.Edit
+                        FocusedBorderColor: =""
                         Height: =32
+                        HoverBorderColor: =""
                         Items: =RRHHEmpresas
                         LayoutMinHeight: =32
                         LayoutMinWidth: =320
+                        PressedBorderColor: =""
                         Width: =320
                         X: =0
                         Y: =0

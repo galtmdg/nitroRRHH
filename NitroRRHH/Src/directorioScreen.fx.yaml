@@ -100,6 +100,8 @@
                     planillaTitleText As Texto:
                         AlignInContainer: =AlignInContainer.Center
                         AutoHeight: =false
+                        BorderColor: =""
+                        BorderStyle: =""
                         DisplayMode: =DisplayMode.Edit
                         FillPortions: =1
                         Font: =Font.'Lato Black'
@@ -117,11 +119,18 @@
 
                     DropdownCanvas1 As Desplegable.pcfdataset:
                         AlignInContainer: =AlignInContainer.Center
+                        Appearance: ="FilledDarker"
+                        BorderColor: =""
+                        BorderStyle: =""
+                        DisabledBorderColor: =""
                         DisplayMode: =DisplayMode.Edit
+                        FocusedBorderColor: =""
                         Height: =32
+                        HoverBorderColor: =""
                         Items: =RRHHEmpresas
                         LayoutMinHeight: =32
                         LayoutMinWidth: =320
+                        PressedBorderColor: =""
                         Width: =320
                         X: =0
                         Y: =0
@@ -208,6 +217,8 @@
                         ZIndex: =1
 
                         TextCanvas2 As Texto:
+                            BorderColor: =""
+                            BorderStyle: =""
                             DisplayMode: =DisplayMode.Edit
                             FontColor: =RGBA(255, 255, 255, 1)
                             Height: =32
@@ -219,6 +230,8 @@
                             ZIndex: =1
 
                         TextCanvas2_1 As Texto:
+                            BorderColor: =""
+                            BorderStyle: =""
                             DisplayMode: =DisplayMode.Edit
                             FontColor: =RGBA(255, 255, 255, 1)
                             Height: =32
@@ -230,6 +243,8 @@
                             ZIndex: =2
 
                         TextCanvas2_3 As Texto:
+                            BorderColor: =""
+                            BorderStyle: =""
                             DisplayMode: =DisplayMode.Edit
                             FontColor: =RGBA(255, 255, 255, 1)
                             Height: =32
