@@ -157,11 +157,31 @@
                     LayoutMinHeight: =50
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
+                    PaddingRight: =20
                     RadiusBottomLeft: =4
                     RadiusBottomRight: =4
                     RadiusTopLeft: =4
                     RadiusTopRight: =4
                     ZIndex: =2
+
+                    Rectangle1 As rectangle:
+                        AlignInContainer: =AlignInContainer.Center
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Fill: =RGBA(45, 49, 66, 1)
+                        FillPortions: =1
+                        ZIndex: =1
+
+                    ButtonCanvas6 As Botón:
+                        AlignInContainer: =AlignInContainer.Center
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =32
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =96
+                        Text: ="Nuevo"
+                        Width: =96
+                        X: =0
+                        Y: =0
+                        ZIndex: =2
 
                 Container13_1 As groupContainer.horizontalAutoLayoutContainer:
                     FillPortions: =0.5
