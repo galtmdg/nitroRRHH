@@ -136,14 +136,6 @@
                         Y: =0
                         ZIndex: =3
 
-                        IDEmpresa2 As pcfDataField.textualColumn:
-                            FieldDisplayName: ="IDEmpresa"
-                            FieldName: ="crda0_name"
-                            FieldType: ="s"
-                            FieldVariantName: ="textualColumn"
-                            Order: =1
-                            ZIndex: =7
-
                         Nombre2 As pcfDataField.textualColumn:
                             FieldDisplayName: ="Nombre"
                             FieldName: ="crda0_nombre"
@@ -152,37 +144,13 @@
                             Order: =2
                             ZIndex: =8
 
-                        Direccion2 As pcfDataField.textualColumn:
-                            FieldDisplayName: ="Direccion"
-                            FieldName: ="crda0_direccion"
+                        IDEmpresa2 As pcfDataField.textualColumn:
+                            FieldDisplayName: ="IDEmpresa"
+                            FieldName: ="crda0_name"
                             FieldType: ="s"
                             FieldVariantName: ="textualColumn"
-                            Order: =3
-                            ZIndex: =9
-
-                        Telefono2 As pcfDataField.textualColumn:
-                            FieldDisplayName: ="Telefono"
-                            FieldName: ="crda0_telefono"
-                            FieldType: ="s"
-                            FieldVariantName: ="textualColumn"
-                            Order: =4
+                            Order: =2
                             ZIndex: =10
-
-                        Correo2 As pcfDataField.textualColumn:
-                            FieldDisplayName: ="Correo"
-                            FieldName: ="crda0_correo"
-                            FieldType: ="s"
-                            FieldVariantName: ="textualColumn"
-                            Order: =5
-                            ZIndex: =11
-
-                        RUC2 As pcfDataField.textualColumn:
-                            FieldDisplayName: ="RUC"
-                            FieldName: ="crda0_ruc"
-                            FieldType: ="s"
-                            FieldVariantName: ="textualColumn"
-                            Order: =6
-                            ZIndex: =12
 
                 Container13 As groupContainer.horizontalAutoLayoutContainer:
                     FillPortions: =0.5
@@ -298,7 +266,7 @@
                             VerticalAlign: =VerticalAlign.Top
                             Width: =280
                             X: =96
-                            Y: =59
+                            Y: =19
                             ZIndex: =2
 
                         Image9 As image:
@@ -314,7 +282,6 @@
                             RadiusTopRight: =90
                             Width: =60
                             X: =10
-                            Y: =32
                             ZIndex: =3
 
                         Separator3 As rectangle:
@@ -344,8 +311,8 @@
                             Icon: =Icon.OpenInNewWindow
                             OnSelect: =Select(Parent);Navigate(detallesPlanillaScreen,ScreenTransition.Fade)
                             Width: =24
-                            X: =934
-                            Y: =17
+                            X: =933
+                            Y: =10
                             ZIndex: =6
 
                         Circle1_1 As circle:
@@ -355,7 +322,7 @@
                             OnSelect: =Select(Parent)
                             Width: =10
                             X: =76
-                            Y: =62
+                            Y: =22
                             ZIndex: =7
 
                         Body3_1 As label:
@@ -374,12 +341,19 @@
                             VerticalAlign: =VerticalAlign.Top
                             Width: =280
                             X: =558
-                            Y: =62
+                            Y: =12
                             ZIndex: =8
 
-                    previewPlanilla_1 As previewPlanilla:
-                        LayoutMinHeight: =640
-                        LayoutMinWidth: =640
-                        Visible: =false
-                        ZIndex: =2
+                        Icon3 As icon.View:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =App.Theme.Colors.Lighter80
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledColor: =RGBA(244, 244, 244, 1)
+                            Height: =32
+                            Icon: =Icon.View
+                            OnSelect: =Select(Parent)
+                            Width: =24
+                            X: =974
+                            Y: =10
+                            ZIndex: =9
 

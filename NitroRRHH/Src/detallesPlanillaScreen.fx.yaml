@@ -148,7 +148,7 @@
                         FillPortions: =1
                         FontColor: =RGBA(255, 255, 255, 1)
                         Height: =55
-                        Items: =["General", "Deducciones", "Beneficios","Contratos"]
+                        Items: =["General", "Deducciones", "Beneficios","Contratos",]
                         LayoutMinHeight: =55
                         LayoutMinWidth: =450
                         Width: =280
@@ -4082,18 +4082,23 @@
                                 BorderStyle: =BorderStyle.Solid
                                 DisplayMode: =DisplayMode.Edit
                                 Fill: =RGBA(0, 0, 0, 0)
-                                Height: =70
+                                Height: =46
                                 Width: =528
                                 X: =0
                                 Y: =0
                                 ZIndex: =1
 
                                 TextCanvas3 As Texto:
+                                    Align: ='TextCanvas.Align'.Center
                                     DisplayMode: =DisplayMode.Edit
-                                    Height: =32
-                                    Width: =96
-                                    X: =40
-                                    Y: =40
+                                    FontColor: =RGBA(255, 255, 255, 1)
+                                    Height: =42
+                                    Size: =20
+                                    Text: ="Nuevo contrato"
+                                    Weight: ='TextCanvas.Weight'.Bold
+                                    Width: =272
+                                    X: =150
+                                    Y: =0
                                     ZIndex: =1
 
                             IDContrato_DataCard1 As typedDataCard.fluentV9TextualViewCard:
