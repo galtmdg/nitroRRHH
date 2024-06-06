@@ -122,6 +122,8 @@
                         Appearance: ="FilledDarker"
                         BorderColor: =""
                         BorderStyle: =""
+                        DefaultSelectedItems: |-
+                            ={Value: IDEmpresa2.FieldName}
                         DisabledBorderColor: =""
                         DisplayMode: =DisplayMode.Edit
                         FocusedBorderColor: =""
@@ -178,6 +180,7 @@
                         DisabledColor: =RGBA(244, 244, 244, 1)
                         Height: =40
                         Icon: =Icon.AddUser
+                        OnSelect: =Set(newWorker, true)
                         Width: =40
                         ZIndex: =2
 
@@ -383,6 +386,7 @@
         RadiusBottomRight: =4
         RadiusTopLeft: =4
         RadiusTopRight: =4
+        Visible: =newWorker
         Width: =Parent.Width
         ZIndex: =2
 
@@ -1287,6 +1291,37 @@
                     X: =0
                     Y: =DataCardKey58.Y
                     ZIndex: =4
+
+            DataCard8 As typedDataCard.blankCard:
+                BorderColor: =App.Theme.Colors.Darker40
+                BorderStyle: =BorderStyle.Solid
+                DisplayMode: =DisplayMode.Edit
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =120
+                Width: =758
+                X: =0
+                Y: =9
+                ZIndex: =1
+
+                ButtonCanvas7 As Botón:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    OnSelect: =SubmitForm(Form3)
+                    Text: ="Guardar"
+                    Width: =96
+                    X: =412
+                    Y: =40
+                    ZIndex: =2
+
+                ButtonCanvas8 As Botón:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    OnSelect: =Set(newWorker, false)
+                    Text: ="Cancelar"
+                    Width: =96
+                    X: =256
+                    Y: =40
+                    ZIndex: =3
 
             idcolaborador_DataCard1 As typedDataCard.fluentV9TextualViewCard:
                 BorderColor: =App.Theme.Colors.Darker40
