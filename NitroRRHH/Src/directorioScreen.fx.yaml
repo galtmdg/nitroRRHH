@@ -375,3 +375,990 @@
                             Y: =10
                             ZIndex: =9
 
+    Container16 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(214, 221, 224, 0.59)
+        Height: =Parent.Height
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width
+        ZIndex: =2
+
+        Form3 As form.PowerApps_CoreControls_Form:
+            BorderColor: =App.Theme.Colors.Darker40
+            DataSource: =RRHHcolaboradores
+            DefaultMode: =FormMode.New
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =Parent.Height / 1.2
+            NumberOfColumns: =2
+            UseFluentV9Cards: =true
+            Width: =Parent.Width / 1.8
+            X: =Parent.X + ((Parent.Width - Form3.Width)/2)
+            Y: =39
+            ZIndex: =1
+
+            Apellido_DataCard2 As typedDataCard.fluentV9TextualEditCard:
+                BorderColor: =App.Theme.Colors.Darker40
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="crda0_apellido"
+                Default: =ThisItem.Apellido
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@RRHHcolaboradores],DataSourceInfo.DisplayName,crda0_apellido)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =70
+                MaxLength: =DataSourceInfo([@RRHHcolaboradores], DataSourceInfo.MaxLength, crda0_apellido)
+                Required: =false
+                Update: =DataCardValue38.Value
+                Width: =379
+                X: =0
+                Y: =1
+                ZIndex: =1
+
+                DataCardKey44 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =22
+                    Text: =Parent.DisplayName
+                    Weight: ='TextCanvas.Weight'.Semibold
+                    Width: =Parent.Width - 48
+                    Wrap: =false
+                    X: =24
+                    Y: =10
+                    ZIndex: =1
+
+                "DataCardValue38 As 'Entrada de texto'":
+                    AccessibleLabel: =Parent.DisplayName
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =32
+                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                    Required: =Parent.Required
+                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                    Value: =Parent.Default
+                    Width: =Parent.Width - 48
+                    X: =24
+                    Y: =DataCardKey44.Y + DataCardKey44.Height + 4
+                    ZIndex: =2
+
+                ErrorMessage39 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: =Parent.Error
+                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =Parent.Width - 48
+                    Wrap: =true
+                    X: =24
+                    Y: =DataCardValue38.Y + DataCardValue38.Height
+                    ZIndex: =3
+
+                StarVisible39 As Texto:
+                    Align: ='TextCanvas.Align'.Center
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    X: =0
+                    Y: =DataCardKey44.Y
+                    ZIndex: =4
+
+            Banco_DataCard2 As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard:
+                BorderColor: =App.Theme.Colors.Darker40
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="crda0_banco"
+                Default: =ThisItem.Banco
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@RRHHcolaboradores],DataSourceInfo.DisplayName,crda0_banco)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =70
+                Required: =false
+                Update: =DataCardValue39.Selected.Value
+                Width: =379
+                X: =1
+                Y: =1
+                ZIndex: =1
+
+                DataCardKey45 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =22
+                    Text: =Parent.DisplayName
+                    Weight: ='TextCanvas.Weight'.Semibold
+                    Width: =Parent.Width - 48
+                    Wrap: =false
+                    X: =24
+                    Y: =10
+                    ZIndex: =1
+
+                "DataCardValue39 As 'Cuadro combinado'.pcfdataset":
+                    AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                    DefaultSelectedItems: =[Parent.Default]
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =32
+                    Items: =Choices(Bancos)
+                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                    Width: =Parent.Width - 48
+                    X: =24
+                    Y: =DataCardKey45.Y + DataCardKey45.Height + 4
+                    ZIndex: =2
+
+                ErrorMessage40 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: =Parent.Error
+                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =Parent.Width - 48
+                    Wrap: =true
+                    X: =24
+                    Y: =DataCardValue39.Y + DataCardValue39.Height
+                    ZIndex: =3
+
+                StarVisible40 As Texto:
+                    Align: ='TextCanvas.Align'.Center
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =20
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    X: =0
+                    Y: =DataCardKey45.Y
+                    ZIndex: =4
+
+            Cargo_DataCard2 As typedDataCard.fluentV9TextualEditCard:
+                BorderColor: =App.Theme.Colors.Darker40
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="crda0_cargo"
+                Default: =ThisItem.Cargo
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@RRHHcolaboradores],DataSourceInfo.DisplayName,crda0_cargo)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =70
+                MaxLength: =DataSourceInfo([@RRHHcolaboradores], DataSourceInfo.MaxLength, crda0_cargo)
+                Required: =false
+                Update: =DataCardValue40.Value
+                Width: =379
+                X: =0
+                Y: =2
+                ZIndex: =1
+
+                DataCardKey46 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =22
+                    Text: =Parent.DisplayName
+                    Weight: ='TextCanvas.Weight'.Semibold
+                    Width: =Parent.Width - 48
+                    Wrap: =false
+                    X: =24
+                    Y: =10
+                    ZIndex: =1
+
+                "DataCardValue40 As 'Entrada de texto'":
+                    AccessibleLabel: =Parent.DisplayName
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =32
+                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                    Required: =Parent.Required
+                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                    Value: =Parent.Default
+                    Width: =Parent.Width - 48
+                    X: =24
+                    Y: =DataCardKey46.Y + DataCardKey46.Height + 4
+                    ZIndex: =2
+
+                ErrorMessage41 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: =Parent.Error
+                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =Parent.Width - 48
+                    Wrap: =true
+                    X: =24
+                    Y: =DataCardValue40.Y + DataCardValue40.Height
+                    ZIndex: =3
+
+                StarVisible41 As Texto:
+                    Align: ='TextCanvas.Align'.Center
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    X: =0
+                    Y: =DataCardKey46.Y
+                    ZIndex: =4
+
+            Celular_DataCard2 As typedDataCard.fluentV9TextualEditCard:
+                BorderColor: =App.Theme.Colors.Darker40
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="crda0_celular"
+                Default: =ThisItem.Celular
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@RRHHcolaboradores],DataSourceInfo.DisplayName,crda0_celular)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =70
+                MaxLength: =DataSourceInfo([@RRHHcolaboradores], DataSourceInfo.MaxLength, crda0_celular)
+                Required: =false
+                Update: =DataCardValue41.Value
+                Width: =379
+                X: =1
+                Y: =2
+                ZIndex: =1
+
+                DataCardKey47 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =22
+                    Text: =Parent.DisplayName
+                    Weight: ='TextCanvas.Weight'.Semibold
+                    Width: =Parent.Width - 48
+                    Wrap: =false
+                    X: =24
+                    Y: =10
+                    ZIndex: =1
+
+                "DataCardValue41 As 'Entrada de texto'":
+                    AccessibleLabel: =Parent.DisplayName
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =32
+                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                    Required: =Parent.Required
+                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                    Value: =Parent.Default
+                    Width: =Parent.Width - 48
+                    X: =24
+                    Y: =DataCardKey47.Y + DataCardKey47.Height + 4
+                    ZIndex: =2
+
+                ErrorMessage42 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: =Parent.Error
+                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =Parent.Width - 48
+                    Wrap: =true
+                    X: =24
+                    Y: =DataCardValue41.Y + DataCardValue41.Height
+                    ZIndex: =3
+
+                StarVisible42 As Texto:
+                    Align: ='TextCanvas.Align'.Center
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    X: =0
+                    Y: =DataCardKey47.Y
+                    ZIndex: =4
+
+            CorreoPersonal_DataCard2 As typedDataCard.fluentV9TextualEditCard:
+                BorderColor: =App.Theme.Colors.Darker40
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="crda0_correopersonal"
+                Default: =ThisItem.CorreoPersonal
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@RRHHcolaboradores],DataSourceInfo.DisplayName,crda0_correopersonal)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =70
+                MaxLength: =DataSourceInfo([@RRHHcolaboradores], DataSourceInfo.MaxLength, crda0_correopersonal)
+                Required: =false
+                Update: =DataCardValue42.Value
+                Width: =379
+                X: =0
+                Y: =3
+                ZIndex: =1
+
+                DataCardKey48 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =22
+                    Text: =Parent.DisplayName
+                    Weight: ='TextCanvas.Weight'.Semibold
+                    Width: =Parent.Width - 48
+                    Wrap: =false
+                    X: =24
+                    Y: =10
+                    ZIndex: =1
+
+                "DataCardValue42 As 'Entrada de texto'":
+                    AccessibleLabel: =Parent.DisplayName
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =32
+                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                    Required: =Parent.Required
+                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                    Value: =Parent.Default
+                    Width: =Parent.Width - 48
+                    X: =24
+                    Y: =DataCardKey48.Y + DataCardKey48.Height + 4
+                    ZIndex: =2
+
+                ErrorMessage43 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: =Parent.Error
+                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =Parent.Width - 48
+                    Wrap: =true
+                    X: =24
+                    Y: =DataCardValue42.Y + DataCardValue42.Height
+                    ZIndex: =3
+
+                StarVisible43 As Texto:
+                    Align: ='TextCanvas.Align'.Center
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    X: =0
+                    Y: =DataCardKey48.Y
+                    ZIndex: =4
+
+            Direccion_DataCard2 As typedDataCard.fluentV9TextualEditCard:
+                BorderColor: =App.Theme.Colors.Darker40
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="crda0_direccion"
+                Default: =ThisItem.Direccion
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@RRHHcolaboradores],DataSourceInfo.DisplayName,crda0_direccion)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =70
+                MaxLength: =DataSourceInfo([@RRHHcolaboradores], DataSourceInfo.MaxLength, crda0_direccion)
+                Required: =false
+                Update: =DataCardValue43.Value
+                Width: =379
+                X: =1
+                Y: =3
+                ZIndex: =1
+
+                DataCardKey49 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =22
+                    Text: =Parent.DisplayName
+                    Weight: ='TextCanvas.Weight'.Semibold
+                    Width: =Parent.Width - 48
+                    Wrap: =false
+                    X: =24
+                    Y: =10
+                    ZIndex: =1
+
+                "DataCardValue43 As 'Entrada de texto'":
+                    AccessibleLabel: =Parent.DisplayName
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =32
+                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                    Required: =Parent.Required
+                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                    Value: =Parent.Default
+                    Width: =Parent.Width - 48
+                    X: =24
+                    Y: =DataCardKey49.Y + DataCardKey49.Height + 4
+                    ZIndex: =2
+
+                ErrorMessage44 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: =Parent.Error
+                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =Parent.Width - 48
+                    Wrap: =true
+                    X: =24
+                    Y: =DataCardValue43.Y + DataCardValue43.Height
+                    ZIndex: =3
+
+                StarVisible44 As Texto:
+                    Align: ='TextCanvas.Align'.Center
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    X: =0
+                    Y: =DataCardKey49.Y
+                    ZIndex: =4
+
+            Edad_DataCard1 As typedDataCard.fluentV9TextualViewCard:
+                BorderColor: =App.Theme.Colors.Darker40
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="crda0_edad"
+                Default: =ThisItem.Edad
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@RRHHcolaboradores],DataSourceInfo.DisplayName,crda0_edad)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =70
+                Required: =false
+                Width: =379
+                X: =0
+                Y: =4
+                ZIndex: =1
+
+                DataCardKey50 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =22
+                    Text: =Parent.DisplayName
+                    Weight: ='TextCanvas.Weight'.Semibold
+                    Width: =Parent.Width - 48
+                    Wrap: =false
+                    X: =24
+                    Y: =10
+                    ZIndex: =1
+
+                "DataCardValue44 As 'Entrada de texto'":
+                    DisplayMode: =DisplayMode.View
+                    Height: =32
+                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                    Value: =Parent.Default
+                    Width: =Parent.Width - 48
+                    X: =24
+                    Y: =DataCardKey50.Y + DataCardKey50.Height + 4
+                    ZIndex: =2
+
+            FechaActual_DataCard2 As typedDataCard.fluentV9TextualViewCard:
+                BorderColor: =App.Theme.Colors.Darker40
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="crda0_fechaactual"
+                Default: =ThisItem.FechaActual
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@RRHHcolaboradores],DataSourceInfo.DisplayName,crda0_fechaactual)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =70
+                Required: =false
+                Width: =379
+                X: =1
+                Y: =4
+                ZIndex: =1
+
+                DataCardKey51 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =22
+                    Text: =Parent.DisplayName
+                    Weight: ='TextCanvas.Weight'.Semibold
+                    Width: =Parent.Width - 48
+                    Wrap: =false
+                    X: =24
+                    Y: =10
+                    ZIndex: =1
+
+                "DataCardValue45 As 'Entrada de texto'":
+                    DisplayMode: =DisplayMode.View
+                    Height: =32
+                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                    Value: =Parent.Default
+                    Width: =Parent.Width - 48
+                    X: =24
+                    Y: =DataCardKey51.Y + DataCardKey51.Height + 4
+                    ZIndex: =2
+
+            FechaNacimiento_DataCard2 As typedDataCard.fluentV9DateTimeEditCard:
+                BorderColor: =App.Theme.Colors.Darker40
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="crda0_fechanacimiento"
+                Default: =ThisItem.FechaNacimiento
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@RRHHcolaboradores],DataSourceInfo.DisplayName,crda0_fechanacimiento)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =70
+                Required: =false
+                Update: =If(Not IsBlank(DateValue7.SelectedDate), DateTime(Year(DateValue7.SelectedDate), Month(DateValue7.SelectedDate), Day(DateValue7.SelectedDate), Value(HourValue7.Selected.Value), Value(MinuteValue7.Selected.Value), Second(DateValue7.SelectedDate)))
+                Width: =379
+                X: =0
+                Y: =5
+                ZIndex: =1
+
+                DataCardKey52 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =22
+                    Text: =Parent.DisplayName
+                    Weight: ='TextCanvas.Weight'.Semibold
+                    Width: =Parent.Width - 48
+                    Wrap: =false
+                    X: =24
+                    Y: =10
+                    ZIndex: =1
+
+                "DateValue7 As 'Selector de fecha'":
+                    AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =32
+                    SelectedDate: =Parent.Default
+                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                    Width: =(Parent.Width - 48) / 2
+                    X: =24
+                    Y: =DataCardKey52.Y + DataCardKey52.Height + 4
+                    ZIndex: =2
+
+                HourValue7 As Desplegable.pcfdataset:
+                    DefaultSelectedItems: =[Text(Hour(Parent.Default),"00")]
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =28
+                    Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23"]
+                    Width: =DateValue7.Width / 2 - 10
+                    X: =DateValue7.X + DateValue7.Width + 10
+                    Y: =DateValue7.Y + 1
+                    ZIndex: =3
+
+                Separator8 As Texto:
+                    Align: ='TextCanvas.Align'.Center
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =HourValue7.Height
+                    Text: |-
+                        =":"
+                    Width: =10
+                    X: =HourValue7.X + HourValue7.Width
+                    Y: =HourValue7.Y
+                    ZIndex: =4
+
+                MinuteValue7 As Desplegable.pcfdataset:
+                    DefaultSelectedItems: =[Text(Minute(Parent.Default),"00")]
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =28
+                    Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59"]
+                    Width: =HourValue7.Width
+                    X: =HourValue7.X + HourValue7.Width + Separator8.Width
+                    Y: =HourValue7.Y + 1
+                    ZIndex: =5
+
+                ErrorMessage45 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: =Parent.Error
+                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =Parent.Width - 48
+                    Wrap: =true
+                    X: =24
+                    Y: =DateValue7.Y + DateValue7.Height
+                    ZIndex: =6
+
+                StarVisible45 As Texto:
+                    Align: ='TextCanvas.Align'.Center
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =20
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    X: =0
+                    Y: =DataCardKey52.Y
+                    ZIndex: =7
+
+            Nacionalidad_DataCard2 As typedDataCard.fluentV9TextualEditCard:
+                BorderColor: =App.Theme.Colors.Darker40
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="crda0_nacionalidad"
+                Default: =ThisItem.Nacionalidad
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@RRHHcolaboradores],DataSourceInfo.DisplayName,crda0_nacionalidad)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =70
+                MaxLength: =DataSourceInfo([@RRHHcolaboradores], DataSourceInfo.MaxLength, crda0_nacionalidad)
+                Required: =false
+                Update: =DataCardValue46.Value
+                Width: =379
+                X: =1
+                Y: =5
+                ZIndex: =1
+
+                DataCardKey53 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =22
+                    Text: =Parent.DisplayName
+                    Weight: ='TextCanvas.Weight'.Semibold
+                    Width: =Parent.Width - 48
+                    Wrap: =false
+                    X: =24
+                    Y: =10
+                    ZIndex: =1
+
+                "DataCardValue46 As 'Entrada de texto'":
+                    AccessibleLabel: =Parent.DisplayName
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =32
+                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                    Required: =Parent.Required
+                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                    Value: =Parent.Default
+                    Width: =Parent.Width - 48
+                    X: =24
+                    Y: =DataCardKey53.Y + DataCardKey53.Height + 4
+                    ZIndex: =2
+
+                ErrorMessage46 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: =Parent.Error
+                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =Parent.Width - 48
+                    Wrap: =true
+                    X: =24
+                    Y: =DataCardValue46.Y + DataCardValue46.Height
+                    ZIndex: =3
+
+                StarVisible46 As Texto:
+                    Align: ='TextCanvas.Align'.Center
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    X: =0
+                    Y: =DataCardKey53.Y
+                    ZIndex: =4
+
+            NIdentificacion_DataCard2 As typedDataCard.fluentV9TextualEditCard:
+                BorderColor: =App.Theme.Colors.Darker40
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="crda0_nidentificacion"
+                Default: =ThisItem.NIdentificacion
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@RRHHcolaboradores],DataSourceInfo.DisplayName,crda0_nidentificacion)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =70
+                MaxLength: =DataSourceInfo([@RRHHcolaboradores], DataSourceInfo.MaxLength, crda0_nidentificacion)
+                Required: =false
+                Update: =DataCardValue47.Value
+                Width: =379
+                X: =0
+                Y: =6
+                ZIndex: =1
+
+                DataCardKey54 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =22
+                    Text: =Parent.DisplayName
+                    Weight: ='TextCanvas.Weight'.Semibold
+                    Width: =Parent.Width - 48
+                    Wrap: =false
+                    X: =24
+                    Y: =10
+                    ZIndex: =1
+
+                "DataCardValue47 As 'Entrada de texto'":
+                    AccessibleLabel: =Parent.DisplayName
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =32
+                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                    Required: =Parent.Required
+                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                    Value: =Parent.Default
+                    Width: =Parent.Width - 48
+                    X: =24
+                    Y: =DataCardKey54.Y + DataCardKey54.Height + 4
+                    ZIndex: =2
+
+                ErrorMessage47 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: =Parent.Error
+                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =Parent.Width - 48
+                    Wrap: =true
+                    X: =24
+                    Y: =DataCardValue47.Y + DataCardValue47.Height
+                    ZIndex: =3
+
+                StarVisible47 As Texto:
+                    Align: ='TextCanvas.Align'.Center
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    X: =0
+                    Y: =DataCardKey54.Y
+                    ZIndex: =4
+
+            Nombre_DataCard2 As typedDataCard.fluentV9TextualEditCard:
+                BorderColor: =App.Theme.Colors.Darker40
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="crda0_nombre"
+                Default: =ThisItem.Nombre
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@RRHHcolaboradores],DataSourceInfo.DisplayName,crda0_nombre)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =70
+                MaxLength: =DataSourceInfo([@RRHHcolaboradores], DataSourceInfo.MaxLength, crda0_nombre)
+                Required: =false
+                Update: =DataCardValue48.Value
+                Width: =379
+                X: =1
+                Y: =6
+                ZIndex: =1
+
+                DataCardKey55 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =22
+                    Text: =Parent.DisplayName
+                    Weight: ='TextCanvas.Weight'.Semibold
+                    Width: =Parent.Width - 48
+                    Wrap: =false
+                    X: =24
+                    Y: =10
+                    ZIndex: =1
+
+                "DataCardValue48 As 'Entrada de texto'":
+                    AccessibleLabel: =Parent.DisplayName
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =32
+                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                    Required: =Parent.Required
+                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                    Value: =Parent.Default
+                    Width: =Parent.Width - 48
+                    X: =24
+                    Y: =DataCardKey55.Y + DataCardKey55.Height + 4
+                    ZIndex: =2
+
+                ErrorMessage48 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: =Parent.Error
+                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =Parent.Width - 48
+                    Wrap: =true
+                    X: =24
+                    Y: =DataCardValue48.Y + DataCardValue48.Height
+                    ZIndex: =3
+
+                StarVisible48 As Texto:
+                    Align: ='TextCanvas.Align'.Center
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    X: =0
+                    Y: =DataCardKey55.Y
+                    ZIndex: =4
+
+            SalarioNetoMensual_DataCard1 As typedDataCard.fluentV9TextualViewCard:
+                BorderColor: =App.Theme.Colors.Darker40
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="crda0_salarionetomensual"
+                Default: =ThisItem.SalarioNetoMensual
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@RRHHcolaboradores],DataSourceInfo.DisplayName,crda0_salarionetomensual)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =70
+                Required: =false
+                Width: =379
+                X: =0
+                Y: =7
+                ZIndex: =1
+
+                DataCardKey56 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =22
+                    Text: =Parent.DisplayName
+                    Weight: ='TextCanvas.Weight'.Semibold
+                    Width: =Parent.Width - 48
+                    Wrap: =false
+                    X: =24
+                    Y: =10
+                    ZIndex: =1
+
+                "DataCardValue49 As 'Entrada de texto'":
+                    DisplayMode: =DisplayMode.View
+                    Height: =32
+                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                    Value: =Parent.Default
+                    Width: =Parent.Width - 48
+                    X: =24
+                    Y: =DataCardKey56.Y + DataCardKey56.Height + 4
+                    ZIndex: =2
+
+            TipoColaborador_DataCard4 As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard:
+                BorderColor: =App.Theme.Colors.Darker40
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="crda0_tipocolaborador"
+                Default: =ThisItem.TipoColaborador
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@RRHHcolaboradores],DataSourceInfo.DisplayName,crda0_tipocolaborador)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =70
+                Required: =false
+                Update: =DataCardValue50.Selected.Value
+                Width: =379
+                X: =1
+                Y: =7
+                ZIndex: =1
+
+                DataCardKey57 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =22
+                    Text: =Parent.DisplayName
+                    Weight: ='TextCanvas.Weight'.Semibold
+                    Width: =Parent.Width - 48
+                    Wrap: =false
+                    X: =24
+                    Y: =10
+                    ZIndex: =1
+
+                "DataCardValue50 As 'Cuadro combinado'.pcfdataset":
+                    AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                    DefaultSelectedItems: =[Parent.Default]
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =32
+                    Items: =Choices('Tipo Colaborador')
+                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                    Width: =Parent.Width - 48
+                    X: =24
+                    Y: =DataCardKey57.Y + DataCardKey57.Height + 4
+                    ZIndex: =2
+
+                ErrorMessage49 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: =Parent.Error
+                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =Parent.Width - 48
+                    Wrap: =true
+                    X: =24
+                    Y: =DataCardValue50.Y + DataCardValue50.Height
+                    ZIndex: =3
+
+                StarVisible49 As Texto:
+                    Align: ='TextCanvas.Align'.Center
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =20
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    X: =0
+                    Y: =DataCardKey57.Y
+                    ZIndex: =4
+
+            TipoCuenta_DataCard2 As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard:
+                BorderColor: =App.Theme.Colors.Darker40
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="crda0_tipocuenta"
+                Default: =ThisItem.TipoCuenta
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@RRHHcolaboradores],DataSourceInfo.DisplayName,crda0_tipocuenta)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =70
+                Required: =false
+                Update: =DataCardValue51.Selected.Value
+                Width: =379
+                X: =0
+                Y: =8
+                ZIndex: =1
+
+                DataCardKey58 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =22
+                    Text: =Parent.DisplayName
+                    Weight: ='TextCanvas.Weight'.Semibold
+                    Width: =Parent.Width - 48
+                    Wrap: =false
+                    X: =24
+                    Y: =10
+                    ZIndex: =1
+
+                "DataCardValue51 As 'Cuadro combinado'.pcfdataset":
+                    AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                    DefaultSelectedItems: =[Parent.Default]
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =32
+                    Items: =Choices('Tipo de Cuenta')
+                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                    Width: =Parent.Width - 48
+                    X: =24
+                    Y: =DataCardKey58.Y + DataCardKey58.Height + 4
+                    ZIndex: =2
+
+                ErrorMessage50 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: =Parent.Error
+                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =Parent.Width - 48
+                    Wrap: =true
+                    X: =24
+                    Y: =DataCardValue51.Y + DataCardValue51.Height
+                    ZIndex: =3
+
+                StarVisible50 As Texto:
+                    Align: ='TextCanvas.Align'.Center
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =20
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    X: =0
+                    Y: =DataCardKey58.Y
+                    ZIndex: =4
+
+            idcolaborador_DataCard1 As typedDataCard.fluentV9TextualViewCard:
+                BorderColor: =App.Theme.Colors.Darker40
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="crda0_idcolaborador"
+                Default: =ThisItem.idcolaborador
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@RRHHcolaboradores],DataSourceInfo.DisplayName,crda0_idcolaborador)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =70
+                Required: =false
+                Width: =369
+                X: =0
+                Y: =0
+                ZIndex: =2
+
+                DataCardKey42 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =22
+                    Text: =Parent.DisplayName
+                    Weight: ='TextCanvas.Weight'.Semibold
+                    Width: =Parent.Width - 48
+                    Wrap: =false
+                    X: =24
+                    Y: =10
+                    ZIndex: =1
+
+                "DataCardValue36 As 'Entrada de texto'":
+                    DisplayMode: =DisplayMode.View
+                    Height: =32
+                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                    Value: =Parent.Default
+                    Width: =Parent.Width - 48
+                    X: =24
+                    Y: =DataCardKey42.Y + DataCardKey42.Height + 4
+                    ZIndex: =2
+
+            "'Fecha de creación_DataCard1' As typedDataCard.fluentV9TextualViewCard":
+                BorderColor: =App.Theme.Colors.Darker40
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="createdon"
+                Default: =ThisItem.'Fecha de creación'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@RRHHcolaboradores],DataSourceInfo.DisplayName,createdon)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =70
+                Required: =false
+                Width: =369
+                X: =1
+                Y: =0
+                ZIndex: =2
+
+                DataCardKey43 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =22
+                    Text: =Parent.DisplayName
+                    Weight: ='TextCanvas.Weight'.Semibold
+                    Width: =Parent.Width - 48
+                    Wrap: =false
+                    X: =24
+                    Y: =10
+                    ZIndex: =1
+
+                "DataCardValue37 As 'Entrada de texto'":
+                    DisplayMode: =DisplayMode.View
+                    Height: =32
+                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                    Value: =Parent.Default
+                    Width: =Parent.Width - 48
+                    X: =24
+                    Y: =DataCardKey43.Y + DataCardKey43.Height + 4
+                    ZIndex: =2
+
