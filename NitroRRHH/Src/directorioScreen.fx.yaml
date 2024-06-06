@@ -123,7 +123,7 @@
                         BorderColor: =""
                         BorderStyle: =""
                         DefaultSelectedItems: |-
-                            ={Value: IDEmpresa2.FieldName}
+                            ={Value: Filter(RRHHEmpresas,Nombre="Latam Consulting Services Inc.")}
                         DisabledBorderColor: =""
                         DisplayMode: =DisplayMode.Edit
                         FocusedBorderColor: =""
