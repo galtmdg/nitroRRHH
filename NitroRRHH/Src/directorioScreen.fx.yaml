@@ -122,8 +122,7 @@
                         Appearance: ="FilledDarker"
                         BorderColor: =""
                         BorderStyle: =""
-                        DefaultSelectedItems: |-
-                            ={Value: Filter(RRHHEmpresas,Nombre="Latam Consulting Services Inc.")}
+                        DefaultSelectedItems: =
                         DisabledBorderColor: =""
                         DisplayMode: =DisplayMode.Edit
                         FocusedBorderColor: =""
@@ -413,13 +412,13 @@
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =70
                 Required: =false
-                Update: =DataCardValue36.Selected
+                Update: =DataCardValue44.Selected
                 Width: =379
                 X: =1
-                Y: =8
+                Y: =7
                 ZIndex: =1
 
-                DataCardKey42 As Texto:
+                DataCardKey50 As Texto:
                     DisplayMode: =DisplayMode.Edit
                     Height: =22
                     Text: =Parent.DisplayName
@@ -430,7 +429,7 @@
                     Y: =10
                     ZIndex: =1
 
-                "DataCardValue36 As 'Cuadro combinado'.pcfdataset":
+                "DataCardValue44 As 'Cuadro combinado'.pcfdataset":
                     AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obligatorio.", "{0}", Parent.DisplayName), Parent.DisplayName)
                     DefaultSelectedItems: =[Parent.Default]
                     DisplayMode: =Parent.DisplayMode
@@ -439,7 +438,7 @@
                     ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                     Width: =Parent.Width - 48
                     X: =24
-                    Y: =DataCardKey42.Y + DataCardKey42.Height + 4
+                    Y: =DataCardKey50.Y + DataCardKey50.Height + 4
                     ZIndex: =2
 
                     IDEmpresa3 As pcfDataField.textualColumn:
@@ -846,7 +845,7 @@
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =70
                 Required: =false
-                Update: =If(Not IsBlank(DateValue7.SelectedDate), DateTime(Year(DateValue7.SelectedDate), Month(DateValue7.SelectedDate), Day(DateValue7.SelectedDate), Value(HourValue7.Selected.Value), Value(MinuteValue7.Selected.Value), Second(DateValue7.SelectedDate)))
+                Update: =If(Not IsBlank(DateValue7.SelectedDate), Date(Year(DateValue7.SelectedDate), Month(DateValue7.SelectedDate), Day(DateValue7.SelectedDate)))
                 Width: =379
                 X: =0
                 Y: =3
@@ -869,41 +868,10 @@
                     Height: =32
                     SelectedDate: =Parent.Default
                     ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                    Width: =(Parent.Width - 48) / 2
+                    Width: =(Parent.Width - 48)
                     X: =24
                     Y: =DataCardKey52.Y + DataCardKey52.Height + 4
                     ZIndex: =2
-
-                HourValue7 As Desplegable.pcfdataset:
-                    DefaultSelectedItems: =[Text(Hour(Parent.Default),"00")]
-                    DisplayMode: =Parent.DisplayMode
-                    Height: =28
-                    Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23"]
-                    Width: =DateValue7.Width / 2 - 10
-                    X: =DateValue7.X + DateValue7.Width + 10
-                    Y: =DateValue7.Y + 1
-                    ZIndex: =3
-
-                Separator8 As Texto:
-                    Align: ='TextCanvas.Align'.Center
-                    DisplayMode: =DisplayMode.Edit
-                    Height: =HourValue7.Height
-                    Text: |-
-                        =":"
-                    Width: =10
-                    X: =HourValue7.X + HourValue7.Width
-                    Y: =HourValue7.Y
-                    ZIndex: =4
-
-                MinuteValue7 As Desplegable.pcfdataset:
-                    DefaultSelectedItems: =[Text(Minute(Parent.Default),"00")]
-                    DisplayMode: =Parent.DisplayMode
-                    Height: =28
-                    Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59"]
-                    Width: =HourValue7.Width
-                    X: =HourValue7.X + HourValue7.Width + Separator8.Width
-                    Y: =HourValue7.Y + 1
-                    ZIndex: =5
 
                 ErrorMessage45 As Texto:
                     DisplayMode: =DisplayMode.Edit
@@ -1187,8 +1155,8 @@
                 Required: =false
                 Update: =DataCardValue51.Selected.Value
                 Width: =379
-                X: =1
-                Y: =5
+                X: =0
+                Y: =6
                 ZIndex: =1
 
                 DataCardKey58 As Texto:
@@ -1244,7 +1212,7 @@
                 Height: =120
                 Width: =758
                 X: =0
-                Y: =6
+                Y: =7
                 ZIndex: =1
 
                 ButtonCanvas7 As Botón:
@@ -1266,4 +1234,67 @@
                     X: =256
                     Y: =40
                     ZIndex: =3
+
+            NumeroCuenta_DataCard2 As typedDataCard.fluentV9TextualEditCard:
+                BorderColor: =App.Theme.Colors.Darker40
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="crda0_numerocuenta"
+                Default: =ThisItem.NumeroCuenta
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@RRHHcolaboradores],DataSourceInfo.DisplayName,crda0_numerocuenta)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =70
+                MaxLength: =DataSourceInfo([@RRHHcolaboradores], DataSourceInfo.MaxLength, crda0_numerocuenta)
+                Required: =false
+                Update: =DataCardValue39.Value
+                Width: =379
+                X: =1
+                Y: =5
+                ZIndex: =1
+
+                DataCardKey45 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =22
+                    Text: =Parent.DisplayName
+                    Weight: ='TextCanvas.Weight'.Semibold
+                    Width: =Parent.Width - 48
+                    Wrap: =false
+                    X: =24
+                    Y: =10
+                    ZIndex: =1
+
+                "DataCardValue39 As 'Entrada de texto'":
+                    AccessibleLabel: =Parent.DisplayName
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =32
+                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                    Required: =Parent.Required
+                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                    Value: =Parent.Default
+                    Width: =Parent.Width - 48
+                    X: =24
+                    Y: =DataCardKey45.Y + DataCardKey45.Height + 4
+                    ZIndex: =2
+
+                ErrorMessage40 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: =Parent.Error
+                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =Parent.Width - 48
+                    Wrap: =true
+                    X: =24
+                    Y: =DataCardValue39.Y + DataCardValue39.Height
+                    ZIndex: =3
+
+                StarVisible40 As Texto:
+                    Align: ='TextCanvas.Align'.Center
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    X: =0
+                    Y: =DataCardKey45.Y
+                    ZIndex: =4
 
